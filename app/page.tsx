@@ -56,8 +56,12 @@ export default function Home() {
   useEffect(() => {
     if (isDark) {
       document.documentElement.classList.add('dark');
+      document.documentElement.setAttribute('data-theme', 'dark');
+      document.body.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
+      document.documentElement.setAttribute('data-theme', 'light');
+      document.body.classList.remove('dark');
     }
 
     // Listen to storage update events
@@ -75,9 +79,13 @@ export default function Home() {
       const next = !prev;
       if (next) {
         document.documentElement.classList.add('dark');
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.body.classList.add('dark');
         localStorage.setItem('tadoku_de_theme', 'dark');
       } else {
         document.documentElement.classList.remove('dark');
+        document.documentElement.setAttribute('data-theme', 'light');
+        document.body.classList.remove('dark');
         localStorage.setItem('tadoku_de_theme', 'light');
       }
       return next;
@@ -146,7 +154,12 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100 flex flex-col font-sans transition-colors duration-200">
+    <div
+      className={`min-h-screen flex flex-col font-sans transition-colors duration-200 ${
+        isDark ? 'dark bg-slate-950 text-slate-100' : 'bg-white text-slate-900'
+      }`}
+      data-theme={isDark ? 'dark' : 'light'}
+    >
       {/* Universal Top Bar */}
       <Header
         progress={progress}
