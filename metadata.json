@@ -1,0 +1,8 @@
+{
+  "name": "Tadoku Deutsch",
+  "description": "プライバシー第一（ログイン不要・完全ローカル完結）で、CEFRレベル別に面白いドイツ語ストーリーを多読できるWebアプリケーション。",
+  "version": "1.0.0",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
