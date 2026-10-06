@@ -12,6 +12,7 @@ interface HeaderProps {
   isDark: boolean;
   onToggleDark: () => void;
   onResetToHome?: () => void;
+  mounted?: boolean;
 }
 
 export function Header({
@@ -22,6 +23,7 @@ export function Header({
   isDark,
   onToggleDark,
   onResetToHome,
+  mounted = true,
 }: HeaderProps) {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-slate-200 bg-white/95 backdrop-blur-md dark:border-slate-800 dark:bg-slate-950/95 transition-colors">
@@ -97,7 +99,7 @@ export function Header({
           >
             <BookOpen className="h-3.5 w-3.5 text-slate-500" />
             <span className="font-semibold text-slate-900 dark:text-slate-100 tabular-nums">
-              {progress.totalWordsRead.toLocaleString()}
+              {mounted ? progress.totalWordsRead.toLocaleString() : '0'}
             </span>
             <span className="text-slate-500 dark:text-slate-400">語読了</span>
           </button>
@@ -117,7 +119,11 @@ export function Header({
             aria-label="テーマ切り替え"
             className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-100 dark:border-slate-800 dark:text-slate-300 dark:hover:bg-slate-800 transition-colors"
           >
-            {isDark ? <Sun className="h-4 w-4 text-amber-400" /> : <Moon className="h-4 w-4" />}
+            {mounted ? (
+              isDark ? <Sun className="h-4 w-4 text-amber-400" /> : <Moon className="h-4 w-4" />
+            ) : (
+              <span className="h-4 w-4 opacity-0" />
+            )}
           </button>
         </div>
       </div>

@@ -26,20 +26,32 @@ function calculateTotalWords(readIds: string[]): number {
   return STORIES.filter(s => readIds.includes(s.id)).reduce((acc, s) => acc + s.wordCount, 0);
 }
 
+let cachedProgressSnapshot: UserProgress = DEFAULT_PROGRESS;
+let lastProgressRawString: string | null = null;
+
 export function getStoredProgress(): UserProgress {
   if (typeof window === 'undefined') return DEFAULT_PROGRESS;
   try {
     const raw = localStorage.getItem(STORAGE_KEYS.PROGRESS);
-    if (!raw) return DEFAULT_PROGRESS;
+    if (!raw) {
+      cachedProgressSnapshot = DEFAULT_PROGRESS;
+      lastProgressRawString = null;
+      return DEFAULT_PROGRESS;
+    }
+    if (raw === lastProgressRawString && cachedProgressSnapshot) {
+      return cachedProgressSnapshot;
+    }
     const parsed = JSON.parse(raw);
     const readStoryIds = Array.isArray(parsed.readStoryIds) ? parsed.readStoryIds : [];
-    return {
+    cachedProgressSnapshot = {
       readStoryIds,
       bookmarkedStoryIds: Array.isArray(parsed.bookmarkedStoryIds) ? parsed.bookmarkedStoryIds : [],
       savedWords: Array.isArray(parsed.savedWords) ? parsed.savedWords : [],
       lastReadStoryId: parsed.lastReadStoryId,
       totalWordsRead: calculateTotalWords(readStoryIds),
     };
+    lastProgressRawString = raw;
+    return cachedProgressSnapshot;
   } catch (e) {
     console.error('Failed to load progress from localStorage', e);
     return DEFAULT_PROGRESS;
@@ -53,7 +65,10 @@ export function saveStoredProgress(progress: UserProgress): void {
       ...progress,
       totalWordsRead: calculateTotalWords(progress.readStoryIds),
     };
-    localStorage.setItem(STORAGE_KEYS.PROGRESS, JSON.stringify(toSave));
+    const jsonStr = JSON.stringify(toSave);
+    localStorage.setItem(STORAGE_KEYS.PROGRESS, jsonStr);
+    lastProgressRawString = jsonStr;
+    cachedProgressSnapshot = toSave;
     window.dispatchEvent(new Event('tadoku_progress_updated'));
   } catch (e) {
     console.error('Failed to save progress to localStorage', e);
@@ -183,5 +198,7 @@ export function resetAllUserData(): void {
   if (typeof window === 'undefined') return;
   localStorage.removeItem(STORAGE_KEYS.PROGRESS);
   localStorage.removeItem(STORAGE_KEYS.SETTINGS);
+  cachedProgressSnapshot = DEFAULT_PROGRESS;
+  lastProgressRawString = null;
   window.dispatchEvent(new Event('tadoku_progress_updated'));
 }

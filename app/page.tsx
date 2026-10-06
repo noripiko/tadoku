@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo, useSyncExternalStore } from 'react';
 import { Header } from '@/components/Header';
 import { HeroSection } from '@/components/HeroSection';
 import { LevelFilterBar } from '@/components/LevelFilterBar';
@@ -20,11 +20,57 @@ import {
 } from '@/lib/storage';
 import { BookOpen, RefreshCw } from 'lucide-react';
 
+const EMPTY_PROGRESS: UserProgress = {
+  readStoryIds: [],
+  bookmarkedStoryIds: [],
+  savedWords: [],
+  totalWordsRead: 0,
+};
+
+function subscribeProgress(callback: () => void) {
+  window.addEventListener('tadoku_progress_updated', callback);
+  window.addEventListener('storage', callback);
+  return () => {
+    window.removeEventListener('tadoku_progress_updated', callback);
+    window.removeEventListener('storage', callback);
+  };
+}
+
+function subscribeTheme(callback: () => void) {
+  window.addEventListener('tadoku_theme_updated', callback);
+  window.addEventListener('storage', callback);
+  return () => {
+    window.removeEventListener('tadoku_theme_updated', callback);
+    window.removeEventListener('storage', callback);
+  };
+}
+
+function subscribeMounted() {
+  return () => {};
+}
+
 export default function Home() {
-  // User progress state with lazy initializer to avoid setState in effect
-  const [progress, setProgress] = useState<UserProgress>(() => {
-    return getStoredProgress();
-  });
+  const isMounted = useSyncExternalStore(
+    subscribeMounted,
+    () => true,
+    () => false
+  );
+
+  const progress = useSyncExternalStore(
+    subscribeProgress,
+    getStoredProgress,
+    () => EMPTY_PROGRESS
+  );
+
+  const isDark = useSyncExternalStore(
+    subscribeTheme,
+    () => {
+      const saved = localStorage.getItem('tadoku_de_theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      return saved === 'dark' || (!saved && prefersDark);
+    },
+    () => false
+  );
 
   // Active view state
   const [activeStory, setActiveStory] = useState<Story | null>(null);
@@ -40,21 +86,10 @@ export default function Home() {
   const [isWordBankOpen, setIsWordBankOpen] = useState(false);
   const [isGuideOpen, setIsGuideOpen] = useState(false);
 
-  // Dark mode state with lazy initializer
-  const [isDark, setIsDark] = useState<boolean>(() => {
-    if (typeof window === 'undefined') return false;
-    const savedTheme = localStorage.getItem('tadoku_de_theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const initialDark = savedTheme === 'dark' || (!savedTheme && prefersDark);
-    if (initialDark) {
-      document.documentElement.classList.add('dark');
-    }
-    return initialDark;
-  });
-
-  // Synchronize on mount and storage events
-  useEffect(() => {
-    if (isDark) {
+  const toggleDarkMode = () => {
+    const next = !isDark;
+    localStorage.setItem('tadoku_de_theme', next ? 'dark' : 'light');
+    if (next) {
       document.documentElement.classList.add('dark');
       document.documentElement.setAttribute('data-theme', 'dark');
       document.body.classList.add('dark');
@@ -63,54 +98,24 @@ export default function Home() {
       document.documentElement.setAttribute('data-theme', 'light');
       document.body.classList.remove('dark');
     }
-
-    // Listen to storage update events
-    const handleUpdate = () => {
-      setProgress(getStoredProgress());
-    };
-    window.addEventListener('tadoku_progress_updated', handleUpdate);
-    return () => {
-      window.removeEventListener('tadoku_progress_updated', handleUpdate);
-    };
-  }, [isDark]);
-
-  const toggleDarkMode = () => {
-    setIsDark((prev) => {
-      const next = !prev;
-      if (next) {
-        document.documentElement.classList.add('dark');
-        document.documentElement.setAttribute('data-theme', 'dark');
-        document.body.classList.add('dark');
-        localStorage.setItem('tadoku_de_theme', 'dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-        document.documentElement.setAttribute('data-theme', 'light');
-        document.body.classList.remove('dark');
-        localStorage.setItem('tadoku_de_theme', 'light');
-      }
-      return next;
-    });
+    window.dispatchEvent(new Event('tadoku_theme_updated'));
   };
 
   // Handlers
   const handleToggleRead = (storyId: string) => {
-    const { newProgress } = toggleStoryReadStatus(storyId);
-    setProgress(newProgress);
+    toggleStoryReadStatus(storyId);
   };
 
   const handleToggleBookmark = (storyId: string) => {
-    const { newProgress } = toggleStoryBookmark(storyId);
-    setProgress(newProgress);
+    toggleStoryBookmark(storyId);
   };
 
   const handleSaveWord = (wordData: Omit<SavedWord, 'id' | 'savedAt'>) => {
-    const newProgress = saveWordToBank(wordData);
-    setProgress(newProgress);
+    saveWordToBank(wordData);
   };
 
   const handleRemoveWord = (wordId: string) => {
-    const newProgress = removeWordFromBank(wordId);
-    setProgress(newProgress);
+    removeWordFromBank(wordId);
   };
 
   // Filtered stories calculation
@@ -154,12 +159,7 @@ export default function Home() {
   };
 
   return (
-    <div
-      className={`min-h-screen flex flex-col font-sans transition-colors duration-200 ${
-        isDark ? 'dark bg-slate-950 text-slate-100' : 'bg-white text-slate-900'
-      }`}
-      data-theme={isDark ? 'dark' : 'light'}
-    >
+    <div className="min-h-screen bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100 flex flex-col font-sans transition-colors duration-200">
       {/* Universal Top Bar */}
       <Header
         progress={progress}
@@ -169,6 +169,7 @@ export default function Home() {
         isDark={isDark}
         onToggleDark={toggleDarkMode}
         onResetToHome={() => setActiveStory(null)}
+        mounted={isMounted}
       />
 
       {/* Main View Router: Story Reader vs Stories Catalog */}
@@ -256,7 +257,7 @@ export default function Home() {
               </div>
             ) : (
               <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {filteredStories.map((story) => (
+                {filteredStories.map((story, idx) => (
                   <StoryCard
                     key={story.id}
                     story={story}
@@ -268,6 +269,7 @@ export default function Home() {
                       setActiveStory(s);
                       window.scrollTo({ top: 0, behavior: 'smooth' });
                     }}
+                    priority={idx === 0}
                   />
                 ))}
               </div>
@@ -314,7 +316,7 @@ export default function Home() {
         isOpen={isProgressOpen}
         onClose={() => setIsProgressOpen(false)}
         progress={progress}
-        onProgressReset={() => setProgress(getStoredProgress())}
+        onProgressReset={() => window.dispatchEvent(new Event('tadoku_progress_updated'))}
       />
 
       <WordBankModal
