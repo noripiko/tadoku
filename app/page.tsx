@@ -9,6 +9,7 @@ import { StoryReader } from '@/components/StoryReader';
 import { ProgressModal } from '@/components/ProgressModal';
 import { WordBankModal } from '@/components/WordBankModal';
 import { TadokuGuideModal } from '@/components/TadokuGuideModal';
+import { TadokuSeoSection } from '@/components/TadokuSeoSection';
 import { STORIES } from '@/lib/stories';
 import { Story, UserProgress, SavedWord } from '@/lib/types';
 import {
@@ -279,6 +280,9 @@ export default function Home() {
               </div>
             )}
           </section>
+
+          {/* SEO Content, Tadoku Method & FAQ Section */}
+          <TadokuSeoSection />
         </main>
       )}
 

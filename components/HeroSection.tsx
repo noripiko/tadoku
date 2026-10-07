@@ -6,10 +6,10 @@ import {
   ChevronUp,
   ShieldCheck,
   BookOpen,
-  Laugh,
   Layers,
   ArrowRight,
-  Sparkles,
+  Languages,
+  Volume2,
 } from 'lucide-react';
 import { UserProgress, Story } from '@/lib/types';
 import { STORIES } from '@/lib/stories';
@@ -55,13 +55,13 @@ export function HeroSection({
           {/* Left Column: Clear Value Proposition */}
           <div className="lg:col-span-7">
             {/* Top Category Badge */}
-            <div className="flex items-center gap-2 text-xs font-semibold text-slate-500 dark:text-slate-400">
+            <div className="flex flex-wrap items-center gap-2 text-xs font-semibold text-slate-500 dark:text-slate-400">
               <span className="flex h-2 w-2 rounded-full bg-emerald-500" />
               <span>🇩🇪 ドイツ語多読プラットフォーム</span>
               <span aria-hidden="true">·</span>
-              <span>CEFR A1〜C1</span>
+              <span>CEFR A1〜C1（30編）</span>
               <span aria-hidden="true">·</span>
-              <span>登録不要</span>
+              <span>完全無料・登録不要</span>
             </div>
 
             {/* Main Headline */}
@@ -72,40 +72,40 @@ export function HeroSection({
 
             {/* Subheading: Concrete & Concise */}
             <p className="mt-3.5 max-w-2xl text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300">
-              文法ドリルで挫折した学習者のための「多読（Tadoku）」リーダー。
-              入門（A1）から上級（C1）まで、クスッと笑える日常譚やSF短編を通じて、
-              ドイツ語をドイツ語のまま理解する直感を養います。
+              文法ドリルで挫折した学習者のための「ドイツ語多読（Tadoku）」リーダー。
+              入門（A1）から中級・上級（B1〜C1）まで、クスッと笑える日常譚を通じてドイツ語脳を育成。
+              一行対訳・ネイティブ音声・クリック単語帳で、つまずかずに自然と読み進められます。
             </p>
 
-            {/* 3 Core Value Props - Google Style Micro-Cards */}
+            {/* 3 Core Value Props - Clean Micro-Cards */}
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div className="rounded-xl border border-slate-200/80 bg-white p-3.5 shadow-xs dark:border-slate-800 dark:bg-slate-900">
                 <div className="flex items-center gap-2 text-slate-900 dark:text-slate-100 font-bold text-xs">
                   <Layers className="h-4 w-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
-                  <span>A1〜C1 段階別</span>
+                  <span>A1〜C1 厳選30編</span>
                 </div>
                 <p className="mt-1 text-[11px] leading-snug text-slate-500 dark:text-slate-400">
-                  1話150語〜。自分のレベルに合った長さと難易度で始められます。
+                  初心者でも1話2分で読破可能。長さと難易度でスムーズにステップアップ。
                 </p>
               </div>
 
               <div className="rounded-xl border border-slate-200/80 bg-white p-3.5 shadow-xs dark:border-slate-800 dark:bg-slate-900">
                 <div className="flex items-center gap-2 text-slate-900 dark:text-slate-100 font-bold text-xs">
-                  <Laugh className="h-4 w-4 text-amber-500 shrink-0" />
-                  <span>飽きないエンタメ</span>
+                  <Languages className="h-4 w-4 text-blue-600 dark:text-blue-400 shrink-0" />
+                  <span>辞書いらずの一行対訳</span>
                 </div>
                 <p className="mt-1 text-[11px] leading-snug text-slate-500 dark:text-slate-400">
-                  役所の頑固な自販機やUバーンの怪異など、ユーモア溢れる短編揃い。
+                  段落ごとに日本語訳の表示・非表示を切り替え。単語タップで即座に単語帳に追加。
                 </p>
               </div>
 
               <div className="rounded-xl border border-slate-200/80 bg-white p-3.5 shadow-xs dark:border-slate-800 dark:bg-slate-900">
                 <div className="flex items-center gap-2 text-slate-900 dark:text-slate-100 font-bold text-xs">
-                  <BookOpen className="h-4 w-4 text-blue-500 shrink-0" />
-                  <span>全訳・音声完備</span>
+                  <Volume2 className="h-4 w-4 text-violet-600 dark:text-violet-400 shrink-0" />
+                  <span>ネイティブ音声朗読</span>
                 </div>
                 <p className="mt-1 text-[11px] leading-snug text-slate-500 dark:text-slate-400">
-                  下部全訳アコーディオン・音声朗読（TTS）・ワンタップ単語帳付き。
+                  段落単位または全文の音声再生。耳と目を連動させてドイツ語のリズムを習得。
                 </p>
               </div>
             </div>
@@ -124,14 +124,23 @@ export function HeroSection({
                 onClick={scrollToCatalog}
                 className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-xs sm:text-sm font-semibold text-slate-700 shadow-xs hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800 transition-colors"
               >
-                <span>ストーリー一覧を見る</span>
+                <span>ストーリー一覧</span>
+              </button>
+
+              <button
+                onClick={() => {
+                  document.getElementById('guide-faq')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-xs sm:text-sm font-semibold text-slate-700 shadow-xs hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800 transition-colors"
+              >
+                <span>多読学習ガイド & FAQ</span>
               </button>
 
               <button
                 onClick={() => setShowRules(!showRules)}
                 className="inline-flex items-center gap-1 text-xs font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200 px-2 py-2 transition-colors ml-auto sm:ml-0"
               >
-                <Sparkles className="h-3.5 w-3.5 text-amber-500" />
+                <BookOpen className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
                 <span>多読の3原則</span>
                 {showRules ? <ChevronUp className="h-3.5 w-3.5" /> : <ChevronDown className="h-3.5 w-3.5" />}
               </button>
@@ -141,7 +150,7 @@ export function HeroSection({
             {showRules && (
               <div className="mt-4 rounded-xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900 text-xs text-slate-600 dark:text-slate-300 space-y-2.5 animate-in fade-in duration-200">
                 <div className="font-bold text-slate-900 dark:text-slate-100 text-xs flex items-center gap-1.5">
-                  <Sparkles className="h-3.5 w-3.5 text-amber-500" />
+                  <BookOpen className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
                   <span>多読を10倍楽しむ「3つの鉄則」</span>
                 </div>
                 <div className="grid gap-2 sm:grid-cols-3 pt-1">
