@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation';
 import { STORIES } from '@/lib/stories';
 import { StoryViewClient } from '@/components/StoryViewClient';
 
+export const instant = false;
+
 interface PageProps {
   params: Promise<{ id: string }>;
 }

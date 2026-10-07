@@ -55,7 +55,7 @@ export function LevelFilterBar({
           )}
         </div>
 
-        <div className="flex items-center gap-1.5 overflow-x-auto p-1.5 bg-slate-100 dark:bg-slate-800/80 rounded-xl no-scrollbar">
+        <div className="grid grid-cols-3 sm:flex sm:items-center sm:flex-row gap-1.5 p-1.5 bg-slate-100 dark:bg-slate-800/80 rounded-xl">
           {levels.map((lvl) => {
             const isSelected = selectedLevel === lvl;
             const levelStories = lvl === 'all' ? STORIES : STORIES.filter((s) => s.level === lvl);
@@ -66,13 +66,22 @@ export function LevelFilterBar({
               <button
                 key={lvl}
                 onClick={() => onSelectLevel(lvl)}
-                className={`flex items-center gap-2 px-3.5 py-2 text-xs font-medium rounded-lg transition-all shrink-0 whitespace-nowrap ${
+                className={`flex items-center justify-center gap-1.5 sm:gap-2 px-2 sm:px-3.5 py-2 text-xs font-medium rounded-lg transition-all sm:shrink-0 whitespace-nowrap ${
                   isSelected
                     ? 'bg-white text-slate-900 shadow-sm dark:bg-slate-900 dark:text-slate-100 font-semibold'
                     : 'text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200'
                 }`}
               >
-                <span>{lvl === 'all' ? 'All Stories' : lvl}</span>
+                <span>
+                  {lvl === 'all' ? (
+                    <>
+                      <span className="sm:hidden">すべて</span>
+                      <span className="hidden sm:inline">All Stories</span>
+                    </>
+                  ) : (
+                    lvl
+                  )}
+                </span>
                 <span
                   className={`text-[10px] tabular-nums px-1.5 py-0.5 rounded ${
                     isSelected
