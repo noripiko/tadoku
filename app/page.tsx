@@ -282,7 +282,7 @@ export default function Home() {
               Tadoku Deutsch
             </span>
             <span aria-hidden="true">·</span>
-            <span>プライバシー第一のドイツ語多読プラットフォーム</span>
+            <span>ドイツ語多読プラットフォーム</span>
             <span aria-hidden="true">·</span>
             <span className="font-medium text-slate-700 dark:text-slate-300">© 2026 noripiko</span>
           </div>
