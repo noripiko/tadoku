@@ -289,7 +289,10 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-slate-200 bg-slate-50 py-8 dark:border-slate-800 dark:bg-slate-950 transition-colors">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2.5">
+            <div className="flex h-5 w-5 items-center justify-center rounded-md bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900" aria-hidden="true">
+              <BookOpen className="h-3 w-3 stroke-[2.2]" />
+            </div>
             <span className="font-bold text-slate-900 dark:text-slate-100">
               Tadoku Deutsch
             </span>

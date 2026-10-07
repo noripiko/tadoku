@@ -34,8 +34,8 @@ export function Header({
             onClick={onResetToHome}
             className="group flex items-center gap-2.5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 rounded-lg p-1"
           >
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900 shadow-sm transition-transform group-hover:scale-105">
-              <span className="text-base font-bold tracking-tight">De</span>
+            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900 shadow-sm transition-transform group-hover:scale-105" aria-hidden="true">
+              <BookOpen className="h-5 w-5 stroke-[2.2]" />
             </div>
             <div>
               <div className="flex items-center gap-1.5">
