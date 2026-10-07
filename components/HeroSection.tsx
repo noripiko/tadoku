@@ -17,15 +17,11 @@ import { STORIES } from '@/lib/stories';
 
 interface HeroSectionProps {
   progress: UserProgress;
-  onSelectLevel: (level: string) => void;
-  activeLevel: string;
   onSelectStory?: (story: Story) => void;
 }
 
 export function HeroSection({
   progress,
-  onSelectLevel,
-  activeLevel,
   onSelectStory,
 }: HeroSectionProps) {
   const [showRules, setShowRules] = useState(false);
@@ -231,31 +227,7 @@ export function HeroSection({
                 </div>
               </div>
 
-              {/* Level Quick Nav */}
-              <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs">
-                <span className="text-slate-500 dark:text-slate-400">レベル選択:</span>
-                <div className="flex items-center gap-1">
-                  {['A1', 'A2', 'B1', 'B2', 'C1'].map((lvl) => {
-                    const isSelected = activeLevel === lvl;
-                    return (
-                      <button
-                        key={lvl}
-                        onClick={() => {
-                          onSelectLevel(lvl);
-                          scrollToCatalog();
-                        }}
-                        className={`px-2.5 py-1 rounded text-xs font-semibold transition-colors ${
-                          isSelected
-                            ? 'bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900 shadow-xs'
-                            : 'text-slate-600 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800'
-                        }`}
-                      >
-                        {lvl}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
+
             </div>
           </div>
         </div>

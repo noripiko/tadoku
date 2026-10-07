@@ -188,8 +188,6 @@ export default function Home() {
         {/* Hero Section */}
         <HeroSection
           progress={progress}
-          onSelectLevel={(lvl) => setSelectedLevel(lvl)}
-          activeLevel={selectedLevel}
           onSelectStory={handleSelectStory}
         />
 
