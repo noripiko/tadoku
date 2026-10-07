@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://tadoku-deutsch.app/sitemap.xml',
+    sitemap: 'https://tadoku-deutsch.vercel.app/sitemap.xml',
   };
 }

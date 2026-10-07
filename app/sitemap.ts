@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { STORIES } from '@/lib/stories';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://tadoku-deutsch.app';
+  const baseUrl = 'https://tadoku-deutsch.vercel.app';
   const now = new Date();
 
   const storyEntries: MetadataRoute.Sitemap = STORIES.map((story) => ({
