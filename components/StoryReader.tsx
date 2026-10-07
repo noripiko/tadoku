@@ -419,10 +419,10 @@ export function StoryReader({
                   : 'hover:bg-slate-50/60 dark:hover:bg-slate-800/40'
               }`}
             >
-              {/* Paragraph Audio Control Button */}
-              <div className="flex items-start justify-between gap-4">
-                <div className="flex-1">
-                  <p className="select-text">
+              {/* Responsive container: flex-col on mobile to let text occupy full width, flex-row on desktop */}
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-start justify-between gap-2.5 sm:gap-4">
+                <div className="flex-1 min-w-0">
+                  <p className="select-text leading-relaxed">
                     {words.map((w, wIdx) => (
                       <span
                         key={wIdx}
@@ -443,26 +443,26 @@ export function StoryReader({
                   )}
                 </div>
 
-                {/* Per-Paragraph Actions */}
-                <div className="flex items-center gap-1 shrink-0 opacity-40 group-hover:opacity-100 transition-opacity">
+                {/* Per-Paragraph Actions: aligned bottom-right on mobile, side-by-side on desktop */}
+                <div className="flex items-center justify-end sm:justify-start gap-1 shrink-0 mt-1 sm:mt-0 opacity-80 sm:opacity-40 sm:group-hover:opacity-100 transition-opacity">
                   <button
                     onClick={() => handlePlayParagraph(p.german, idx)}
-                    className="flex h-7 w-7 items-center justify-center rounded text-slate-500 hover:bg-slate-200 hover:text-slate-800 dark:hover:bg-slate-800 dark:hover:text-slate-200 transition-colors"
+                    className="flex h-8 w-8 sm:h-7 sm:w-7 items-center justify-center rounded-lg sm:rounded text-slate-500 hover:bg-slate-100 hover:text-slate-800 active:bg-slate-200 sm:hover:bg-slate-200 dark:hover:bg-slate-800 dark:hover:text-slate-200 transition-colors"
                     title="この段落を再生"
                   >
                     {isCurrentParagraphPlaying ? (
-                      <Pause className="h-3.5 w-3.5 text-blue-600" />
+                      <Pause className="h-4 w-4 sm:h-3.5 sm:w-3.5 text-blue-600 dark:text-blue-400" />
                     ) : (
-                      <Volume2 className="h-3.5 w-3.5" />
+                      <Volume2 className="h-4 w-4 sm:h-3.5 sm:w-3.5" />
                     )}
                   </button>
 
                   <button
                     onClick={() => toggleParagraphReveal(p.id)}
-                    className="flex h-7 w-7 items-center justify-center rounded text-slate-500 hover:bg-slate-200 hover:text-slate-800 dark:hover:bg-slate-800 dark:hover:text-slate-200 transition-colors"
+                    className="flex h-8 w-8 sm:h-7 sm:w-7 items-center justify-center rounded-lg sm:rounded text-slate-500 hover:bg-slate-100 hover:text-slate-800 active:bg-slate-200 sm:hover:bg-slate-200 dark:hover:bg-slate-800 dark:hover:text-slate-200 transition-colors"
                     title="この段落の日本語訳を表示/非表示"
                   >
-                    <Languages className="h-3.5 w-3.5" />
+                    <Languages className="h-4 w-4 sm:h-3.5 sm:w-3.5" />
                   </button>
                 </div>
               </div>
