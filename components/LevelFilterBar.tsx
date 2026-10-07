@@ -32,6 +32,7 @@ export function LevelFilterBar({
 
   const genres: { id: string; label: string }[] = [
     { id: 'all', label: '全ジャンル' },
+    { id: 'Fairy Tale', label: '童話・名作民話' },
     { id: 'Comedy', label: 'コメディ' },
     { id: 'Surreal', label: 'シュール' },
     { id: 'Mystery', label: 'ミステリー' },

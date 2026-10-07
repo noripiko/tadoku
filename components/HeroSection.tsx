@@ -59,7 +59,7 @@ export function HeroSection({
               <span className="flex h-2 w-2 rounded-full bg-emerald-500" />
               <span>🇩🇪 ドイツ語多読プラットフォーム</span>
               <span aria-hidden="true">·</span>
-              <span>CEFR A1〜C1（全49編）</span>
+              <span>CEFR A1〜C1（全{totalStories}編・グリム童話収録）</span>
               <span aria-hidden="true">·</span>
               <span>完全無料・登録不要</span>
             </div>
@@ -73,7 +73,7 @@ export function HeroSection({
             {/* Subheading: Concrete & Concise */}
             <p className="mt-3.5 max-w-2xl text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300">
               文法ドリルで挫折した学習者のための「ドイツ語多読（Tadoku）」リーダー。
-              入門（A1）から中級・上級（B1〜C1）まで、クスッと笑える日常譚を通じてドイツ語脳を育成。
+              グリム童話（赤ずきん・ブレーメン等）やクスッと笑える日常譚で、辞書を引かずにドイツ語脳を育成。
               一行対訳・ネイティブ音声・クリック単語帳で、つまずかずに自然と読み進められます。
             </p>
 
@@ -82,10 +82,10 @@ export function HeroSection({
               <div className="rounded-xl border border-slate-200/80 bg-white p-3.5 shadow-xs dark:border-slate-800 dark:bg-slate-900">
                 <div className="flex items-center gap-2 text-slate-900 dark:text-slate-100 font-bold text-xs">
                   <Layers className="h-4 w-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
-                  <span>A1〜C1 全49編</span>
+                  <span>A1〜C1 全{totalStories}編</span>
                 </div>
                 <p className="mt-1 text-[11px] leading-snug text-slate-500 dark:text-slate-400">
-                  入門短編からB1長編・B2本格作まで。長さと難易度でスムーズにステップアップ。
+                  グリム名作童話・入門短編からB1長編・B2本格作まで。レベル別にスムーズに多読。
                 </p>
               </div>
 

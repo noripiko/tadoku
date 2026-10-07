@@ -14,12 +14,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tadoku-deutsch.vercel.app"),
-  title: "Tadoku Deutsch | ドイツ語多読プラットフォーム (A1〜C1対応・49作品・無料)",
+  title: "Tadoku Deutsch | ドイツ語多読プラットフォーム (A1〜C1対応・全59作品・無料)",
   description:
-    "ドイツ語多読（Tadoku）を無料＆登録不要で体験。A1・A2・B1（長編20作）・B2（本格7作）などCEFRレベル別のストーリー全49選。一行対訳・ネイティブ音声朗読・クリック単語帳で、辞書を引かずに楽しく読解力が伸びる！",
+    "ドイツ語多読（Tadoku）を無料＆登録不要で体験。グリム童話名作コレクション（赤ずきん・ブレーメン等）やオリジナル短編などCEFRレベル別全59選。一行対訳・ネイティブ音声朗読・クリック単語帳で、辞書を引かずに楽しく読解力が伸びる！",
   keywords: [
     "ドイツ語 多読",
     "ドイツ語 リーディング",
+    "グリム童話 ドイツ語",
+    "ドイツ語 童話",
+    "ドイツ語 赤ずきん",
+    "ドイツ語 ブレーメンの音楽隊",
     "ドイツ語 A1 多読",
     "ドイツ語 A2 小説",
     "ドイツ語 B1 読み物",
@@ -36,9 +40,9 @@ export const metadata: Metadata = {
     canonical: "https://tadoku-deutsch.vercel.app",
   },
   openGraph: {
-    title: "Tadoku Deutsch | ドイツ語多読プラットフォーム (A1〜C1・49作品)",
+    title: "Tadoku Deutsch | ドイツ語多読プラットフォーム (A1〜C1・全59作品)",
     description:
-      "辞書を引かずにドイツ語がスラスラ読める。CEFRレベル別短編・長編小説49選・一行対訳・音声朗読付きの無料・完全ローカル多読リーダー。",
+      "辞書を引かずにドイツ語がスラスラ読める。グリム童話名作10編含む全59作品・一行対訳・音声朗読付きの無料・完全ローカル多読リーダー。",
     url: "https://tadoku-deutsch.vercel.app",
     siteName: "Tadoku Deutsch",
     locale: "ja_JP",
@@ -46,9 +50,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tadoku Deutsch | ドイツ語多読プラットフォーム (A1〜C1・49作品)",
+    title: "Tadoku Deutsch | ドイツ語多読プラットフォーム (A1〜C1・全59作品)",
     description:
-      "辞書を引かずにドイツ語がスラスラ読める。CEFRレベル別短編・長編小説49選・一行対訳・音声朗読付きの無料・完全ローカル多読リーダー。",
+      "辞書を引かずにドイツ語がスラスラ読める。グリム童話名作10編含む全59作品・一行対訳・音声朗読付きの無料・完全ローカル多読リーダー。",
   },
   robots: {
     index: true,
@@ -80,7 +84,7 @@ export default function RootLayout({
     applicationCategory: "EducationalApplication",
     operatingSystem: "All",
     description:
-      "ドイツ語多読（Tadoku）プラットフォーム。CEFRレベル別（A1〜C1）ストーリー全49選（B1長編20作・B2上中級7作）、一行対訳・音声朗読・クリック単語帳、登録不要・完全ローカル完結。",
+      "ドイツ語多読（Tadoku）プラットフォーム。CEFRレベル別（A1〜C1）ストーリー全59選（グリム童話名作10編含む）、一行対訳・音声朗読・クリック単語帳、登録不要・完全ローカル完結。",
     url: "https://tadoku-deutsch.vercel.app",
     offers: {
       "@type": "Offer",

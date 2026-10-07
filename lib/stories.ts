@@ -3,8 +3,9 @@ import { A1_STORIES } from './stories/a1';
 import { A2_STORIES } from './stories/a2';
 import { B1_STORIES } from './stories/b1';
 import { B2_STORIES } from './stories/b2';
+import { FAIRYTALE_STORIES } from './stories/fairytales';
 
-export { B2_STORIES };
+export { B2_STORIES, FAIRYTALE_STORIES };
 
 export const C1_STORIES: Story[] = [
   {
@@ -116,11 +117,20 @@ export const C1_STORIES: Story[] = [
   }
 ];
 
+const a1Fairytales = FAIRYTALE_STORIES.filter((s) => s.level === 'A1');
+const a2Fairytales = FAIRYTALE_STORIES.filter((s) => s.level === 'A2');
+const b1Fairytales = FAIRYTALE_STORIES.filter((s) => s.level === 'B1');
+const b2Fairytales = FAIRYTALE_STORIES.filter((s) => s.level === 'B2');
+
 export const STORIES: Story[] = [
   ...A1_STORIES,
+  ...a1Fairytales,
   ...A2_STORIES,
+  ...a2Fairytales,
   ...B1_STORIES,
+  ...b1Fairytales,
   ...B2_STORIES,
+  ...b2Fairytales,
   ...C1_STORIES,
 ];
 
