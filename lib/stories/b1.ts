@@ -1,6 +1,7 @@
 import { Story } from '../types';
+import { B1_EXTENDED_STORIES } from './b1_extended';
 
-export const B1_STORIES: Story[] = [
+const B1_BASE_STORIES: Story[] = [
   {
     id: 'b1-u8-wurmloch',
     level: 'B1',
@@ -587,4 +588,9 @@ export const B1_STORIES: Story[] = [
       content: '「doch」は他言語に一言で翻訳するのが極めて難しい単語の代表で、否定に対する強い肯定や、親しい間柄での強調・共感を1語で言い表すドイツ語特有の表現です。'
     }
   }
+];
+
+export const B1_STORIES: Story[] = [
+  ...B1_BASE_STORIES,
+  ...B1_EXTENDED_STORIES,
 ];

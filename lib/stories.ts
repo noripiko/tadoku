@@ -256,8 +256,8 @@ export const CEFR_DESCRIPTIONS: Record<string, { label: string; descJa: string; 
   },
   B1: {
     label: 'B1 · 中級（Mittelstufe I）',
-    descJa: '複文や関係代名詞を使った本格ストーリー。SFコメディや一風変わった日常劇。',
-    wordRange: '300〜400 語'
+    descJa: '複文や関係代名詞を使った本格ストーリー。日常劇から長編ドラマまで読み応え十分。',
+    wordRange: '300〜700 語'
   },
   B2: {
     label: 'B2 · 上中級（Mittelstufe II）',

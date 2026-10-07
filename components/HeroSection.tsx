@@ -59,7 +59,7 @@ export function HeroSection({
               <span className="flex h-2 w-2 rounded-full bg-emerald-500" />
               <span>🇩🇪 ドイツ語多読プラットフォーム</span>
               <span aria-hidden="true">·</span>
-              <span>CEFR A1〜C1（30編）</span>
+              <span>CEFR A1〜C1（40編）</span>
               <span aria-hidden="true">·</span>
               <span>完全無料・登録不要</span>
             </div>
@@ -82,10 +82,10 @@ export function HeroSection({
               <div className="rounded-xl border border-slate-200/80 bg-white p-3.5 shadow-xs dark:border-slate-800 dark:bg-slate-900">
                 <div className="flex items-center gap-2 text-slate-900 dark:text-slate-100 font-bold text-xs">
                   <Layers className="h-4 w-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
-                  <span>A1〜C1 厳選30編</span>
+                  <span>A1〜C1 充実40編</span>
                 </div>
                 <p className="mt-1 text-[11px] leading-snug text-slate-500 dark:text-slate-400">
-                  初心者でも1話2分で読破可能。長さと難易度でスムーズにステップアップ。
+                  入門短編からB1長編まで。長さと難易度でスムーズにステップアップ。
                 </p>
               </div>
 

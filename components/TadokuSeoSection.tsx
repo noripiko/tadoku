@@ -59,7 +59,7 @@ export function TadokuSeoSection() {
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
             単語の暗記カードや文法問題集だけで伸び悩んでいませんか？
-            Tadoku Deutschは、CEFRレベル別（A1〜C1）30編のストーリーと一行対訳・音声朗読を備えた、シンプルで使いやすいドイツ語多読プラットフォームです。
+            Tadoku Deutschは、CEFRレベル別（A1〜C1）40編のストーリーと一行対訳・音声朗読を備えた、シンプルで使いやすいドイツ語多読プラットフォームです。
           </p>
         </div>
 
@@ -188,14 +188,14 @@ export function TadokuSeoSection() {
                     B1（中級）
                   </span>
                   <span className="text-[11px] text-blue-700 dark:text-blue-300 font-medium">
-                    全10編
+                    全20編（短編〜本格長編）
                   </span>
                 </div>
                 <p className="mt-2 text-xs font-semibold text-slate-900 dark:text-slate-100">
-                  オフィス・社会的テーマ・推理・ユーモア
+                  オフィス・社会的テーマ・推理・長編ドラマ
                 </p>
                 <p className="mt-1 text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed">
-                  接続法II式や関係代名詞を含む豊かな表現。自然なドイツ語の語り口を味わえます。
+                  接続法II式や関係代名詞を含む豊かな表現。日常短編から読み応えのある長編小説まで味わえます。
                 </p>
               </div>
             </div>
