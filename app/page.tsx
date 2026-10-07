@@ -1,22 +1,21 @@
 'use client';
 
-import React, { useState, useMemo, useSyncExternalStore } from 'react';
+import React, { useState, useMemo, useEffect, useSyncExternalStore } from 'react';
+import { useRouter } from 'next/navigation';
 import { Header } from '@/components/Header';
 import { HeroSection } from '@/components/HeroSection';
 import { LevelFilterBar } from '@/components/LevelFilterBar';
 import { StoryCard } from '@/components/StoryCard';
-import { StoryReader } from '@/components/StoryReader';
 import { ProgressModal } from '@/components/ProgressModal';
 import { WordBankModal } from '@/components/WordBankModal';
 import { TadokuGuideModal } from '@/components/TadokuGuideModal';
 import { TadokuSeoSection } from '@/components/TadokuSeoSection';
 import { STORIES } from '@/lib/stories';
-import { Story, UserProgress, SavedWord } from '@/lib/types';
+import { Story, UserProgress } from '@/lib/types';
 import {
   getStoredProgress,
   toggleStoryReadStatus,
   toggleStoryBookmark,
-  saveWordToBank,
   removeWordFromBank,
 } from '@/lib/storage';
 import { BookOpen, RefreshCw } from 'lucide-react';
@@ -51,6 +50,8 @@ function subscribeMounted() {
 }
 
 export default function Home() {
+  const router = useRouter();
+
   const isMounted = useSyncExternalStore(
     subscribeMounted,
     () => true,
@@ -73,8 +74,15 @@ export default function Home() {
     () => false
   );
 
-  // Active view state
-  const [activeStory, setActiveStory] = useState<Story | null>(null);
+  // Backward compatibility: redirect any incoming #story-xxx hash to /stories/xxx
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.location.hash.startsWith('#story-')) {
+      const storyId = window.location.hash.replace('#story-', '');
+      if (STORIES.some((s) => s.id === storyId)) {
+        router.replace(`/stories/${storyId}`);
+      }
+    }
+  }, [router]);
 
   // Filters
   const [selectedLevel, setSelectedLevel] = useState<string>('all');
@@ -109,10 +117,6 @@ export default function Home() {
 
   const handleToggleBookmark = (storyId: string) => {
     toggleStoryBookmark(storyId);
-  };
-
-  const handleSaveWord = (wordData: Omit<SavedWord, 'id' | 'savedAt'>) => {
-    saveWordToBank(wordData);
   };
 
   const handleRemoveWord = (wordId: string) => {
@@ -159,6 +163,10 @@ export default function Home() {
     setSearchQuery('');
   };
 
+  const handleSelectStory = (story: Story) => {
+    router.push(`/stories/${story.id}`);
+  };
+
   return (
     <div className="min-h-screen bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100 flex flex-col font-sans transition-colors duration-200">
       {/* Universal Top Bar */}
@@ -169,122 +177,99 @@ export default function Home() {
         onOpenGuide={() => setIsGuideOpen(true)}
         isDark={isDark}
         onToggleDark={toggleDarkMode}
-        onResetToHome={() => setActiveStory(null)}
+        onResetToHome={() => {
+          resetFilters();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
         mounted={isMounted}
       />
 
-      {/* Main View Router: Story Reader vs Stories Catalog */}
-      {activeStory ? (
-        <main className="flex-1">
-          <StoryReader
-            story={activeStory}
-            isRead={progress.readStoryIds.includes(activeStory.id)}
-            isBookmarked={progress.bookmarkedStoryIds.includes(activeStory.id)}
-            onToggleRead={handleToggleRead}
-            onToggleBookmark={handleToggleBookmark}
-            onSaveWord={handleSaveWord}
-            onBack={() => setActiveStory(null)}
-            onSelectStory={(s) => {
-              setActiveStory(s);
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
-            allStories={STORIES}
-          />
-        </main>
-      ) : (
-        <main className="flex-1">
-          {/* Hero Section */}
-          <HeroSection
-            progress={progress}
-            onSelectLevel={(lvl) => setSelectedLevel(lvl)}
-            activeLevel={selectedLevel}
-            onSelectStory={(s) => {
-              setActiveStory(s);
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
+      <main className="flex-1">
+        {/* Hero Section */}
+        <HeroSection
+          progress={progress}
+          onSelectLevel={(lvl) => setSelectedLevel(lvl)}
+          activeLevel={selectedLevel}
+          onSelectStory={handleSelectStory}
+        />
+
+        {/* Stories Catalog Section */}
+        <section id="stories-catalog" className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
+          {/* Filter Bar */}
+          <LevelFilterBar
+            selectedLevel={selectedLevel}
+            onSelectLevel={setSelectedLevel}
+            selectedGenre={selectedGenre}
+            onSelectGenre={setSelectedGenre}
+            readFilter={readFilter}
+            onSelectReadFilter={setReadFilter}
+            searchQuery={searchQuery}
+            onSearchChange={setSearchQuery}
+            readStoryIds={progress.readStoryIds}
           />
 
-          {/* Stories Catalog Section */}
-          <section id="stories-catalog" className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
-            {/* Filter Bar */}
-            <LevelFilterBar
-              selectedLevel={selectedLevel}
-              onSelectLevel={setSelectedLevel}
-              selectedGenre={selectedGenre}
-              onSelectGenre={setSelectedGenre}
-              readFilter={readFilter}
-              onSelectReadFilter={setReadFilter}
-              searchQuery={searchQuery}
-              onSearchChange={setSearchQuery}
-              readStoryIds={progress.readStoryIds}
-            />
-
-            {/* Results count & reset */}
-            <div className="mt-6 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-              <div className="flex items-center gap-1.5 font-medium">
-                <span>表示中:</span>
-                <strong className="text-slate-900 dark:text-slate-100 tabular-nums">
-                  {filteredStories.length} 編
-                </strong>
-                <span>（全 {STORIES.length} 編中）</span>
-              </div>
-
-              {(selectedLevel !== 'all' ||
-                selectedGenre !== 'all' ||
-                readFilter !== 'all' ||
-                searchQuery) && (
-                <button
-                  onClick={resetFilters}
-                  className="flex items-center gap-1 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200"
-                >
-                  <RefreshCw className="h-3 w-3" />
-                  <span>フィルター解除</span>
-                </button>
-              )}
+          {/* Results count & reset */}
+          <div className="mt-6 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
+            <div className="flex items-center gap-1.5 font-medium">
+              <span>表示中:</span>
+              <strong className="text-slate-900 dark:text-slate-100 tabular-nums">
+                {filteredStories.length} 編
+              </strong>
+              <span>（全 {STORIES.length} 編中）</span>
             </div>
 
-            {/* Stories Grid */}
-            {filteredStories.length === 0 ? (
-              <div className="mt-8 rounded-2xl border border-dashed border-slate-200 p-12 text-center dark:border-slate-800">
-                <BookOpen className="mx-auto h-10 w-10 text-slate-300 dark:text-slate-700" />
-                <h3 className="mt-3 text-sm font-bold text-slate-900 dark:text-slate-100">
-                  該当するストーリーが見つかりません
-                </h3>
-                <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
-                  検索ワードやレベル、ジャンルなどのフィルター条件を変更してお試しください。
-                </p>
-                <button
-                  onClick={resetFilters}
-                  className="mt-4 rounded-lg bg-slate-900 px-4 py-2 text-xs font-semibold text-white hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900"
-                >
-                  すべてのストーリーを表示
-                </button>
-              </div>
-            ) : (
-              <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {filteredStories.map((story, idx) => (
-                  <StoryCard
-                    key={story.id}
-                    story={story}
-                    isRead={progress.readStoryIds.includes(story.id)}
-                    isBookmarked={progress.bookmarkedStoryIds.includes(story.id)}
-                    onToggleRead={handleToggleRead}
-                    onToggleBookmark={handleToggleBookmark}
-                    onSelectStory={(s) => {
-                      setActiveStory(s);
-                      window.scrollTo({ top: 0, behavior: 'smooth' });
-                    }}
-                    priority={idx === 0}
-                  />
-                ))}
-              </div>
+            {(selectedLevel !== 'all' ||
+              selectedGenre !== 'all' ||
+              readFilter !== 'all' ||
+              searchQuery) && (
+              <button
+                onClick={resetFilters}
+                className="flex items-center gap-1 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200"
+              >
+                <RefreshCw className="h-3 w-3" />
+                <span>フィルター解除</span>
+              </button>
             )}
-          </section>
+          </div>
 
-          {/* SEO Content, Tadoku Method & FAQ Section */}
-          <TadokuSeoSection />
-        </main>
-      )}
+          {/* Stories Grid */}
+          {filteredStories.length === 0 ? (
+            <div className="mt-8 rounded-2xl border border-dashed border-slate-200 p-12 text-center dark:border-slate-800">
+              <BookOpen className="mx-auto h-10 w-10 text-slate-300 dark:text-slate-700" />
+              <h3 className="mt-3 text-sm font-bold text-slate-900 dark:text-slate-100">
+                該当するストーリーが見つかりません
+              </h3>
+              <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
+                検索ワードやレベル、ジャンルなどのフィルター条件を変更してお試しください。
+              </p>
+              <button
+                onClick={resetFilters}
+                className="mt-4 rounded-lg bg-slate-900 px-4 py-2 text-xs font-semibold text-white hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900"
+              >
+                すべてのストーリーを表示
+              </button>
+            </div>
+          ) : (
+            <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {filteredStories.map((story, idx) => (
+                <StoryCard
+                  key={story.id}
+                  story={story}
+                  isRead={progress.readStoryIds.includes(story.id)}
+                  isBookmarked={progress.bookmarkedStoryIds.includes(story.id)}
+                  onToggleRead={handleToggleRead}
+                  onToggleBookmark={handleToggleBookmark}
+                  onSelectStory={handleSelectStory}
+                  priority={idx === 0}
+                />
+              ))}
+            </div>
+          )}
+        </section>
+
+        {/* SEO Content, Tadoku Method & FAQ Section */}
+        <TadokuSeoSection />
+      </main>
 
       {/* Footer */}
       <footer className="border-t border-slate-200 bg-slate-50 py-8 dark:border-slate-800 dark:bg-slate-950 transition-colors">

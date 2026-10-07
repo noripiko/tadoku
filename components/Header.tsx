@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { BookOpen, Award, Bookmark, HelpCircle, Moon, Sun, ShieldCheck } from 'lucide-react';
 import { UserProgress } from '@/lib/types';
 
@@ -30,8 +31,11 @@ export function Header({
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         {/* Zone 1: Wordmark */}
         <div className="flex items-center gap-3">
-          <button
-            onClick={onResetToHome}
+          <Link
+            href="/"
+            onClick={() => {
+              if (onResetToHome) onResetToHome();
+            }}
             className="group flex items-center gap-2.5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 rounded-lg p-1"
           >
             <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900 shadow-sm transition-transform group-hover:scale-105" aria-hidden="true">
@@ -50,17 +54,20 @@ export function Header({
                 ドイツ語多読リーダー · 登録不要
               </p>
             </div>
-          </button>
+          </Link>
         </div>
 
         {/* Zone 2: Navigation Links */}
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600 dark:text-slate-300">
-          <button
-            onClick={onResetToHome}
+          <Link
+            href="/#stories-catalog"
+            onClick={() => {
+              if (onResetToHome) onResetToHome();
+            }}
             className="hover:text-slate-900 dark:hover:text-white transition-colors"
           >
             ストーリー一覧
-          </button>
+          </Link>
           <button
             onClick={onOpenProgress}
             className="flex items-center gap-1.5 hover:text-slate-900 dark:hover:text-white transition-colors"

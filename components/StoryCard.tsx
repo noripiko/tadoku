@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { Check, CheckCircle2, Circle, Bookmark, ArrowRight, BookOpen } from 'lucide-react';
 import { Story } from '@/lib/types';
 
@@ -10,7 +11,7 @@ interface StoryCardProps {
   isBookmarked: boolean;
   onToggleRead: (storyId: string) => void;
   onToggleBookmark: (storyId: string) => void;
-  onSelectStory: (story: Story) => void;
+  onSelectStory?: (story: Story) => void;
   priority?: boolean;
 }
 
@@ -41,12 +42,23 @@ export function StoryCard({
 
   return (
     <article
-      onClick={() => onSelectStory(story)}
-      className={`group relative flex cursor-pointer flex-col justify-between rounded-xl border border-slate-200 bg-white p-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md dark:border-slate-800 dark:bg-slate-900 dark:hover:border-slate-700 border-l-[5px] ${
+      className={`group relative flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md dark:border-slate-800 dark:bg-slate-900 dark:hover:border-slate-700 border-l-[5px] ${
         levelAccentClasses[story.level] || 'border-l-slate-400'
       } ${isRead ? 'opacity-90 bg-slate-50/40 dark:bg-slate-900/60' : ''}`}
     >
-      <div>
+      {/* Primary Link Overlay for SEO Crawlers & Navigation */}
+      <Link
+        href={`/stories/${story.id}`}
+        onClick={() => {
+          if (onSelectStory) {
+            onSelectStory(story);
+          }
+        }}
+        className="absolute inset-0 z-0 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+        aria-label={`${story.title}（${story.titleJa}）を読む`}
+      />
+
+      <div className="relative z-1 pointer-events-none">
         {/* Card Header: Level Badge, Genre, Status, Bookmark */}
         <div className="flex items-center justify-between gap-2">
           <div className="flex items-center gap-1.5 flex-wrap">
@@ -63,7 +75,7 @@ export function StoryCard({
             </span>
           </div>
 
-          <div className="flex items-center gap-1.5">
+          <div className="flex items-center gap-1.5 pointer-events-auto">
             {/* Read status pill */}
             {isRead && (
               <span className="inline-flex items-center gap-1 rounded bg-emerald-100 dark:bg-emerald-950/80 px-2 py-0.5 text-[11px] font-semibold text-emerald-700 dark:text-emerald-300">
@@ -75,12 +87,13 @@ export function StoryCard({
             {/* Bookmark button */}
             <button
               onClick={(e) => {
+                e.preventDefault();
                 e.stopPropagation();
                 onToggleBookmark(story.id);
               }}
               aria-label={isBookmarked ? 'ブックマーク解除' : 'ブックマークに追加'}
               title={isBookmarked ? 'ブックマーク解除' : 'ブックマークに追加'}
-              className={`flex h-7 w-7 items-center justify-center rounded-lg border transition-colors ${
+              className={`relative z-10 flex h-7 w-7 items-center justify-center rounded-lg border transition-colors ${
                 isBookmarked
                   ? 'border-amber-300 bg-amber-50 text-amber-500 dark:border-amber-800 dark:bg-amber-950/50 dark:text-amber-400'
                   : 'border-slate-200 text-slate-400 hover:bg-slate-100 hover:text-slate-600 dark:border-slate-800 dark:text-slate-500 dark:hover:bg-slate-800 dark:hover:text-slate-300'
@@ -108,7 +121,7 @@ export function StoryCard({
       </div>
 
       {/* Card Footer: Word Count, Est. Time & Action */}
-      <div className="mt-4 flex items-center justify-between border-t border-slate-100 pt-3 dark:border-slate-800/80">
+      <div className="relative z-1 mt-4 flex items-center justify-between border-t border-slate-100 pt-3 dark:border-slate-800/80">
         <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 font-medium">
           <span className="tabular-nums font-semibold text-slate-700 dark:text-slate-300">
             {story.wordCount}
@@ -122,11 +135,12 @@ export function StoryCard({
           {/* Read Toggle Checkbox */}
           <button
             onClick={(e) => {
+              e.preventDefault();
               e.stopPropagation();
               onToggleRead(story.id);
             }}
             aria-label={isRead ? '未読に戻す' : '読了にする'}
-            className="flex items-center gap-1 text-xs text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200 transition-colors"
+            className="relative z-10 flex items-center gap-1 text-xs text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200 transition-colors"
             title={isRead ? '未読に戻す' : '読了にする'}
           >
             {isRead ? (

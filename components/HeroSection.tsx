@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import {
   ChevronDown,
   ChevronUp,
@@ -34,15 +35,6 @@ export function HeroSection({
 
   // First recommended beginner story
   const firstStory = STORIES.find((s) => s.level === 'A1') || STORIES[0];
-
-  const handleStartReading = () => {
-    if (onSelectStory && firstStory) {
-      onSelectStory(firstStory);
-    } else {
-      onSelectLevel('A1');
-      document.getElementById('stories-catalog')?.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   const scrollToCatalog = () => {
     document.getElementById('stories-catalog')?.scrollIntoView({ behavior: 'smooth' });
@@ -112,13 +104,18 @@ export function HeroSection({
 
             {/* Primary Action Buttons */}
             <div className="mt-6 flex flex-wrap items-center gap-3">
-              <button
-                onClick={handleStartReading}
+              <Link
+                href={`/stories/${firstStory.id}`}
+                onClick={() => {
+                  if (onSelectStory) {
+                    onSelectStory(firstStory);
+                  }
+                }}
                 className="group inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-2.5 text-xs sm:text-sm font-semibold text-white shadow-sm hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-white transition-all"
               >
                 <span>まずはA1（入門・2分）を読む</span>
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-              </button>
+              </Link>
 
               <button
                 onClick={scrollToCatalog}
