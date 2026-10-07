@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tadoku-deutsch.app"),
-  title: "Tadoku Deutsch | ドイツ語多読プラットフォーム (A1〜C1対応・40作品・無料)",
+  title: "Tadoku Deutsch | ドイツ語多読プラットフォーム (A1〜C1対応・49作品・無料)",
   description:
-    "ドイツ語多読（Tadoku）を無料＆登録不要で体験。A1・A2・B1（長編充実の全20編）などCEFRレベル別のストーリー40選。一行対訳・ネイティブ音声朗読・クリック単語帳で、辞書を引かずに楽しく読解力が伸びる！",
+    "ドイツ語多読（Tadoku）を無料＆登録不要で体験。A1・A2・B1（長編20作）・B2（本格7作）などCEFRレベル別のストーリー全49選。一行対訳・ネイティブ音声朗読・クリック単語帳で、辞書を引かずに楽しく読解力が伸びる！",
   keywords: [
     "ドイツ語 多読",
     "ドイツ語 リーディング",
@@ -24,6 +24,8 @@ export const metadata: Metadata = {
     "ドイツ語 A2 小説",
     "ドイツ語 B1 読み物",
     "ドイツ語 B1 小説",
+    "ドイツ語 B2 小説",
+    "ドイツ語 B2 リーディング",
     "ドイツ語 初心者 読み物",
     "ドイツ語 学習 無料",
     "Tadoku Deutsch",
@@ -34,9 +36,9 @@ export const metadata: Metadata = {
     canonical: "https://tadoku-deutsch.app",
   },
   openGraph: {
-    title: "Tadoku Deutsch | ドイツ語多読プラットフォーム (A1〜C1・40作品)",
+    title: "Tadoku Deutsch | ドイツ語多読プラットフォーム (A1〜C1・49作品)",
     description:
-      "辞書を引かずにドイツ語がスラスラ読める。CEFRレベル別短編・長編小説40選・一行対訳・音声朗読付きの無料・完全ローカル多読リーダー。",
+      "辞書を引かずにドイツ語がスラスラ読める。CEFRレベル別短編・長編小説49選・一行対訳・音声朗読付きの無料・完全ローカル多読リーダー。",
     url: "https://tadoku-deutsch.app",
     siteName: "Tadoku Deutsch",
     locale: "ja_JP",
@@ -44,9 +46,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tadoku Deutsch | ドイツ語多読プラットフォーム (A1〜C1・40作品)",
+    title: "Tadoku Deutsch | ドイツ語多読プラットフォーム (A1〜C1・49作品)",
     description:
-      "辞書を引かずにドイツ語がスラスラ読める。CEFRレベル別短編・長編小説40選・一行対訳・音声朗読付きの無料・完全ローカル多読リーダー。",
+      "辞書を引かずにドイツ語がスラスラ読める。CEFRレベル別短編・長編小説49選・一行対訳・音声朗読付きの無料・完全ローカル多読リーダー。",
   },
   robots: {
     index: true,
@@ -70,7 +72,7 @@ export default function RootLayout({
     applicationCategory: "EducationalApplication",
     operatingSystem: "All",
     description:
-      "ドイツ語多読（Tadoku）プラットフォーム。CEFRレベル別（A1〜C1）ストーリー40選（B1長編20作）、一行対訳・音声朗読・クリック単語帳、登録不要・完全ローカル完結。",
+      "ドイツ語多読（Tadoku）プラットフォーム。CEFRレベル別（A1〜C1）ストーリー全49選（B1長編20作・B2上中級7作）、一行対訳・音声朗読・クリック単語帳、登録不要・完全ローカル完結。",
     url: "https://tadoku-deutsch.app",
     offers: {
       "@type": "Offer",
@@ -106,7 +108,7 @@ export default function RootLayout({
         name: "ドイツ語初心者（A1 / A2）でも読めるストーリーはありますか？",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "はい。A1レベル10編、A2レベル10編、B1レベル20編（日常短編から読み応えのある長編まで）など計40編以上のオリジナルストーリーが用意されています。日常のカフェでの注文や駅の窓口、クスッと笑える日常譚など、初心者でも親しみやすい短い語数から無理なく始められます。",
+          text: "はい。A1レベル10編、A2レベル10編、B1レベル20編（日常短編から長編まで）、B2レベル7編など計49編のオリジナルストーリーが用意されています。日常のカフェでの注文や駅の窓口、クスッと笑える日常譚など、初心者でも親しみやすい短い語数から無理なく始められます。",
         },
       },
       {

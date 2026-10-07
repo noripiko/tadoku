@@ -59,7 +59,7 @@ export function TadokuSeoSection() {
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
             単語の暗記カードや文法問題集だけで伸び悩んでいませんか？
-            Tadoku Deutschは、CEFRレベル別（A1〜C1）40編のストーリーと一行対訳・音声朗読を備えた、シンプルで使いやすいドイツ語多読プラットフォームです。
+            Tadoku Deutschは、CEFRレベル別（A1〜C1）全49編のストーリーと一行対訳・音声朗読を備えた、シンプルで使いやすいドイツ語多読プラットフォームです。
           </p>
         </div>
 
@@ -144,7 +144,7 @@ export function TadokuSeoSection() {
             自分の現在のレベルより「少し易しい」と感じるレベルから読み始めるのが多読継続の秘訣です。
           </p>
 
-          <div className="mt-6 grid gap-4 sm:grid-cols-3">
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-xl border border-emerald-100 bg-emerald-50/40 p-4 dark:border-emerald-950/60 dark:bg-emerald-950/20">
               <div className="flex items-center justify-between">
                 <span className="rounded bg-emerald-600 px-2 py-0.5 text-[11px] font-bold text-white">
@@ -188,14 +188,33 @@ export function TadokuSeoSection() {
                     B1（中級）
                   </span>
                   <span className="text-[11px] text-blue-700 dark:text-blue-300 font-medium">
-                    全20編（短編〜本格長編）
+                    全20編（長編充実）
                   </span>
                 </div>
                 <p className="mt-2 text-xs font-semibold text-slate-900 dark:text-slate-100">
-                  オフィス・社会的テーマ・推理・長編ドラマ
+                  オフィス・社会的テーマ・長編ドラマ
                 </p>
                 <p className="mt-1 text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed">
                   接続法II式や関係代名詞を含む豊かな表現。日常短編から読み応えのある長編小説まで味わえます。
+                </p>
+              </div>
+            </div>
+
+            <div className="rounded-xl border border-indigo-100 bg-indigo-50/40 dark:border-indigo-950/60 dark:bg-indigo-950/20">
+              <div className="p-4">
+                <div className="flex items-center justify-between">
+                  <span className="rounded bg-indigo-600 px-2 py-0.5 text-[11px] font-bold text-white">
+                    B2（上中級）
+                  </span>
+                  <span className="text-[11px] text-indigo-700 dark:text-indigo-300 font-medium">
+                    全7編（本格短編）
+                  </span>
+                </div>
+                <p className="mt-2 text-xs font-semibold text-slate-900 dark:text-slate-100">
+                  風刺・文化遺産・哲学・人間ドラマ
+                </p>
+                <p className="mt-1 text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed">
+                  受動態や慣用句、専門的語彙。シュパイヒャーシュタットやモーゼルなど各地の文化と深遠な物語。
                 </p>
               </div>
             </div>

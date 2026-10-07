@@ -1,6 +1,6 @@
 {
   "name": "Tadoku Deutsch",
-  "description": "ドイツ語多読（Tadoku）プラットフォーム。CEFRレベル別（A1〜C1）40編のオリジナルストーリー（B1長編20作）、一行対訳・ワンタップ音声再生、登録不要・完全ローカル完結。",
+  "description": "ドイツ語多読（Tadoku）プラットフォーム。CEFRレベル別（A1〜C1）全49編のオリジナルストーリー（B1長編20作・B2上中級7作）、一行対訳・ワンタップ音声再生、登録不要・完全ローカル完結。",
   "version": "1.0.0",
   "capabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"

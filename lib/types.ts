@@ -1,6 +1,6 @@
 export type CefrLevel = 'A1' | 'A2' | 'B1' | 'B2' | 'C1';
 
-export type StoryGenre = 'Comedy' | 'Surreal' | 'Mystery' | 'Sci-Fi' | 'Daily Life' | 'Philosophy';
+export type StoryGenre = 'Comedy' | 'Surreal' | 'Mystery' | 'Sci-Fi' | 'Daily Life' | 'Philosophy' | 'Culture' | 'Drama';
 
 export interface StoryParagraph {
   id: number;
@@ -27,7 +27,7 @@ export interface Story {
   genreJa: string;
   wordCount: number;
   readingTimeMinutes: number;
-  image: string;
+  image?: string;
   summaryJa: string;
   paragraphs: StoryParagraph[];
   fullTranslationJa: string[];
