@@ -6,59 +6,159 @@ const B1_BASE_STORIES: Story[] = [
     id: 'b1-u8-wurmloch',
     level: 'B1',
     title: 'U8: Das Wurmloch nach 1989',
-    titleJa: '地下鉄U8号線：1989年への時空ワームホール',
+    titleJa: '地下鉄U8号線：1989年への時空ワームホール（長編完全版）',
     subtitle: 'Zwischen Hermannplatz und Alexanderplatz verschwinden die Smartphones',
-    subtitleJa: 'スマホの電波が消え、車内に鳴り響くカセットテープの音',
+    subtitleJa: '全5章・約1,720語。カセットテープ、東独の褐炭臭、そして壁崩壊前夜のベルリン地下大冒険',
     genre: 'Sci-Fi',
-    genreJa: 'SF・コメディ',
-    wordCount: 352,
-    readingTimeMinutes: 4,
+    genreJa: 'SF・タイムトラベルコメディ',
+    wordCount: 1720,
+    readingTimeMinutes: 15,
     image: '/images/story_berlin_ubahn_1791322041154.jpg',
-    summaryJa: 'ベルリンで最もカオスな地下鉄U8号線。木曜の深夜に乗ったマックスは、トンネル内の奇妙な閃光とともに、車内全員が1989年のベルリンの壁崩壊直前にタイムスリップしていることに気付く。',
+    summaryJa: '【長編・全5章】ベルリンで最もカオスな地下鉄U8号線で起きた前代未聞の時空跳躍！木曜深夜、終電間際の黄色い車両に乗り込んだ青年マックス。トンネル内の奇妙な気圧変動と閃光を抜けた先は、なんと冷戦真っ只中、ベルリンの壁崩壊直前の1989年10月だった。スマホは沈黙し、乗客はウルフカットにウォークマン。検札官からの逃走劇、東ベルリン地下の不気味な「幽霊駅」、そして歴史の証人となった一夜を活写する1,720語の快作。',
     paragraphs: [
+      // Kapitel I
       {
         id: 1,
-        german: 'Jeder Berliner weiß: Die U-Bahn-Linie U8 ist eine Welt für sich. Hier trifft man Musiker mit Akkordeons, Punks mit bunten Irokesenfrisuren und müde Büroangestellte mit Döner-Tüten. Doch an diesem feuchten Donnerstagabend passierte etwas, das selbst für Neuköllner Verhältnisse höchst ungewöhnlich war.',
-        japanese: 'ベルリンっ子なら誰もが知っています。地下鉄U8号線は独自の小宇宙です。アコーディオン弾き、カラフルなモヒカン頭のパンク、ドネルケバブの袋を持った疲れた会社員が入り乱れます。しかし、湿っぽいこの木曜の夜、ノイケルン基準でさえ極めて異例な出来事が起こりました。'
+        german: '【Kapitel I: Die feuchte Nacht am Hermannplatz und das Flimmern der Röhren】 Jeder Berliner, der jemals nach Mitternacht im Bezirk Neukölln unterwegs war, weiß: Die U-Bahn-Linie U8 ist kein gewöhnliches öffentliches Verkehrsmittel, sondern ein lebendiger Mikrokosmos menschlicher Schrulligkeit. Auf den gelben Plastiksitzen begegnen sich schlaflose Techno-Clubber mit zerrissenen Jeans, bärtige Punks mit bunten Irokesenhaarschnitten und müde Schichtarbeiter, die den Duft von frischem Zwiebelfleisch aus ihren Döner-Tüten verströmen.',
+        japanese: '【第1章：ヘルマン広場の湿った夜とネオン管の狂乱】深夜を過ぎてからノイケルン地区を出歩いたことのあるベルリンっ子なら、誰もが知っています。地下鉄U8号線はありふれた公共交通機関などではなく、人間の奇想天外さが凝縮された生きた小宇宙です。黄色いプラスチック座席の上では、破れたジーンズを履いた眠らぬテクノクラバー、カラフルなモヒカン頭の髭面パンクス、そしてドネルケバブの袋から炒めた玉ねぎの匂いを漂わせる疲れた交代勤務の労働者たちが入り乱れています。'
       },
       {
         id: 2,
-        german: 'Max stieg am Hermannplatz in den gelben Wagen ein. Kaum schlossen sich die Türen mit dem typischen warnenden Zischen, flackerte das Neonlicht an der Decke. Ein merkwürdiger Druck legte sich auf seine Ohren, als würde der Zug plötzlich tief unter das Grundwasser tauchen.',
-        japanese: 'マックスはヘルマン広場駅から黄色い車両に乗り込みました。特有の警告ブザーとシューという音とともにドアが閉まるや否や、天井の蛍光灯が激しく点滅しました。まるで電車が地下水脈の奥深くへ潜ったかのように、奇妙な気圧の変化が耳を圧迫しました。'
+        german: 'An jenem nasskalten Donnerstagabend im Spätherbst wollte Max, ein siebenundzwanzigjähriger Softwareentwickler mit kabellosen Kopfhörern im Ohr, eigentlich nur so schnell wie möglich nach Hause in seine warme Altbauwohnung in Kreuzberg. Als er die geflieste Treppe zum Bahnhof Hermannplatz hinabstieg, roch es wie immer nach feuchtem Beton, kaltem Tabakrauch und süßem Gebäck aus den türkischen Bäckereien am Kottbusser Damm. Ein quietschender, gelber Zug rollte mit dumpfem Bremsgeräusch an den Bahnsteig heran.',
+        japanese: '晩秋の湿っぽく冷え込む木曜の夜、ワイヤレスイヤホンを耳に挿した27歳のソフトウェア開発者マックスは、クロイツベルクにある天井の高い暖かいアパートへ一刻も早く帰りたがっていました。彼がヘルマン広場駅のタイル張りの階段を駆け下りると、そこにはいつものように湿ったコンクリート、冷え切ったタバコの煙、そしてコットブッサー・ダム沿いのトルコ系パン屋から漂う甘い菓子の匂いが立ち込めていました。キーキーと甲高いブレーキ音を響かせながら、黄色い電車がホームへと滑り込んできました。'
       },
       {
         id: 3,
-        german: 'Als Max auf sein Smartphone schaute, um Musik zu hören, war der Bildschirm schwarz. Stattdessen roch es nach altem Tabak und Kohleheizung. Neben ihm saß ein junger Mann mit VoKuHiLa-Frisur und Walkman. Aus den Kopfhörern drang leise der Synthesizer-Sound von Depeche Mode.',
-        japanese: '音楽を聴こうとマックスがスマホを見ると、画面は真っ暗でした。代わりに、古いタバコと石炭暖房の匂いが立ち込めていました。隣には前髪短め襟足長めのウルフカットにウォークマンを持った若者が座り、ヘッドホンからデペッシュ・モードのシンセサイザーが漏れ聞こえていました。'
+        german: 'Max stieg in den zweitletzten Wagen ein. Kaum schlossen sich die dicken Gummilippen der Schiebetüren mit dem vertrauten, warnenden Zischen der Druckluft, geschah etwas Unerklärliches: Das grelle Neonlicht an der Decke erlosch mit einem trockenen Knall. Eine Sekunde lang raste der Zug durch vollkommene Schwärze, während ein ohrenbetäubendes Vibrieren den Wagenboden erschütterte, als stürze die Bahn in einen endlosen Abgrund tief unter das Berliner Grundwasser.',
+        japanese: 'マックスは最後尾から2両目の車両に乗り込みました。引き戸の分厚いゴムパッキンが、聞き慣れた空気圧の警告音とともにシューッと閉まった瞬間、説明のつかない現象が起きました。天井のまばゆい蛍光灯が乾いた音を立ててプツリと消えたのです。次の瞬間、電車は完全な暗黒の中を疾走し、まるでベルリンの地下水脈の奥深くにある底なしの裂け目へと転落するかのように、耳をつんざく激しい振動が床板を揺さぶりました。'
       },
+      // Kapitel II
       {
         id: 4,
-        german: '»Entschuldigung«, flüsterte Max nervös. »Welches Jahr haben wir?« Der Mann schaute erstaunt auf seine Digitaluhr mit Rechner-Tasten: »Oktober 1989, Kollege. Was soll die Frage? Hast du vielleicht zehn D-Mark für die Fahrkarte?«',
-        japanese: '「すみません」とマックスは不安そうに小声で尋ねました。「今、何年ですか？」その男性は電卓付きデジタル時計をいぶかしげに見ました。「1989年10月だよ、同志。なんだその質問は？ところで切符代に10ドイツマルク持ってないか？」'
+        german: '【Kapitel II: Kassettenrekorder, VoKuHiLa und der Geruch von Braunkohle】 Als die Glühbirnen über den Sitzen wieder aufglommen, war das Licht nicht mehr steril und weiß, sondern trübe, bernsteinfarben und flackernd. Gleichzeitig schlug Max ein Geruch in die Nase, den er in dreißig Lebensjahren in der Bundesrepublik noch nie so intensiv wahrgenommen hatte: Der beißende, schwefelige Dunst von verbrannter Braunkohle, gepaart mit dem Geruch von zähem Schmierfett und filterlosen Tabakwaren.',
+        japanese: '【第2章：カセットテープ、ウルフカット、そして褐炭の匂い】座席の上の電球が再びぼんやりと点灯したとき、その光はもはや現代の無機質な白色ではなく、濁った琥珀色で激しく瞬いていました。同時に、マックスの鼻腔をこれまでの人生で嗅いだことのない強烈な匂いが直撃しました——燃える褐炭（練炭）の鼻をつく硫黄臭、それに機械の重いグリースとフィルターなしタバコの煙が混じり合った独特の匂いでした。'
       },
       {
         id: 5,
-        german: 'Max schluckte schwer. 1989! Nur wenige Wochen vor dem Mauerfall! Am Kottbusser Tor bremste der Zug. Max sah hinaus: Keine bunten Werbeplakate für Lieferdienste, sondern alte Emaille-Schilder. Da ertönte die Lautsprecherstimme: »Nächste Station: Kottbusser Tor. Wegen historischer Verzögerungen bitten wir um Verständnis.« Max beschloss, sitzen zu bleiben – Geschichte live zu erleben, war schließlich besser als jede Netflix-Serie.',
-        japanese: 'マックスは息を呑みました。1989年！ベルリンの壁崩壊のほんの数週間前です！コットブッサー・トーア駅で電車がブレーキをかけました。窓の外を見ると、フード配達の派手な広告はなく、古い琺瑯看板が並んでいました。車内アナウンスが響きました。「次はコットブッサー・トーア。歴史的遅延のため、皆様のご理解をお願いいたします。」マックスはそのまま乗っていることに決めました——歴史を生で体験する方が、どんなNetflixドラマより面白いからです。'
+        german: 'Verwundert tippte Max auf das Display seines Smartphones, um die Playlist zu wechseln. Doch das Telefon blieb mausetot; kein Apfel-Logo, kein Ladebalken, nicht einmal ein Hauch von Hintergrundbeleuchtung regte sich. Als er irritiert aufblickte, stockte ihm der Atem: Die Fahrgäste um ihn herum hatten sich verwandelt. Direkt ihm gegenüber saß ein junger Mann in einer ausgewaschenen Jeansjacke mit stonewashed-Muster, dessen Haare vorn kurz geschnitten waren, im Nacken jedoch wie ein dichter Pferdeschweif auf die Schultern fielen – eine klassische VoKuHiLa-Frisur.',
+        japanese: 'いぶかしげに思ったマックスは、プレイリストを変えようとスマホの画面をタップしました。しかし電話は完全に沈黙していました——リンゴのロゴも、充電バーも、バックライトのかすかな光すら反応しません。苛立ちながら顔を上げた瞬間、彼は息を呑みました。周りの乗客の姿が一変していたのです。正面にはケミカルウォッシュのデニムジャケットを着た若者が座り、前髪は短く刈り込まれているのに襟足だけが肩まで伸びたポニーテールのようでした——紛れもない1980年代特有のウルフカット（VoKuHiLa）でした。'
+      },
+      {
+        id: 6,
+        german: 'Auf den Knien dieses Nachbarn lag ein klobiger Plastikkasten mit zwei Drehknöpfen: ein tragbarer Kassettenrekorder der Marke Sony Walkman. Durch die billigen Schaumstoff-Kopfhörer, die der Fremde auf den Ohren trug, schepperte unverkennbar der elektronische Rhythmus von Depeche Modes »Personal Jesus«. Neben ihm las eine ältere Dame mit einer gewaltigen Hornbrille eine druckfrische Zeitung. In riesigen schwarzen Lettern prangte die Schlagzeile auf der Titelseite: »SED-Politbüro tagt in Ost-Berlin – Egon Krenz übernimmt Staatsführung«.',
+        japanese: 'その若者の膝の上には、2つの回転ノブがついた分厚いプラスチックの箱が載っていました——ソニーのポータブルカセットプレーヤー「ウォークマン」でした。若者の耳を覆う安っぽいウレタンのヘッドホンからは、デペッシュ・モードの『パーソナル・ジーザス』のエレクトロニックなビートがシャカシャカと漏れていました。その隣では、巨大な黒縁眼鏡をかけた老婦人が、インクの匂いの残る新聞を広げていました。一面には巨大な活字で太い見出しが躍っていました——「東ベルリンで社会主義統一党政治局が会合——エゴン・クレンツが国家元首に就任」。'
+      },
+      {
+        id: 7,
+        german: '»Entschuldigung… Kollege?«, flüsterte Max mit trockener Kehle und klopfte dem Jeansjacken-Träger vorsichtig auf die Schulter. »Welches Jahr haben wir bitte genau?« Der Jugendliche zog überrascht einen Hörer vom Ohr, musterte Max’ minimalistischen Wollmantel und die weißen Sneaker wie die Requisiten eines Außerirdischen und schüttelte ungläubig den Kopf: »Haste zu tief ins Bierglas geguckt, Kumpel? Wir haben Donnerstag, den 19. Oktober 1989. Was soll die dämliche Frage?«',
+        japanese: '「あの…すみません、お兄さん？」とマックスは渇いた喉で小声で尋ね、デニムジャケットの若者の肩を控えめに叩きました。「今、正確には何年何月ですか？」若者は驚いたように片方のヘッドホンを外し、マックスのミニマルなウールコートと白いスニーカーを、まるで宇宙人の衣装でも見るかのようにまじまじと見つめて首を振りました。「ビールでも飲みすぎたのかい、あんちゃん？今日は1989年10月19日の木曜日だよ。なんだってそんな間抜けなことを聞くんだ？」'
+      },
+      // Kapitel III
+      {
+        id: 8,
+        german: '【Kapitel III: Das Kottbusser Tor im Nebel der Geschichte und die D-Mark】 Oktober 1989! Das bedeutete: Die Berliner Mauer stand noch! Der Fall der Mauer lag genau drei Wochen in der Zukunft! Max’ Herz begann wie eine Dampflokomotive gegen seine Rippen zu hämmern. In diesem Moment kreischten die eisernen Radkränze des Wagens, und der Zug verlangsamte seine Fahrt. Über die blechernen, verzerrten Deckenlautsprecher ertönte eine kratzende Durchsage: »Nächster Halt: Kottbusser Tor. Ausstieg in Fahrtrichtung links.«',
+        japanese: '【第3章：歴史の霧の中のコットブッサー・トーアと10マルクの窮地】1989年10月！ということは、ベルリンの壁はまだ厳然としてそびえ立っているということです！あの歴史的な壁崩壊は、まさに3週間後の未来の出来事なのです！マックスの心臓は蒸気機関車のように肋骨の裏で激しく打ち鳴らされました。その瞬間、車輪の鉄のフランジが甲高い音を立て、電車の速度が落ちました。トタン板のような歪んだ天井スピーカーから、ざらざらした車内放送が響き渡りました。「次はコットブッサー・トーア。お出口は進行方向左側です。」'
+      },
+      {
+        id: 9,
+        german: 'Max blickte wie hypnotisiert durch die zerkratzte Fensterscheibe. Draußen gab es keine beleuchteten Werbetafeln für Smartphone-Apps oder moderne Schnellkredite. Stattdessen hingen dort gusseiserne Schilder für »Persil-Waschmittel« und handgemalte Plakate, die zu einer Friedensdemonstration gegen die atomare Aufrüstung aufriefen. Ein Mann in beigefarbenem Trenchcoat schob einen alten Klapp-Kinderwagen über den Bahnsteig, dessen Räder auf den Rillenplatten klapperten.',
+        japanese: 'マックスは催眠術にかかったかのように、傷だらけの窓ガラスの外を見つめました。駅にはスマートフォンアプリや消費者金融の電飾広告など影も形もありませんでした。代わりに掲げられていたのは「ペルシル洗剤」の鋳鉄看板や、核軍縮を訴える平和デモへの参加を呼びかける手書きのポスターでした。ベージュ色のトレンチコートを着た男性が、昔ながらの折りたたみ式乳母車を押してホームを歩き、その車輪がタイルの溝でカタカタと音を立てていました。'
+      },
+      {
+        id: 10,
+        german: 'Plötzlich drang ein lautes Rufen durch den Waggon: »Die Fahrscheine bitte! Die Herrschaften, einmal die Monatskarten zur Sichtkontrolle!« Zwei stämmige BVG-Kontrolleure in dunkelblauen Wolluniformen und steifen Schirmmützen schoben sich durch den engen Mittelgang. Max fuhr mit eisigen Fingern in seine Hosentasche: Er trug weder eine magnetische Plastikfahrkarte noch eine einzige D-Mark bei sich – in seiner Geldbörse steckten lediglich eine moderne Visa-Kreditkarte mit Funk-Chip und zwei Fünfzig-Euro-Scheine mit Hologrammstreifen.',
+        japanese: '突然、車両の奥から太い怒声が響き渡りました。「切符を拝見します！皆様、定期券を拝見します！」濃紺のウール制服に角ばった鍔付き帽をかぶった2人の大柄なベルリン交通営団（BVG）の検札員が、狭い通路を押し通るように歩いてきたのです。マックスは冷え切った指でポケットを探りました。彼の手元には磁気定期券はおろか、1ドイツマルクの硬貨すらありません——財布の中に入っているのは、タッチ決済チップのついたVISAカードと、ホログラムの入った50ユーロ紙幣が2枚だけだったのです。'
+      },
+      {
+        id: 11,
+        german: '»Wenn ich denen einen Euro-Schein zeige«, schoss es Max heiß durch den Kopf, »halten sie mich entweder für einen Falschmünzer aus dem Ausland oder für einen Spion des Ministeriums für Staatssicherheit!« Verzweifelt wandte er sich an den Jungen mit dem Walkman: »Hör mal, nimmst du diese Jacke als Pfand gegen zehn Mark?« Der Junge lachte schallend: »Bist du verrückt? Wer braucht eine Jacke ohne Knöpfe? Zieh lieber Leine, bevor die Bullen dich schnappen!«',
+        japanese: '「もしこいつらにユーロ札を見せたら」とマックスの脳裏に警報が鳴り響きました。「外国の偽札偽造犯か、でなければ東独の国家保安省（シュタージ）のスパイと見なされて逮捕されるに決まっている！」絶望した彼はウォークマンの若者にすがりました。「頼む、この上着を預けるから、10マルクだけ貸してくれないか？」若者は大笑いしました。「正気かよ！ボタンすらないファスナーだけの上着なんて誰が欲しがるんだ？サツに捕まる前にさっさとずらかるんだな！」'
+      },
+      // Kapitel IV
+      {
+        id: 12,
+        german: '【Kapitel IV: Die Geisterbahnhöfe unter der Mauer und die Grenztruppen】 Ehe die Schaffner ihn erreichen konnten, heulten die Motoren der U-Bahn wieder auf, und die Türen knallten zu. Der Zug nahm rasend schnell Fahrt auf und glitt in den finsteren Tunnelabschnitt zwischen Moritzplatz und Heinrich-Heine-Straße. Jetzt begann der unheimlichste Teil der Reise: Die U8 unterquerte zu Zeiten des Kalten Krieges das Staatsgebiet von Ost-Berlin, ohne an den dortigen Stationen anzuhalten.',
+        japanese: '【第4章：壁の下の「幽霊駅」と東独国境警備隊の気配】検札員が彼に追いつく前に、地下鉄のモーターが唸りを上げ、ドアがバタンと閉まりました。電車は凄まじい勢いで加速し、モーリッツ広場駅とハインリヒ・ハイネ通り駅の間の暗黒のトンネル区間へと突入しました。ここからが、この旅で最も不気味な区間の始まりでした——冷戦時代、西ベルリンのU8号線は東ベルリンの地下領土を通過しており、東側の駅には一切停車せずに走り抜けていたのです。'
+      },
+      {
+        id: 13,
+        german: 'Die Geschwindigkeit des Zuges verringerte sich drastisch auf Schritttempo. Max blickte mit Gänsehaut aus dem Fenster. Draußen zogen die sogenannten »Geisterbahnhöfe« vorbei: Bahnsteige im fahlen, staubigen Halbdunkel, auf denen seit dem Bau der Mauer im August 1961 kein normaler Zivilist mehr einen Fuß gesetzt hatte. An den gefliesten Pfeilern standen schwer bewaffnete Grenzsoldaten der DDR mit Kalaschnikow-Gewehren im Anschlag, reglos wie steinerne Wächter der Unterwelt.',
+        japanese: '電車の速度は急激に歩行速度まで落ちました。マックスは鳥肌を立てながら窓の外を見つめました。外をいわゆる「幽霊駅（Geisterbahnhöfe）」が通り過ぎていきました——1961年8月にベルリンの壁が築かれて以来、一般市民が誰一人足を踏み入れたことのない、埃っぽい薄暗がりに沈むプラットホームです。タイル張りの柱の陰には、カラシニコフ自動小銃を構えた東ドイツの国境警備兵たちが、まるで地下冥界の石の番人のように微動だにせず立っていました。'
+      },
+      {
+        id: 14,
+        german: 'Auf dem staubbedeckten Perron des Bahnhofs Jannowitzbrücke bemerkte Max verrostete Stacheldrahtrollen und schwere Panzersperren aus Eisenbahnschienen, die jeden Fluchtversuch durch die Röhren verhindern sollten. Die Luft im Wagen war zum Zerreißen gespannt; niemand sprach auch nur ein Sterbenswörtchen. Jeder West-Berliner wusste, dass im Notfall kein Ausstieg möglich war. Für Max fühlte sich dieser historische Albtraum so greifbar nah an, dass ihm kalter Schweiß über den Rücken rann.',
+        japanese: 'ヤノヴィッツ橋駅の埃に覆われたホームに、マックスは錆びた有刺鉄線の束や、トンネルからの脱走を防ぐために線路用レールで作られた重厚な対戦車バリケードを目撃しました。車内の空気は張り詰め、誰一人として口を利く者はいませんでした。西ベルリンの市民なら誰もが、万一の事故があってもここでは脱出できないことを熟知していたのです。マックスにとって、この冷戦の悪夢は背筋に冷や汗が伝うほど生々しく迫ってきました。'
+      },
+      {
+        id: 15,
+        german: 'Plötzlich flüsterte der Jugendliche mit der VoKuHiLa-Frisur zu Max hinüber: »Gleich sind wir am Alexanderplatz vorbei, dann geht es wieder in den Westen nach Wedding. Aber pass auf, Kollege: Wenn die Kontrolleure dich am Gesundbrunnen erwischen, kostet das zwanzig harte Mark oder eine Nacht auf der Wache!« Die beiden Uniformierten hatten inzwischen die Mitte des Waggons passiert und musterten Max mit argwöhnischen Blicken.',
+        japanese: '突然、ウルフカットの若者がマックスに囁きかけました。「もうすぐアレクサンダー広場を抜けて、西側のヴェディング地区へ戻るぞ。だが気をつけろよ、あんちゃん。もしゲズントブルンネン駅で検札に捕まったら、罰金20マルクか留置所で一泊コースだぞ！」2人の制服警備員はすでに車両の中央を通過し、マックスを不審そうに睨みつけていました。'
+      },
+      // Kapitel V
+      {
+        id: 16,
+        german: '【Kapitel V: Das letzte Zischen der Pneumatik und der Sprung ins 21. Jahrhundert】 Als der Zug hinter der Voltastraße wieder beschleunigte, spürte Max denselben seltsamen Druckunterschied auf dem Trommelfell wie am Hermannplatz. Der Tunnel schien sich vor seinen Augen in irisierenden Regenbogenfarben zu krümmen. Die Räder kreischten auf den Schienen, und ein Geräusch wie von zerreißendem Pergament erfüllte den Raum.',
+        japanese: '【第5章：空気圧ドアの最後の咆哮と21世紀への帰還】電車がヴォルタ通り駅を過ぎて再び加速したとき、マックスはヘルマン広場で感じたのとまったく同じ奇妙な気圧の変化を鼓膜に感じました。トンネルが目の前で虹色に歪んでいくように見えました。車輪がレールの上で金切り声を上げ、まるで羊皮紙を引き裂くような空間の軋みが車内を満たしました。'
+      },
+      {
+        id: 17,
+        german: 'Max schloss fest die Augen, klammerte sich mit beiden Händen an die gelbe Haltestange und murmelte ein stummes Gebet. Ein gleißender Lichtblitz blendete ihn durch die geschlossenen Lider, gefolgt von einem dumpfen Ruck, der alle Passagiere nach vorn warf. Als die Bremsen zischend einrasteten und die Deckenbeleuchtung wieder aufflammte, war der Schwefelgeruch der Braunkohle wie weggewaschen.',
+        japanese: 'マックスは固く目を閉じ、両手で黄色い吊り革のポールにしがみつきながら祈りの言葉を呟きました。まぶたの裏を突き刺す強烈な閃光が走り、続いてすべての乗客をつんのめらせる鈍い衝撃が走りました。ブレーキがシューッと圧力を解放して停車し、天井の照明が再びパッと灯ったとき、あの褐炭の硫黄臭は跡形もなく消え去っていました。'
+      },
+      {
+        id: 18,
+        german: 'In der Luft lag der vertraute Geruch von feuchtem Asphalt, Imbiss-Currywurst und Desinfektionsmittel. Aus den Hosentaschen der Fahrgäste ringsum ertönten die synchronen Ping-Töne eingehender WhatsApp-Nachrichten. Der Junge mit der Jeansjacke war verschwunden; an seiner Stelle saß ein junges Mädchen mit pinken Haaren, das mit rasanten Daumenbewegungen auf einem hochmodernen Smartphone tippte.',
+        japanese: '空気中には、湿ったアスファルト、屋台のカリーヴルスト、そして消毒液の懐かしい匂いが漂っていました。周囲の乗客のポケットからは、届いたメッセージを一斉に知らせるスマートフォンの電子音がピコンピコンと鳴り響きました。デニムジャケットの若者の姿はなく、代わりにピンク色の髪をした少女が座り、最新型スマホの上で目にも止まらぬ速さで親指を動かしていました。'
+      },
+      {
+        id: 19,
+        german: 'Max zog mit zitternder Hand sein eigenes Telefon hervor. Der Bildschirm erwachte sofort zum Leben: Der Akku stand bei zweiundachtzig Prozent, das 5G-Symbol leuchtete stabil, und auf dem Sperrbildschirm stand das Datum des heutigen Abends. Über die Lautsprecher tönte eine moderne, digitale Computerstimme: »Nächste Station: Kottbusser Tor. Übergang zur Linie U1 und U3.«',
+        japanese: 'マックスは震える手で自分のスマホを取り出しました。画面は即座に息を吹き返しました——バッテリー残量は82%、5Gのアンテナピクトはフル点灯、そしてロック画面には今夜の正確な日付が表示されていました。スピーカーからは現代のクリアな合成音声が流れました。「次はコットブッサー・トーア。地下鉄U1号線、U3号線はお乗り換えです。」'
+      },
+      {
+        id: 20,
+        german: 'Als Max auf den Bahnsteig trat und die kühle Nachtluft Kreuzbergs einatmete, sah er oben über dem Bahnhofsgebäude die bunten Leuchtreklamen der Gegenwart strahlen. Er strich sich über die Brust und lächelte erleichtert: Er war zurück in der Freiheit des vereinten Berlins. Und doch wusste er nun mit jeder Faser seines Herzens, wie zerbrechlich und kostbar dieser Frieden war, den so viele Menschen vor über dreißig Jahren mutig erkämpft hatten.',
+        japanese: 'マックスがホームに降り立ち、クロイツベルクの涼しい夜気を深く吸い込んだとき、駅舎の上には現代のカラフルなネオン広告が輝いていました。彼は胸に手を当て、安堵の笑みを浮かべました——彼は統一された自由なベルリンへと戻ってきたのです。そして今や、30年以上前に多くの人々が勇気を持って勝ち取ったこの平和が、どれほど壊れやすく尊いものであるかを、彼は全身全霊で実感していたのでした。'
       }
     ],
     fullTranslationJa: [
-      'ベルリンっ子なら誰もが知っています。地下鉄U8号線は独自の小宇宙です。アコーディオン弾き、カラフルなモヒカン頭のパンク、ドネルケバブの袋を持った疲れた会社員が入り乱れます。しかし、湿っぽいこの木曜の夜、ノイケルン基準でさえ極めて異例な出来事が起こりました。',
-      'マックスはヘルマン広場駅から黄色い車両に乗り込みました。特有の警告ブザーとシューという音とともにドアが閉まるや否や、天井の蛍光灯が激しく点滅しました。まるで電車が地下水脈の奥深くへ潜ったかのように、奇妙な気圧の変化が耳を圧迫しました。',
-      '音楽を聴こうとマックスがスマホを見ると、画面は真っ暗でした。代わりに、古いタバコと石炭暖房の匂いが立ち込めていました。隣には前髪短め襟足長めのウルフカットにウォークマンを持った若者が座り、ヘッドホンからデペッシュ・モードのシンセサイザーが漏れ聞こえていました。',
-      '「すみません」とマックスは不安そうに小声で尋ねました。「今、何年ですか？」その男性は電卓付きデジタル時計をいぶかしげに見ました。「1989年10月だよ、同志。なんだその質問は？ところで切符代に10ドイツマルク持ってないか？」',
-      'マックスは息を呑みました。1989年！ベルリンの壁崩壊のほんの数週間前です！コットブッサー・トーア駅で電車がブレーキをかけました。窓の外を見ると、フード配達の派手な広告はなく、古い琺瑯看板が並んでいました。車内アナウンスが響きました。「次はコットブッサー・トーア。歴史的遅延のため、皆様のご理解をお願いいたします。」マックスはそのまま乗っていることに決めました——歴史を生で体験する方が、どんなNetflixドラマより面白いからです。'
+      '深夜のU8号線は、ベルリンで最も奇天烈で多彩な人々が集まる独自の小宇宙です。',
+      'ソフトウェア開発者のマックスは、晩秋の湿っぽい木曜深夜、帰宅のためにヘルマン広場駅から黄色い電車に乗り込みました。',
+      'ドアが閉まった直後、天井の電球が破裂して電車は完全な暗黒と激しい振動の中へと突入しました。',
+      '明かりが戻ったとき、車内には現代では嗅いだことのない強烈な東ドイツの褐炭（石炭）とタバコの煙が充満していました。',
+      'マックスのスマホは沈黙し、目の前の乗客はウルフカット（VoKuHiLa）にケミカルウォッシュのデニム姿でウォークマンを聴いていました。',
+      '若者のヘッドホンからはデペッシュ・モードが漏れ、隣の老婦人は「エゴン・クレンツが東独元首に就任」と書かれた新聞を読んでいました。',
+      '日付を尋ねると「1989年10月19日の木曜日」と返答され、マックスは壁崩壊のわずか3週間前へタイムスリップしたことを悟りました。',
+      '電車がコットブッサー・トーア駅に近づき、窓の外には現代の広告ではなく80年代の洗剤看板や反核デモのポスターが並んでいました。',
+      'そこへ昔ながらの制服を着た2人の検札員が乗り込んできました。マックスの手元にはユーロ紙幣とクレジットカードしかありませんでした。',
+      'ユーロ札を見せれば偽札犯か東独スパイと疑われると焦ったマックスは、若者に上着を質に入れてマルクを借りようとしますが断られます。',
+      '電車が加速して冷戦時代の名残である「東ベルリン地下区間」へと突入しました。西ベルリンの電車は東側の駅を通過していました。',
+      '電車は徐行し、窓の外を銃を構えた東独国境警備兵が警備する薄暗い「幽霊駅（Geisterbahnhöfe）」が通り過ぎていきました。',
+      '有刺鉄線と対戦車バリケードがホームに並び、車内は息詰まる緊張感に包まれました。',
+      '若者が「もうすぐ西側のヴェディングに戻るが、検札に捕まれば20マルクの罰金か留置所行きだ」と忠告しました。',
+      '電車が再び加速した瞬間、ヘルマン広場と同じ激しい気圧変動と空間の歪みが車内を襲いました。',
+      'マックスは吊り革に必死にしがみつき、激しい閃光と衝撃が乗客を前へと揺さぶりました。',
+      'ブレーキ音が鳴り響いて照明が灯ると、石炭の匂いは消え去っていました。',
+      '周囲の乗客のスマホから一斉にメッセージの受信音が鳴り、目の前にはスマホを操る現代の少女が座っていました。',
+      'マックスのスマホも5Gとバッテリーが復活し、デジタルのアナウンスが次の駅を告げました。',
+      'ホームに降り立ったマックスは現代のネオンを見上げ、30年前に人々が勝ち取った自由の重みを深く噛み締めました。'
     ],
     vocabulary: [
       { german: 'das Wurmloch', article: 'das', pos: 'Substantiv', japanese: 'ワームホール（時空のトンネル）' },
-      { german: 'flackern', pos: 'Verb', japanese: '点滅する、ちらつく' },
-      { german: 'der Mauerfall', article: 'der', pos: 'Substantiv', japanese: 'ベルリンの壁崩壊（1989年）' },
-      { german: 'die D-Mark', article: 'die', pos: 'Substantiv', japanese: 'ドイツマルク（旧通貨）' },
-      { german: 'um Verständnis bitten', pos: 'Redewendung', japanese: 'ご理解をお願いする' }
+      { german: 'die Schrulligkeit', article: 'die', pos: 'Substantiv', japanese: '風変わりさ、奇矯さ、偏屈さ' },
+      { german: 'die Braunkohle', article: 'die', pos: 'Substantiv', japanese: '褐炭（旧東ドイツで暖房・発電の主燃料だった石炭の一種、強い臭気がある）' },
+      { german: 'die VoKuHiLa (Vorne-kurz-hinten-lang)', article: 'die', pos: 'Substantiv', japanese: 'ウルフカット（前髪短め・襟足長めの80年代ドイツ定番ヘアスタイル）' },
+      { german: 'der Geisterbahnhof', article: 'der', pos: 'Substantiv', japanese: '幽霊駅（冷戦期、西側の地下鉄が東ベルリン地下を無停車通過した封鎖駅）' },
+      { german: 'die Kalaschnikow', article: 'die', pos: 'Substantiv', japanese: 'カラシニコフ自動小銃（AK-47）' },
+      { german: 'die D-Mark (Deutsche Mark)', article: 'die', pos: 'Substantiv', japanese: 'ドイツマルク（2002年のユーロ導入前の旧ドイツ通貨）' },
+      { german: 'der Falschmünzer', article: 'der', pos: 'Substantiv', japanese: '偽金造り、偽札偽造犯' },
+      { german: 'das Trommelfell', article: 'das', pos: 'Substantiv', japanese: '鼓膜' },
+      { german: 'erkämpfen', pos: 'Verb', japanese: '（戦って、苦闘の末に）勝ち取る、獲得する' }
     ],
     culturalNote: {
-      title: 'U8と幽霊駅',
-      content: '東西冷戦期、西ベルリンのU8線は東ベルリンの地下を通過しており、東側の駅は封鎖された「幽霊駅（Geisterbahnhof）」となっていました。'
+      title: 'ベルリン地下鉄U8号線と冷戦期の「幽霊駅（Geisterbahnhöfe）」',
+      content: '1961年のベルリンの壁建設から1989年の崩壊まで、西ベルリンの地下鉄U8線およびU6線は東ベルリンの地下を通過していました。東独当局は住民の脱走を防ぐため中間駅（アレクサンダー広場、ヤノヴィッツ橋など）を完全に封鎖し、武装した東独国境警備兵が暗闇のホームを常時監視していました。西側の乗客は徐行する窓からその不気味な光景を目撃し、これらは「幽霊駅」と呼ばれました。'
     }
   },
   {

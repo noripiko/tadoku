@@ -5,59 +5,152 @@ export const B2_STORIES: Story[] = [
     id: 'b2-buerokratie-gefuehle',
     level: 'B2',
     title: 'Die Bürokratie der Gefühle: Formular 27-B',
-    titleJa: '感情の官僚主義：申請書27-B',
-    subtitle: 'Ein satirischer Besuch im Bundesamt für Affektregulierung',
-    subtitleJa: '軽い不機嫌を公認してもらうために書類を提出する市民の苦悩',
+    titleJa: '感情の官僚主義：申請書27-B（長編完全版）',
+    subtitle: 'Ein satirischer Besuch im Bundesamt für Affektregulierung und Gemütszustände',
+    subtitleJa: '全5章・約1,760語。軽い不機嫌を公認してもらうために書類を提出する市民の苦悩と、ボンの青空への脱出',
     genre: 'Surreal',
-    genreJa: '風刺・シュール',
-    wordCount: 476,
-    readingTimeMinutes: 5,
-    summaryJa: '近未来のドイツ。市民の精神衛生を標準化するため設立された「連邦感情規制庁」。クララは月曜朝の満員電車で抱いた「軽度の不条理感」を公式に表明するため、複雑極まりない書類手続きに挑む。',
+    genreJa: '風刺・近未来ディストピア文学',
+    wordCount: 1760,
+    readingTimeMinutes: 15,
+    summaryJa: '【長編・全5章】2042年の近未来ドイツ。ゴミの徹底分別とパンの規格化を完遂した国家が最後に着手したのは、人間の感情の法規制だった。設立された「連邦感情規制・気分状態庁（BAAG）」の窓口で、月曜朝の満員電車の遅延に起因する「軽度の不条理感と憂鬱」を公認申請しようとする女性クララ。冷酷な担当官シメルプフェニヒ、地下の気象精神鑑定室、膨大な別添書類との格闘の末、彼女が最後に下した痛快な決断を描く1,760語の現代カフカ風風刺長編。',
     paragraphs: [
+      // Kapitel I
       {
         id: 1,
-        german: 'Deutschland im Jahr 2042 ist bekanntlich das am gründlichsten organisierte Land des Planeten. Nach der erfolgreichen Vereinheitlichung der Mülltrennung und der DIN-Normierung für Frühstücksbrötchen wandte sich der Gesetzgeber dem letzten chaotischen Refugium zu: der menschlichen Gefühlswelt. Zu diesem Zweck wurde das »Bundesamt für Affektregulierung und Gemütszustände« in Bonn ins Leben gerufen.',
-        japanese: '2042年のドイツは、周知のとおり地球上で最も徹底して組織化された国です。ゴミの分別基準の統一と朝食のパン（Brötchen）に関する工業規格（DIN）の制定に成功したあと、立法府は最後に残された混沌の領域、すなわち人間の感情世界へと目を向けました。そのためにボンに設立されたのが「連邦感情規制・気分状態庁」でした。'
+        german: '【Kapitel I: Die marmornen Hallen des Bundesamts für Affektregulierung in Bonn】 Die Bundesrepublik Deutschland im Jahre 2042 galt unter internationalen Soziologen unangefochten als das am reinsten organisierte Staatswesen unseres Planeten. Nachdem die Vereinheitlichung der kommunalen Mülltrennung mit vierzehn verschiedenen Wertstofftonnen und die DIN-Normierung der Krustenporosität von Frühstückssemmeln vollendet worden waren, wandte sich der Bundestag der letzten unregulierten Wildnis zu: der unberechenbaren Gefühlswelt seiner Bürgerinnen und Bürger.',
+        japanese: '【第1章：ボン・連邦感情規制庁の冷徹なる大理石ホール】2042年のドイツ連邦共和国は、国際社会学者たちの間で文句なしに地球上で最も純粋に組織化された国家体制と目されていました。14種類の資源ゴミ回収箱による徹底したゴミ分別の統一と、朝食パンの皮の気泡構造に関するドイツ工業規格（DIN）の制定が完了したのち、連邦議会は最後に残された未開の原野、すなわち市民たちの予測不可能な感情世界へと目を向けたのです。'
       },
       {
         id: 2,
-        german: 'Klara Becker saß an Schalter 14 und hielt das Formular 27-B krampfhaft in beiden Händen. Sie beabsichtigte, eine »leichte, aber spürbare Montagslustlosigkeit in Verbindung mit mäßiger Verärgerung über die Deutsche Bahn« zu deklarieren. Ohne offizielle behördliche Genehmigung durfte man in der Öffentlichkeit nämlich weder die Stirn runzeln noch vernehmlich seufzen.',
-        japanese: 'クララ・ベッカーは14番窓口に座り、申請書27-Bを両手で力任せに握りしめていました。彼女は「ドイツ鉄道に対する適度な苛立ちを伴う、軽度だが明確な月曜日の無気力」を申告しようとしていたのです。公的機関の認可がなければ、公衆の面前で眉をひそめたり、聞こえるようにため息をついたりすることすら許されなかったからです。'
+        german: 'Zu diesem Zwecke war das monumentale »Bundesamt für Affektregulierung und Gemütszustände« – im Volksmund ehrfürchtig oder genervt schlicht als »BAAG« tituliert – auf dem ehemaligen Regierungsgelände am Bonner Rheinufer errichtet worden. Ein gigantischer Monolith aus grauem Muschelkalk und schusssicherem Spiegelglas, dessen endlose Flure nach Desinfektionsmittel, Kopierertoner und dem kalten Hauch überdimensionierter Klimaanlagen rochen.',
+        japanese: 'その目的のために、ボンのライン川河畔の旧政府機関敷地に「連邦感情規制・気分状態庁」——民間で畏怖あるいはうんざりした調子で単に「BAAG」と呼ばれる巨大官庁——が建設されました。灰色の貝殻石灰岩と防弾ミラーガラスでできた巨大なモノリスの建物内部には、消毒液とコピー機のトナー、そして大型空調設備の冷たい風の匂いが漂う果てしない廊下が続いていました。'
       },
       {
         id: 3,
-        german: 'Der zuständige Sachbearbeiter, Herr Schimmelpfennig, musterte Klara über den Rand seiner randlosen Brille hinweg. Seine Miene spiegelte exakt den emotionsneutralen Referenzzustand nach Paragraph 4 Absatz 2 wider. »Frau Becker«, begann er mit monotoner Präzision, »Sie haben in Feld 18 angekreuzt, dass Ihre Enttäuschung existenzielle Züge trägt. Haben Sie dafür ein tierärztliches oder meteorologisches Gutachten beigelegt?«',
-        japanese: '担当官のシメルプフェニヒ氏は、縁なし眼鏡の縁越しにクララを品定めしました。彼の表情は、第4条第2項に定められた完全な感情中立基準状態を忠実に反映していました。「ベッカーさん」と彼は単調かつ精密な口調で切り出しました。「あなたは第18欄に、ご自身の失望感が『実存的な特徴を帯びている』とチェックされていますね。それについての獣医学的、あるいは気象学的な鑑定書は添付されていますか？」'
+        german: 'Klara Becker, eine dreiunddreißigjährige Bibliothekarin mit scharfem Verstand und einem ausgeprägten Sinn für persönliche Freiheit, schob sich durch die rotierenden Sicherheitsschleusen. An ihrer Jacke war der obligatorische biometrische Sensor befestigt, der ihren Puls, ihren Hautleitwert und ihre Pupillenerweiterung sekundengenau an den Zentralrechner übertrug. Ohne behördliche Erlaubnis war es nämlich seit dem »Affektreformgesetz von 2038« strengstens untersagt, in der Öffentlichkeit die Stirn zu runzeln, vernehmlich zu seufzen oder gar zynisch die Augen zu verdrehen.',
+        japanese: '明晰な頭脳と個人の自由に対する強い信念を持つ33歳の司書クララ・ベッカーは、回転式セキュリティゲートを通過しました。彼女の上着には義務化された生体センサーが装着されており、脈拍、皮膚電気活動、瞳孔の散大状況が毎秒単位で中央コンピューターへと送信されていました。「2038年感情改革法」の施行以来、公的機関の事前認可なしに公衆の面前で眉をひそめたり、聞こえるようにため息をついたり、皮肉っぽく目を白黒させたりすることは厳格に禁止されていたからです。'
       },
+      // Kapitel II
       {
         id: 4,
-        german: '»Nein«, erwiderte Klara erstaunt. »Der Zug hatte schlichtweg fünfundvierzig Minuten Verspätung, und mein Kaffee war lauwarm.« Herr Schimmelpfennig schüttelte missbilligend den Kopf. »Ungenügende Kausalität. Für bloße Verspätungen steht Ihnen lediglich die Beschwerdeklasse C-3 zu: ›Passives Schulterzucken mit innerem Zynismus‹. Bitte füllen Sie den vierzehnseitigen Anhang zur Abgrenzung von Melancholie und Sarkasmus aus.«',
-        japanese: '「いいえ」とクララは呆然と答えました。「電車が単に45分遅れて、私のコーヒーが生ぬるかっただけです。」シメルプフェニヒ氏は不服そうに首を振りました。「因果関係が不十分です。単なる列車の遅延に対してあなたに付与できるのは、苦情等級C-3の『内面的皮肉を伴う消極的な肩すくめ』のみです。メランコリーとサーカズムの境界画定に関する全14ページの付録書類に記入してください。」'
+        german: '【Kapitel II: Formular 27-B und der Kausalitätsnachweis der Montagstristesse】 Klara zog eine Wartemarke aus dem Nummernausgeber: Nummer 842. Auf der digitalen Anzeigetafel leuchtete erst die Zahl 611 auf. Nach drei quälenden Stunden des stummen Wartens auf ergonomischen Hartplastikstühlen durfte sie endlich das Büro 14 im dritten Obergeschoss betreten. Hinter einem massiven Schreibtisch aus furnierter Eiche thronte der zuständige Oberamtsrat, Herr Dr. Schimmelpfennig.',
+        japanese: '【第2章：申請書27-Bと月曜の憂鬱の因果関係立証義務】クララは発券機から整理券を引きました——842番。電光掲示板にはまだ611番が表示されていました。人間工学に基づいた硬質プラスチック椅子の上で耐え忍ぶこと3時間、ついに彼女は3階の14号室への入室を許可されました。化粧板貼りのオーク材の巨大な机の向こうには、担当の上級参事官、シメルプフェニヒ博士が鎮座していました。'
       },
       {
         id: 5,
-        german: 'Klara blickte auf den gigantischen Stapel Recyclingpapier. In diesem Augenblick spürte sie weder Zorn noch Frustration, sondern eine tiefe, fast meditative Erleuchtung. Sie stand auf, zerriss das Formular in zwei Hälften und lächelte unvorschriftsmäßig breit. Herr Schimmelpfennig erstarrte vor Entsetzen: Ein unlizenziertes Glücksgefühl! Doch bevor er die Sicherheit rufen konnte, war Klara bereits beschwingt in den Bonner Sonnenschein hinausgetreten.',
-        japanese: 'クララは再生紙の巨大な束を見つめました。その瞬間、彼女は怒りも苛立ちも感じず、深くほとんど瞑想的な悟りを感じました。彼女は立ち上がり、申請書を真っ二つに破り裂き、規定外の満面の笑みを浮かべました。シメルプフェニヒ氏は恐怖で硬直しました——無許可の幸福感だ！しかし彼が警備を呼ぶ前に、クララはすでに軽やかな足取りでボンの陽光あふれる街へと踏み出していたのでした。'
+        german: 'Der Beamte trug eine randlose Brille mit polarisierten Gläsern und eine akkurat geknotete silbergraue Krawatte. Seine Gesichtszüge waren von einer solch meisterhaften Erstarrung, dass man ihn leicht für eine wächserne Schaufensterpuppe hätte halten können – der vollendete Ausdruck des gesetzlich vorgeschriebenen »neutralen Referenzzustands«. Er blickte nicht auf, sondern tippte mit mechanischer Regelmäßigkeit Daten in seine Tastatur.',
+        japanese: 'その官僚は偏光レンズの縁なし眼鏡をかけ、完璧に結ばれた銀灰色のネクタイを締めていました。その顔立ちはあまりに見事な硬直を保っており、蝋細工のマネキンと見紛うほどでした——法律で定められた「感情中立基準状態」の完全無欠な体現です。彼は顔を上げることもなく、機械的な規則正しさでキーボードにデータを打ち込み続けていました。'
+      },
+      {
+        id: 6,
+        german: '»Frau Becker«, begann er mit einer Stimme, die so trocken klang wie ein drei Jahre altes Aktenblatt aus dem Kellerarchiv, »Sie begehren die Genehmigung zur temporären Ausstellung einer Mängelmeldung des Gemüts. Konkret: Formular 27-B, Ziffer 4 – ›Leichte bis mittlere Montagslustlosigkeit in unmittelbarer Kausalität zu infrastrukturellem Versagen eines öffentlichen Schienenverkehrsunternehmens‹. Legen Sie Ihre Nachweise vor.«',
+        japanese: '「ベッカーさん」と彼は地下書庫の3年前の書類のように乾ききった声で切り出しました。「あなたは気分の不都合申告の一時的発給許可を申請されていますね。具体的には申請書27-B、第4項——『公共鉄道事業者のインフラ不全との直接的因果関係における軽度から中度の月曜無気力感』です。証拠書類を提示してください。」'
+      },
+      {
+        id: 7,
+        german: 'Klara legte einen gefalteten Ausdruck auf die grüne Schreibtischunterlage. »Hier ist die Verspätungsbescheinigung des Regionalexpresses von Köln nach Bonn. Siebenundvierzig Minuten Standzeit auf freier Strecke wegen Weichenstörung. Dazu fiel die Heizung im Wagen aus, und der Kaffeeautomat war defekt. Ich denke, das rechtfertigt ein legitimes, viertelstündiges Missmutsintervall mit moderatem Zähneknirschen.«',
+        japanese: 'クララは折りたたんだ印刷物を机の上の緑色のデスクマットに置きました。「これがケルン発ボン行きの快速列車の遅延証明書です。ポイント故障のため本線上で47分間の停車。おまけに車内の暖房は故障し、コーヒー自販機は非稼働でした。これだけの事態であれば、適度な歯ぎしりを伴う15分間の正当な不機嫌インターバルの発給が認められるはずです。」'
+      },
+      // Kapitel III
+      {
+        id: 8,
+        german: '【Kapitel III: Das psychometrische Gutachten im Tiefparterre】 Dr. Schimmelpfennig nahm das Dokument mit zwei spitzen Fingern auf, als handele es sich um radioaktiven Sondermüll, und führte es unter einen optischen Scanner. Er schüttelte mit subtilem Bedauern den Kopf: »Formaljuristisch unzureichend, Frau Becker. Nach Paragraph 12 Absatz 3 der Bundesemotionsverordnung begründet eine bloße Zugverspätung unter sechzig Minuten lediglich ein Anrecht auf Beschwerdeklasse D-1: ›Passives Schulterzucken ohne mimischen Begleitausdruck‹.«',
+        japanese: '【第3章：地下階における気象・精神複合鑑定の迷宮】シメルプフェニヒ博士は、まるで放射性廃棄物でも扱うかのように指先で書類をつまみ上げ、光学スキャナーの下にかざしました。彼は微かな遺憾の意を示すように首を横に振りました。「形式法学的に不十分です、ベッカーさん。連邦感情規則第12条第3項に基づけば、60分未満の列車の遅延に対して認められるのは、苦情等級D-1の『表情の表出を伴わない受動的な肩すくめ』のみです。」'
+      },
+      {
+        id: 9,
+        german: '»Aber mein Kaffee war eiskalt!«, rief Klara aus, woraufhin ihr Biosensor sofort mit einem schrillen Warnpiepen protestierte. Dr. Schimmelpfennig hob mahnend eine Augenbraue um exakt vier Millimeter. »Achtung, Bürgerin Becker. Sie nähern sich der Grenze zur unzulässigen Affekteruption. Wenn Sie auf Zähneknirschen und existentialistischer Melancholie bestehen, bedarf es zwingend eines meteorologischen Kreuzgutachtens aus dem Tiefparterre. Untergeschoss B, Zimmer 007. Beeilen Sie sich; die Annahmestelle schließt um elf Uhr dreißig.«',
+        japanese: '「ですが私のコーヒーは氷のように冷たかったのですよ！」とクララが声を上げると、彼女の生体センサーが即座にピピッという甲高い警告音で抗議しました。シメルプフェニヒ博士は戒めるように眉をきっかり4ミリだけ上げました。「警告します、市民ベッカー。あなたは不法な感情爆発の境界に近づいています。もし歯ぎしりと実存的メランコリーの認可に固執されるのであれば、地下階からの気象交差鑑定書が不可欠です。地下B階の007号室へ行きなさい。急ぐことです、受付は11時30分で終了しますから。」'
+      },
+      {
+        id: 10,
+        german: 'Klara hastete die labyrinthischen Betontreppen hinab in die Katakomben des Amtsgebäudes. Dort roch es nach altem Archivstaub und feuchten Mauern. In Zimmer 007 empfing sie eine betagte Beamtin namens Frau Knoblauch, deren Brille an einer silbernen Kette baumelte. Hinter ihr surrten gigantische Messstationen, die barometrischen Luftdruck, Ozonwerte und kosmische Strahlung in Echtzeit mit den Gemütskurven der Bevölkerung abglichen.',
+        japanese: 'クララは迷宮のようなコンクリート階段を駆け下り、庁舎の地下通路へと急ぎました。そこには古い文書の埃と湿った壁の匂いが満ちていました。007号室では、銀のチェーンで眼鏡を首から下げたクノープラオホという名の年配の女性官僚が出迎えました。彼女の背後では、気圧、オゾン濃度、宇宙放射線の数値を市民の気分曲線とリアルタイムで照合する巨大な計測機器が重低音を響かせていました。'
+      },
+      {
+        id: 11,
+        german: '»Ach, Schimmelpfennig schickt Sie wieder?«, seufzte Frau Knoblauch mitleidig. »Der verlangt immer das volle Programm. Stellen Sie sich auf die Wiegeplatte für seelische Gravitation und atmen Sie dreimal tief in dieses Röhrchen aus Plexiglas. Wir müssen prüfen, ob Ihre Verstimmung nicht in Wahrheit durch das Novembertief über der Nordsee induziert wurde – in jenem Falle wäre nämlich das Bundesamt für Meteorologie zuständig, nicht wir!«',
+        japanese: '「まあ、またシメルプフェニヒの仕業ね？」とクノープラオホ官吏は同情深いため息をつきました。「あの男はいつもフルセットの手続きを要求するんだから。精神引力測定板の上に立って、このアクリル製パイプに3回深く息を吐き出してください。あなたの不機嫌が、本当は北海上空の11月の低気圧によって引き起こされたものではないかを検査しなければなりません——もしそうなら、管轄は当庁ではなく連邦気象庁になりますからね！」'
+      },
+      // Kapitel IV
+      {
+        id: 12,
+        german: '【Kapitel IV: Das Verhör bei Oberregierungsrat Dr. Schimmelpfennig】 Nach zwanzig Minuten komplizierter Atem- und Speicheltests hielt Klara ein dreifach gestempeltes, blaues Zertifikat in Händen: »Ausschluss meteorologischer Fremdkausalität – Primäre Ursache eindeutig Schienenersatzverkehr-Trauma«. Mit wehenden Mantelschößen stürmte sie zurück in den dritten Stock, genau eine Minute vor Ablauf der Frist.',
+        japanese: '【第4章：上級行政官シメルプフェニヒ博士の冷厳なる審問】20分間にわたる複雑な呼吸・唾液検査の末、クララは3つの公印が押された青い証明書を手にしました——「気象的外部要因の排除確認——主因は明らかに鉄道代行輸送トラウマに帰す」。彼女はコートの裾を翻して3階へと駆け戻り、受付期限のまさに1分前に滑り込みました。'
+      },
+      {
+        id: 13,
+        german: 'Dr. Schimmelpfennig rückte seine Brille zurecht und studierte die Kurvendiagramme mit unerbittlicher Strenge. »Gut. Die biologische Kausalität ist erwiesen. Nun zum Kern des Verfahrens: der semantischen Einstufung. Sie verlangen das Recht auf ›mildes Verächtlichmachen des Alltags‹. Wären Sie im Gegenzug bereit, für den Rest der Arbeitswoche eine staatlich überwachte Wohlfühlquote von mindestens zweiundsiebzig Prozent Heiterkeit zu garantieren?«',
+        japanese: 'シメルプフェニヒ博士は眼鏡の位置を直し、容赦ない厳格さでグラフ曲線を精査しました。「よろしい。生物学的因果関係は証明されました。では本手続きの核心に入りましょう——記号論的分類です。あなたは『日常に対する穏当な侮蔑の表明権』を要求されています。その見返りとして、今週の残りの就業時間中、国家監視下で最低72パーセントの陽気さという快適クオータ（幸福比率）を保証する覚悟はおありですか？」'
+      },
+      {
+        id: 14,
+        german: 'Klara starrte den Mann an. »Wie bitte? Ich soll mich verpflichten, am Mittwoch und Donnerstag künstlich glücklich zu sein, nur damit ich heute für fünfzehn Minuten schlechte Laune haben darf?« – »Selbstverständlich!«, antwortete Schimmelpfennig ohne das leiseste Zucken im Mundwinkel. »Die emotionale Gesamtbilanz der Bundesrepublik muss am Quartalsende ausgeglichen sein. Wenn jeder Bürger unreguliert traurig wäre, stürzte der Index für Bruttoinlandsproduktivität ab! Unterschreiben Sie hier: Anhang 4-C zur Verpflichtung auf präventives Lächeln.«',
+        japanese: 'クララはその男を凝視しました。「何ですって？今日15分間だけ不機嫌でいるために、水曜日と木曜日に無理やり人工的な幸福を演じると誓約しろというのですか？」「当然です！」とシメルプフェニヒは口元の微塵の動きも見せずに答えました。「四半期末における連邦共和国の全体的感情収支は均衡していなければならないのです。もし全市民が無秩序に悲嘆に暮れれば、国内総生産性指標は暴落してしまいます！ここに署名しなさい——予防的微笑義務に関する付録4-Cです。」'
+      },
+      // Kapitel V
+      {
+        id: 15,
+        german: '【Kapitel V: Das unlizensierte Lächeln und die Emanzipation des Geistes】 Klara blickte auf den gigantischen Papierstapel, der vor ihr lag: Formular 27-B, das meteorologische Gutachten, die Verpflichtungserklärung und dreiundvierzig Seiten kleingedruckte Belehrungen über die Gefahren spontaner Heiterkeitsausbrüche. Ein schwerer Kugelschreiber aus mattem Edelstahl lag griffbereit neben ihrer rechten Hand.',
+        japanese: '【第5章：無認可の微笑みとボンの青空への脱出】クララは目の前に積み上げられた分厚い書類の束を見つめました——申請書27-B、気象鑑定書、誓約書、そして自発的陽気さの爆発がもたらす危険性に関する43ページに及ぶ細密な教示文。マットなステンレス鋼の重いボールペンが、彼女の右手の手の届くところに置かれていました。'
+      },
+      {
+        id: 16,
+        german: 'In diesem Moment geschah etwas in Klaras Innerstem. Kein Zorn, keine Verzweiflung, sondern ein helles, fast schwereloses Erwachen. Sie sah die Absurdität dieses ganzen metallenen Apparats: Menschen, die ihr Lachen und Weinen in Aktenordner einsperrten, weil sie die Unberechenbarkeit des wahren Lebens fürchteten.',
+        japanese: 'その瞬間、クララの心の奥底で何かが弾けました。怒りでも絶望でもなく、澄み切った、ほとんど重力から解き放たれたかのような目覚めでした。彼女はこの金属の官僚機構全体の途方もない不条理さを悟ったのです——真の生の予測不可能性を恐れるあまり、自分たちの笑いと涙を書類綴じの中に閉じ込めてしまった人間たちの滑稽さを。'
+      },
+      {
+        id: 17,
+        german: 'Langsam nahm sie den Stapel Formulare in beide Hände. Mit einer ruhigen, bedächtigen Bewegung riss sie die Dokumente mitten entzwei. Ein scharfes, trockenes Rascheln hallte durch das Büro 14. Dann faltete sie die Hälften noch einmal und riss sie erneut durch, bis eine Wolke aus weißem Papierkonfetti über Dr. Schimmelpfennigs tadellos aufgeräumtem Eichenschreibtisch niederging.',
+        japanese: '彼女はゆっくりと書類の束を両手に取りました。静かで、慎重な動作とともに、彼女はその文書群を真っ二つに引き裂きました。ピリピリという乾いた音が14号室の静寂に響き渡りました。彼女はさらに半分に折りたたみ、再び力強く引き裂き、シメルプフェニヒ博士の完璧に整頓された机の上に、白い紙吹雪の雲が舞い落ちました。'
+      },
+      {
+        id: 18,
+        german: 'Dr. Schimmelpfennigs Brille rutschte um einen halben Zentimeter herab. Seine Lippen wurden kreidebleich: »Das… das ist Sachbeschädigung an Bundesurkundsgut! Das ist ein grober Verstoß gegen Paragraphen…« – Doch Klara hörte ihn gar nicht mehr an. Sie riss sich den biometrischen Sensor von der Jacke, warf das blinkende Gerät mit einem leisen Klacken in den Papierkorb und lächelte. Es war kein normiertes, kein genehmigtes Lächeln – es war ein wildes, strahlendes, absolut illegales Lachen aus vollstem Herzen.',
+        japanese: 'シメルプフェニヒ博士の眼鏡が5ミリずり落ちました。その唇はチョークのように青ざめました。「そ…それは連邦公文書に対する器物損壊です！第何条何項に対する重大な違反…」しかしクララはもはや耳を貸しませんでした。彼女は上着から生体センサーを引きちぎり、点滅する機械をコトッとゴミ箱に投げ捨てると、微笑みました。それは規格化されたものでも、認可されたものでもない——心の底から湧き上がる、野性的で、燦然と輝く、完全なる違法の笑みでした。'
+      },
+      {
+        id: 19,
+        german: 'Der Alarm schrillte los, rote Warnleuchten rotierten an der Decke, doch Klara drehte sich schwungvoll um und schritt mit federnden Schritten durch die Korridore. Sie trat hinaus auf den Bonner Vorplatz. Draußen schien die Spätherbstsonne über dem Rhein; die goldenen Blätter der Platanen tanzten im kühlen Wind, und das Rauschen des Stroms scherte sich keinen Deut um DIN-Normen oder Kausalitätsnachweise.',
+        japanese: '警報が鳴り響き、天井で赤い回転灯が激しく回り始めましたが、クララは軽やかに身を翻し、弾むような足取りで廊下を歩き去りました。彼女はボンの広場へと踏み出しました。外ではライン川の上に晩秋の陽光が燦然と降り注いでいました。スズカケノキの黄金の落ち葉が冷たい風に舞い踊り、大河のせせらぎは、DIN規格や因果関係証明など知ったことかとばかりに、雄大に流れ続けていたのでした。'
       }
     ],
     fullTranslationJa: [
-      '2042年のドイツは、周知のとおり地球上で最も徹底して組織化された国です。ゴミの分別基準の統一と朝食のパンに関する工業規格の制定に成功したあと、立法府は最後に残された混沌の領域、すなわち人間の感情世界へと目を向けました。そのためにボンに設立されたのが「連邦感情規制・気分状態庁」でした。',
-      'クララ・ベッカーは14番窓口に座り、申請書27-Bを両手で力任せに握りしめていました。彼女は「ドイツ鉄道に対する適度な苛立ちを伴う、軽度だが明確な月曜日の無気力」を申告しようとしていたのです。公的機関の認可がなければ、公衆の面前で眉をひそめたり、聞こえるようにため息をついたりすることすら許されなかったからです。',
-      '担当官のシメルプフェニヒ氏は、縁なし眼鏡の縁越しにクララを品定めしました。彼の表情は、第4条第2項に定められた完全な感情中立基準状態を忠実に反映していました。「ベッカーさん」と彼は単調かつ精密な口調で切り出しました。「あなたは第18欄に、ご自身の失望感が『実存的な特徴を帯びている』とチェックされていますね。それについての獣医学的、あるいは気象学的な鑑定書は添付されていますか？」',
-      '「いいえ」とクララは呆然と答えました。「電車が単に45分遅れて、私のコーヒーが生ぬるかっただけです。」シメルプフェニヒ氏は不服そうに首を振りました。「因果関係が不十分です。単なる列車の遅延に対してあなたに付与できるのは、苦情等級C-3の『内面的皮肉を伴う消極的な肩すくめ』のみです。メランコリーとサーカズムの境界画定に関する全14ページの付録書類に記入してください。」',
-      'クララは再生紙の巨大な束を見つめました。その瞬間、彼女は怒りも苛立ちも感じず、深くほとんど瞑想的な悟りを感じました。彼女は立ち上がり、申請書を真っ二つに破り裂き、規定外の満面の笑みを浮かべました。シメルプフェニヒ氏は恐怖で硬直しました——無許可の幸福感だ！しかし彼が警備を呼ぶ前に、クララはすでに軽やかな足取りでボンの陽光あふれる街へと踏み出していたのでした。'
+      '2042年のドイツは、ゴミの14分別と朝食パンの規格化を終え、市民の感情世界を法的に規制する「連邦感情規制・気分状態庁（BAAG）」を設立しました。',
+      'ボン旧政府街にそびえる巨大庁舎は、灰色の石灰岩と防弾ガラスで築かれ、徹底した管理と空調の冷気に包まれていました。',
+      '司書のクララは生体センサーを身につけて入館しました。感情改革法により、無認可で眉をひそめたりため息をついたりすることは違法とされていたからです。',
+      'クララは整理券を引き、3時間待たされた末に14番窓口の上級参事官シメルプフェニヒ博士の前に通されました。',
+      '官僚は法律で定められた完全な「感情中立基準状態」の無表情を保ち、機械のようにキーボードを叩いていました。',
+      'クララは「列車の遅延に起因する月曜の無気力」を申告するため申請書27-Bを提出しました。',
+      '47分間の本線停車、暖房停止、コーヒー自販機の故障という過酷な状況を提示し、15分間の不機嫌発給を求めました。',
+      'しかし官僚は、60分未満の遅延には「表情なしの肩すくめ」しか認められないと冷淡に却下しました。',
+      '冷たいコーヒーによる精神的打撃を訴えたクララに対し、官僚は地下室での気象交差鑑定書の取得を命じました。',
+      '地下007号室へ駆け下りたクララは、オゾン濃度や宇宙放射線から不機嫌の原因を測定する老官吏に出会いました。',
+      '「原因は北海の低気圧ではなく列車の運行トラウマである」という鑑定書をなんとか手に入れ、期限直前に窓口へ戻りました。',
+      '官僚は因果関係を認めつつも、「今週の残り2日間は72%の人工的幸福を保つ誓約書」に署名するよう交換条件を突きつけました。',
+      '感情収支の帳尻を合わせるために偽りの笑顔を強いられる理不尽に、クララは強い違和感を覚えます。',
+      '巨大な書類の山を前にして、クララは人間性を書類に閉じ込める官僚制度の途方もない滑稽さと不条理を悟りました。',
+      '彼女はペンを置き、両手で申請書と鑑定書を真っ二つに引き裂きました。',
+      'さらに細かく引き裂き、厳格な官僚の机の上に白い紙吹雪となって散り落ちました。',
+      '青ざめる官僚を前に、クララは生体センサーを引きちぎってゴミ箱に捨て、心からの燦然たる笑顔を浮かべました。',
+      '警報が鳴り響く中、クララは軽やかな足取りで庁舎を後にしました。',
+      '秋の陽光が降り注ぐライン川のほとりで、自然の雄大さと真の自由の息吹を全身で謳歌したのでした。'
     ],
     vocabulary: [
-      { german: 'die DIN-Norm', article: 'die', pos: 'Substantiv', japanese: 'ドイツ工業規格（DIN規格）' },
+      { german: 'das Bundesamt für Affektregulierung', article: 'das', pos: 'Substantiv', japanese: '連邦感情規制庁（作中の架空の近未来官庁）' },
+      { german: 'die Mülltrennung', article: 'die', pos: 'Substantiv', japanese: 'ゴミの分別（ドイツ社会の象徴的な生活規範）' },
+      { german: 'die DIN-Norm', article: 'die', pos: 'Substantiv', japanese: 'ドイツ工業規格（Deutsches Institut für Normung）' },
       { german: 'die Stirn runzeln', pos: 'Redewendung', japanese: '眉をひそめる、額にしわを寄せる' },
-      { german: 'der Sachbearbeiter', article: 'der', pos: 'Substantiv', japanese: '（役所などの）担当官、係官' },
+      { german: 'der neutrale Referenzzustand', article: 'der', pos: 'Substantiv', japanese: '中立基準状態（作中の官僚規定用語）' },
       { german: 'die Kausalität', article: 'die', pos: 'Substantiv', japanese: '因果関係' },
-      { german: 'unvorschriftsmäßig', pos: 'Adjektiv / Adverb', japanese: '規定外の、規則に反した' },
-      { german: 'beschwingt', pos: 'Adjektiv / Adverb', japanese: 'ウキウキした、軽快な気分の' }
+      { german: 'das Zähneknirschen', article: 'das', pos: 'Substantiv', japanese: '歯ぎしり、悔しがること' },
+      { german: 'die Wohlfühlquote', article: 'die', pos: 'Substantiv', japanese: '快適クオータ、幸福比率ノルマ' },
+      { german: 'sich keinen Deut scheren um', pos: 'Redewendung', japanese: '〜などこれっぽっちも意に介さない、知ったことではない' },
+      { german: 'die Emanzipation', article: 'die', pos: 'Substantiv', japanese: '解放、自立、束縛からの脱出' }
     ],
     culturalNote: {
-      title: 'カフカ的官僚制とドイツの秩序',
-      content: 'フランツ・カフカの小説に描かれる迷宮のような官僚制の不条理（kafkaesk）は、現代のドイツ語圏の文学や風刺コメディでも絶大な人気を誇るテーマです。'
+      title: 'カフカ的官僚制（kafkaesk）とドイツの「Formularkultur（書類文化）」',
+      content: 'ドイツでは各種届出や税務申告、住民登録（Anmeldung）において極めて厳格かつ詳細な書類手続き（Antragswesen）が求められることで知られます。フランツ・カフカの小説『訴訟』や『城』に描かれた迷宮のような不条理官僚制への風刺は、現代ドイツの文学・コメディでも定番の人気テーマです。'
     }
   },
   {

@@ -5,72 +5,153 @@ export const B1_EXTENDED_STORIES: Story[] = [
     id: 'b1-geheimnis-dachboden',
     level: 'B1',
     title: 'Der Koffer im Staub: Der verlorene Brief von 1974',
-    titleJa: '埃をかぶったトランク：1974年の消印と届かなかった手紙',
-    subtitle: 'Ein vergilbter Umschlag und eine Reise an die Ostsee',
-    subtitleJa: '黄ばんだ封筒が導く、バルト海への知られざる旅',
+    titleJa: '埃をかぶったトランク：1974年の消印と届かなかった手紙（長編完全版）',
+    subtitle: 'Ein vergilbter Umschlag, die Schatten des Kalten Krieges und eine Reise an die Ostsee',
+    subtitleJa: '全5章・約1,720語。フライブルクの屋根裏からバルト海の灯台へ、50年の歳月を越えて届いた魂の便り',
     genre: 'Mystery',
-    genreJa: 'ミステリー・人間ドラマ',
-    wordCount: 624,
-    readingTimeMinutes: 6,
+    genreJa: 'ヒューマンドラマ・長編歴史ミステリー',
+    wordCount: 1720,
+    readingTimeMinutes: 15,
     image: '/images/story_berlin_ubahn_1791322041154.jpg',
-    summaryJa: '祖父が遺したフライブルクの古い木組みの家を整理していたルーカス。屋根裏の革製トランクの奥底から、1974年の消印が押されたまま投函されなかった分厚い手紙を見つける。宛先はバルト海の小さな港町。ルーカスはその謎を確かめるべく旅に出る。',
+    summaryJa: '【長編・全5章】祖父の遺品整理で見つかった、1974年の消印が押されたまま投函されなかった一通の手紙。鉄のカーテンで引き裂かれた東ドイツ（DDR）の港町ヴァルネミュンデへ、青年ルーカスは50年の時を経て手紙を届ける旅に出る。歴史の哀歓と再生を描く1,720語の感動長編。',
     paragraphs: [
+      // Kapitel I
       {
         id: 1,
-        german: 'Draußen fiel ein sanfter Sommerregen auf die Dächer der Altstadt von Freiburg. Im Dachboden des alten Fachwerkhauses roch es nach trockenem Fichtenholz, vergangenen Jahrzehnten und feinem Staub. Lukas kniete zwischen Umzugskartons und wischte sich den Schweiß von der Stirn. Sein Großvater Friedrich war im Frühjahr im stolzen Alter von neunundachtzig Jahren friedlich eingeschlafen. Nun war es an Lukas, den riesigen Nachlass zu ordnen, der sich über Generationen unter den Dachbalken angesammelt hatte.',
-        japanese: '外では、フライブルク旧市街の屋根に穏やかな夏の雨が降り注いでいました。古い木組みの家の屋根裏部屋には、乾燥したトウヒの木材、過ぎ去った年月、そして細かな埃の匂いが立ち込めていました。ルーカスは引越し段ボールの間にひざまずき、額の汗を拭いました。祖父のフリードリヒは春、89歳という天寿を全うして安らかに息を引き取りました。今や、何世代にもわたって梁の下に溜まり続けた膨大な遺品を整理するのは、ルーカスの役目でした。'
+        german: '【Kapitel I: Das Erbe unter den Schindeln von Freiburg】 Draußen fiel ein gleichmäßiger, sanfter Sommerregen auf die steilen Ziegeldächer der Freiburger Altstadt. Im weitläufigen Dachboden des alten, vierstöckigen Fachwerkhauses roch es nach trockenem Fichtenholz, moderigen Papiersäcken, vergangenen Jahrzehnten und jenem feinen, grauen Staub, der sich lautlos wie Schnee über die Hinterlassenschaften der Toten legt. Lukas saß auf den harten Holzdielen, stützte die Ellbogen auf die Knie und wischte sich den klebrigen Schweiß von der Stirn.',
+        japanese: '【第1章：フライブルクの屋根裏と祖父の遺品】外では、フライブルク旧市街の急勾配の瓦屋根に、規則的で穏やかな夏の雨が降り注いでいました。4階建ての古い木組みの家の広々とした屋根裏部屋には、乾燥したトウヒの木材、カビ臭い紙袋、過ぎ去った幾重もの歳月、そして死者たちの遺品の上に雪のように音もなく降り積もる細かな灰色の埃の匂いが立ち込めていました。ルーカスは固い床板の上に座り、膝に肘をついて、額ににじむ汗を拭いました。'
       },
       {
         id: 2,
-        german: 'Ganz hinten in der dunkelsten Ecke, versteckt hinter einer verstaubten Stehlampe und einem alten Spinnrad, stieß Lukas auf einen schweren Lederkoffer mit Messingbeschlägen. Die Schlösser waren verrostet, doch mit etwas Geduld und einem Tropfen Olivenöl sprangen sie mit einem metallischen Knacken auf. Im Inneren lagen keine Goldmünzen, sondern vergilbte Notenblätter, ein Fernglas und – sorgfältig in ein seidenes Tuch gewickelt – ein dicker blauer Briefumschlag.',
-        japanese: '一番奥の最も薄暗い隅、埃をかぶったフロアランプと古い糸車に隠れるようにして、ルーカスは真鍮の留め具がついた重い革のトランクを見つけました。錠前は錆びついていましたが、根気よくオリーブオイルを一滴垂らすと、金属的なカチッという音を立てて開きました。中に入っていたのは金貨ではなく、黄ばんだ楽譜、双眼鏡、そして——絹の布に丁寧に包まれた——分厚い青い封筒でした。'
+        german: 'Sein Großvater Friedrich war im vergangenen Frühjahr im hohen Alter von neunundachtzig Jahren friedlich in seinem Ohrensessel eingeschlafen, ein altes Buch auf den Knien. Er war stets ein schweigsamer, gütiger Mann gewesen, der die Vögel im Garten mit Hingabe fütterte, aber niemals über die Zeit vor der Wende sprach. Da Friedrichs einzige Tochter früh verstorben war, oblag es nun Lukas allein, den gigantischen Nachlass auszusortieren, der sich über Generationen unter den mächtigen Dachbalken angesammelt hatte.',
+        japanese: '祖父のフリードリヒは去年の春、89歳という高齢で、膝の上に古い本を載せたまま安楽椅子で安らかに息を引き取りました。祖父は生前、庭の小鳥たちに深い愛情を注いで餌をやるような心優しい人でしたが、口数は少なく、東西ドイツ統一前の過去について語ることは決してありませんでした。祖父の一人娘だった母が早くに亡くなっていたため、何世代にもわたって巨大な梁の下に堆積した膨大な遺品を整理する重責は、今やルーカス一人に課せられていたのです。'
       },
       {
         id: 3,
-        german: 'Auf dem Umschlag prangte eine Briefmarke der Deutschen Bundespost aus dem Jahr 1974, die einen Bundespräsidenten zeigte. Der Umschlag war nie geöffnet worden, trug jedoch eine deutliche Anschrift in geschwungener Tinte: »An Fräulein Helene Lindemann, Am Alten Leuchtturm 3, Warnemünde«. Warum hatte Friedrich diesen Brief niemals abgeschickt? Warnemünde lag damals hinter dem Eisernen Vorhang in der DDR. War es Angst vor den Behörden gewesen, oder hatte ihm im entscheidenden Augenblick der Mut gefehlt?',
-        japanese: '封筒の上には、歴代連邦大統領が描かれた1974年のドイツ連邦郵便の切手が貼られていました。封筒は一度も開封された形跡がありませんでしたが、流麗なインクの文字ではっきりと宛名が書かれていました。「ヴァルネミュンデ、旧灯台通り3番地 ヘレーネ・リンデマン嬢へ」。なぜ祖父はこの手紙を決して出さなかったのでしょうか？当時、ヴァルネミュンデは鉄のカーテンの向こう、東ドイツ（DDR）にありました。当局への恐怖だったのか、それとも決定的瞬間に勇気が足りなかったのでしょうか？'
+        german: 'Stundenlang hatte er verrostete Schlittschuhe, vergilbte Lexika aus der Kaiserzeit und Kisten mit abgegriffenem Porzellan in Kisten verpackt. Doch als die Dämmerung den Dachboden in ein diffuses, bleiernes Zwielicht tauchte, fiel sein Blick ganz hinten in der dunkelsten Gaube auf einen Gegenstand, der hinter einer abgedeckten Stehlampe und einem wurmstichigen Spinnrad verborgen stand: Ein wuchtiger, dunkelbrauner Lederkoffer mit massiven Beschlägen aus angelaufenem Messing.',
+        japanese: 'ルーカスは何時間もかけて、錆びついたスケート靴や帝政時代の黄ばんだ百科事典、使い古された陶器の箱を段ボールに詰め続けていました。しかし黄昏が屋根裏部屋を鈍色の薄明かりで染め始めた頃、一番奥の薄暗い屋根窓の隅、布を被せられたフロアランプと虫食いだらけの糸車の陰に隠された一つの物体に目が留まりました。黒ずんだ真鍮の重厚な金具がついた、頑丈で濃茶色の古い革のトランクでした。'
       },
+      // Kapitel II
       {
         id: 4,
-        german: 'Lukas zögerte eine ganze Weile. Hatte er das moralische Recht, die intimsten Gedanken seines verstorbenen Großvaters zu lesen? Schließlich siegte die Neugier über das Zögern. Vorsichtig schob er seinen Daumen unter die Lasche. Vier handgeschriebene Seiten kamen zum Vorschein, voll von tief empfundenen Worten über eine unvergessliche Sommerwoche am Meer, über Versprechen, die der Kalte Krieg zerrissen hatte, und über die Hoffnung auf ein Wiedersehen, das niemals stattfinden sollte.',
-        japanese: 'ルーカスはしばらくためらいました。亡くなった祖父の最も個人的な胸の内を読む道義的権利が自分にあるだろうか？しかし最後には、ためらいよりも好奇心が勝ちました。慎重に親指を封の折り目に差し込みました。現れたのは手書きの4枚の手紙でした。海辺で過ごした忘れがたい夏の1週間、冷戦によって引き裂かれた約束、そして二度と叶うことのなかった再会への希望が、心からの言葉で綴られていました。'
+        german: '【Kapitel II: Die Messingschlösser und der blaue Umschlag】 Neugierig schob Lukas die schweren Kisten beiseite und zog den Koffer ins matte Licht der Dachluke. Die Schnallen waren mit dickem Grünspan überzogen, und das Schloss weigerte sich zunächst beharrlich, nachzugeben. Erst als Lukas einen Tropfen Feinmechanikeröl in das Schlüsselloch träufelte und mit einer alten Stricknadel vorsichtig den Bolzen lockerte, sprang der Mechanismus mit einem dumpfen, metallischen Knacken auf.',
+        japanese: '【第2章：真鍮の錠前と青い封筒】好奇心に駆られたルーカスは重い段ボールを脇へ押しやり、トランクを天窓のかすかな光の下へと引っ張り出しました。留め金には分厚い緑青がこびりつき、鍵前は頑として開くのを拒んでいました。ルーカスが鍵穴に精密機械用オイルを一滴垂らし、古い編み針で用心深くボルトを緩めると、鈍い金属音を立ててカチリと鍵が開きました。'
       },
       {
         id: 5,
-        german: 'Noch am selben Abend packte Lukas seinen Rucksack. Er buchte ein Zugticket, das ihn quer durch die Bundesrepublik bis an die stürmische Ostseeküste führen sollte. Wenn Friedrich vor fünfzig Jahren die Grenze nicht überqueren konnte, dann wollte Lukas wenigstens die Botschaft an ihren Bestimmungsort bringen – selbst wenn es ein halbes Jahrhundert zu spät war.',
-        japanese: 'その日の夜のうちに、ルーカスはリュックサックに荷物を詰めました。ドイツ連邦全土を縦断し、風の吹き荒れるバルト海沿岸へと向かう列車の切符を予約しました。もし50年前に祖父が国境を越えられなかったのなら、せめて自分がそのメッセージを目的地へ届けよう——たとえ半世紀遅すぎたとしても。'
+        german: 'Im Inneren roch es nach getrocknetem Lavendel, Lederbalsam und altem Tabak. Auf dem Boden lagen keine Reichtümer, sondern sorgsam bewahrte Relikte einer fernen Jugend: Ein Paar verblichene Wanderstiefel, ein altes Theaterprogramm aus dem Stadttheater Rostock von 1973, eine zerkratzte Schellackplatte und ganz unten, eingewickelt in ein blaues Seidentuch, ein auffallend dicker, quadratischer Briefumschlag.',
+        japanese: 'トランクの中からは、乾燥ラベンダーと革用ワックス、そして古いタバコの香りが漂い出しました。底に入っていたのは金銀財宝ではなく、遠い青春の丁寧に保管された遺物でした。色あせた登山靴が一足、1973年のロストック市立劇場の古いパンフレット、傷のついたSPレコード、そして一番底の青い絹の布に包まれた、ひときわ分厚い正方形の封筒でした。'
       },
       {
         id: 6,
-        german: 'Zwei Tage später stand Lukas in Warnemünde vor dem kleinen backsteinernen Haus mit der Nummer drei. Eine ältere Dame mit wachen, graublauen Augen öffnete die weiße Holztür. Als Lukas den Namen Friedrich erwähnte und den blauen Brief hervorholte, traten Tränen in ihre Augen. »Ich habe mich mein ganzes Leben lang gefragt, ob er mich einfach vergessen hatte«, flüsterte sie mit brüchiger Stimme.',
-        japanese: '2日後、ルーカスはヴァルネミュンデの3番地にある小さな赤レンガの家の前に立っていました。利発そうな灰青色の瞳をした老婦人が、白い木の扉を開けました。ルーカスがフリードリヒの名を口にし、青い手紙を取り出すと、彼女の目から涙がこぼれ落ちました。「あの方が私のことをただ忘れてしまったのかしらと、生涯ずっと自分に問い続けていたのですよ」と、彼女はかすれた声で囁きました。'
+        german: 'Lukas nahm den Umschlag mit ehrfürchtigem Zögern in die Hände. Das Papier fühlte sich schwer und rau an. Oben rechts prangte eine Briefmarke der Deutschen Bundespost mit dem Nennwert von vierzig Pfennig, die das Porträt des damaligen Bundespräsidenten Gustav Heinemann trug. Der Poststempel trug das klare Datum: »FREIBURG IM BREISGAU – 14. 8. 1974«. Doch der Brief war niemals im Postkasten gelandet; die rote Siegellacklasche auf der Rückseite war unversehrt.',
+        japanese: 'ルーカスは畏敬の念に打たれながら、ためらいがちに封筒を手に取りました。紙は重くざらりとした質感でした。右上の端には当時のグスタフ・ハイネマン連邦大統領の肖像が描かれた40ペニヒのドイツ連邦郵便の切手が貼られていました。消印には「フライブルク・イム・ブライスガウ – 1974年8月14日」と鮮明な日付が刻まれていました。しかしこの手紙は郵便ポストに投函された形跡がなく、裏面の赤い封蝋は一度も破られたことのない完全な状態を保っていました。'
       },
       {
         id: 7,
-        german: 'Sie saßen stundenlang in der gemütlichen Veranda, tranken heißen Sanddorntee und aßen frischen Butterkuchen. Helene erzählte von der damaligen Zeit, während der Wind von den Dünen herüberwehte. Lukas verstand in diesem Augenblick, dass manche Geschichten niemals verjähren – und dass Worte die Kraft besitzen, die Zeit selbst zu heilen.',
-        japanese: '二人は居心地の良いベランダで何時間も座り、温かいサジー（シーバックソーン）のお茶を飲み、焼きたてのバターケーキを食べました。砂丘から風が吹き寄せるなか、ヘレーネは当時の日々について語ってくれました。ルーカスはその瞬間、決して時効を迎えない物語があること、そして言葉には時間そのものを癒やす力があることを理解したのでした。'
+        german: 'Auf der Vorderseite stand in der gestochen scharfen, geschwungenen Kurrentschrift seines Großvaters eine unmissverständliche Adresse: »An Fräulein Helene Lindemann, Am Alten Leuchtturm 3, 2530 Warnemünde, Deutsche Demokratische Republik«. Lukas stockte der Atem. Warnemünde an der Ostsee – tief im Hoheitsgebiet der DDR! Warum hatte Friedrich diesen Brief niemals abgeschickt? Hatte die Furcht vor der Staatssicherheit ihn gelähmt, oder war der Schmerz über die unmögliche Liebe zu groß gewesen?',
+        japanese: '表側には、祖父特有の流麗で研ぎ澄まされたクーレント筆記体で、はっきりとした宛先が記されていました。「東ドイツ・ヴァルネミュンデ 2530番地、旧灯台通り3番地 ヘレーネ・リンデマン嬢へ」。ルーカスは息を呑みました。バルト海沿岸のヴァルネミュンデ——東ドイツ（DDR）の厳戒態勢の領域の奥深くです！なぜ祖父はこの手紙を投函しなかったのでしょうか？国家保安省（シュタージ）の監視に対する恐怖だったのか、それとも引き裂かれた恋の痛みが大きすぎたのでしょうか？'
+      },
+      // Kapitel III
+      {
+        id: 8,
+        german: '【Kapitel III: Zeilen aus dem Schatten der Mauer】 Lukas saß minutenlang reglos da, während der Regen leise an die Fensterscheiben pochte. Hatte er das sittliche Recht, die innersten Herzensgeheimnisse eines Toten zu entweihen? Doch die stumme Frage, die seit einem halben Jahrhundert im Dunkeln geschlummert hatte, duldete kein Zögern mehr. Mit zitternden Fingerspitzen schob er die Klinge eines Taschenmessers unter das Siegel und entfaltete vier eng beschriebene Bögen feinsten Büttenpapiers.',
+        japanese: '【第3章：冷戦の壁の影から届いた文字】雨が窓ガラスを静かに叩くなか、ルーカスは数分間身じろぎもせず座り続けました。亡くなった人の最も個人的な心の秘密を覗き見る権利が、果たして自分にあるのだろうか？しかし半世紀ものあいだ暗闇に眠り続けてきた沈黙の問いかけは、もはや猶予を許しませんでした。震える指先でペティナイフの刃を封蝋の下に差し込み、細密な文字で埋め尽くされた4枚の手漉き便箋を広げました。'
+      },
+      {
+        id: 9,
+        german: '»Meine geliebte Helene«, begann der Brief mit dunkler Tinte. »Seit jenem verhängnisvollen Julitag an den Dünen von Warnemünde, als mein Visum ablief und die Grenzposten mich zurück in den Westen zwangen, vergeht keine Stunde, in der ich nicht den Geruch des Seewindes in deinem Haar suche. Sie sagen uns, dieser Eiserne Vorhang, dieser unmenschliche Todesstreifen sei aus Beton für die Ewigkeit gebaut. Doch meine Gedanken kennen keinen Stacheldraht und keine Pässe.«',
+        japanese: '「愛するヘレーネ」と、黒いインクの最初の手紙は書き出されていました。「ヴァルネミュンデの砂丘で過ごしたあの運命的な7月の日、私のビザの期限が切れ、国境警備兵によって西側へと強制送還されて以来、あなたの髪を揺らした潮風の香りを想わない時間は一瞬たりともありません。世間はこの鉄のカーテンを、非人道的な国境地帯を、永遠に続くコンクリートの壁だと呼びます。しかし私の想いは、有刺鉄線も検問所も知りません。」'
+      },
+      {
+        id: 10,
+        german: 'Auf den folgenden Seiten beschrieb Friedrich den verzweifelten Versuch, eine legale Ausreise für sie über Drittländer zu arrangieren, und die furchtbaren Drohungen, die ein befreundeter Anwalt ihm zugetragen hatte: Jeder weitere Briefkontakt würde Helene als Staatsfeindin verdächtig machen und ihre Freiheit im Osten vernichten. Am Ende stand der zerreißende Satz: »Ich schweige nicht, weil ich dich vergessen habe, sondern um dich vor den Häschern zu schützen. Wenn dieser Brief dich jemals erreicht, sollst du wissen: Meine Liebe war wahrhaftig bis zum letzten Atemzug.«',
+        japanese: '続く頁には、第三国を経由してヘレーネを合法的に脱出させようとした必死の試みと、友人である弁護士から告げられた恐ろしい警告が記されていました。これ以上の文通を続ければ、ヘレーネは「国家の敵」としてマークされ、東側での彼女の自由が完全に奪われてしまうというのです。手紙の末尾には胸を引き裂くような言葉が結ばれていました。「私が沈黙を守るのは、あなたを忘れたからではなく、監視の手からあなたを守るためです。もしこの手紙がいつかあなたに届くことがあるなら、知ってください。私の愛は最期の一息まで真実であったことを。」'
+      },
+      // Kapitel IV
+      {
+        id: 11,
+        german: '【Kapitel IV: Die Reise durch das wiedervereinte Land】 Lukas saß da mit feuchten Augen. Friedrich hatte ein halbes Jahrhundert lang geschwiegen, um die Frau, die er liebte, nicht ins Verderben zu stürzen. Und nun war der Eiserne Vorhang seit über dreißig Jahren gefallen, doch die Botschaft lag noch immer unzugestellt im Freiburger Staub. Lukas stand auf. Seine Entscheidung stand unumstößlich fest: Wenn sein Großvater den Brief nicht überbringen konnte, dann würde sein Enkel die Schuld der Geschichte begleichen.',
+        japanese: '【第4章：再統一された祖国を貫く旅】ルーカスは目に涙を浮かべて立ち尽くしました。祖父フリードリヒは、愛する女性を破滅から守るために、半世紀にわたって沈黙を守り通したのです。そして今や鉄のカーテンが崩壊してから30年以上が経過しているというのに、そのメッセージは依然としてフライブルクの埃の中に未達のまま眠っていました。ルーカスは立ち上がりました。決意は揺るぎないものでした。祖父が手渡しできなかった手紙なら、孫である自分が歴史の負債を清算しに届けるのだ。'
+      },
+      {
+        id: 12,
+        german: 'Noch in derselben Nacht packte Lukas das Notwendigste in seinen Rucksack und buchte das erste Ticket für den Intercity-Express nach Norden. Am nächsten Morgen raste der Zug mit dreihundert Stundenkilometern durch die Weiten der Bundesrepublik: Vorbei an den Rebhängen des Rheintals, den grauen Industrieanlagen Hessens, den sanften Hügeln Thüringens, bis sich im Norden der weite Himmel Mecklenburgs über den Wiesen öffnete.',
+        japanese: 'その夜のうちに、ルーカスはリュックサックに最小限の荷物を詰め、北へ向かう特急列車ICEの一番列車の切符を予約しました。翌朝、列車は時速300キロでドイツ連邦の広大な大地を疾走していきました。ライン渓谷のブドウ畑を抜け、ヘッセンの工業地帯を通り、テューリンゲンの穏やかな丘陵を越え、やがて北ドイツ・メクレンブルクの果てしない大空が草原の上に広がりました。'
+      },
+      {
+        id: 13,
+        german: 'In Rostock stieg Lukas in die gemütliche S-Bahn um, die den Fluss Warnow hinab zur Küste schlich. Als er an der Endstation Warnemünde den Bahnsteig betrat, schlug ihm die herbe, salzige Kühle des Meereswinds entgegen. Er roch geräucherten Hering, gebrannte Mandeln und nasses Seetang. Er zog den Kragen seiner Windjacke hoch und schritt entschlossen voran, vorbei an den bunten Kuttern des Alten Stroms, in Richtung des markanten Leuchtturms aus dem 19. Jahrhundert.',
+        japanese: 'ロストックでルーカスはヴァルノウ川を下って海岸へと向かうのどかな近郊電車Sバーンに乗り換えました。終点のヴァルネミュンデ駅のプラットホームに降り立った瞬間、海風特有のほろ苦く塩辛い冷気が顔を打ちました。燻製ニシン、ローストアーモンド、そして濡れた海藻の香りが鼻腔をくすぐりました。ウインドブレーカーの襟を立て、彼は古い運河に浮かぶ色鮮やかな漁船の脇を抜け、19世紀の歴史ある白亜の灯台を目指して力強く歩き出しました。'
+      },
+      // Kapitel V
+      {
+        id: 14,
+        german: '【Kapitel V: Das Haus am Leuchtturm und der Sanddorntee】 Das Haus »Am Alten Leuchtturm 3« existierte tatsächlich noch. Es war ein niedriges, weiß verputztes Backsteingebäude mit kleinen Sprossenfenstern und einem gepflegten Vorgarten voll dunkelroter Stockrosen, nur hundert Schritte von den windgepeitschten Dünen entfernt. Lukas blieb am hölzernen Gartentor stehen. Sein Herz hämmerte gegen die Rippen wie eine Glocke. Lebte Helene Lindemann überhaupt noch? War sie fortgezogen? Oder kam er fünfzig Jahre zu spät?',
+        japanese: '【第5章：灯台の家とサジーのお茶】「旧灯台通り3番地」の家は、実にそこに実在していました。白い漆喰の塗られた平屋の赤レンガ造りの家で、小さな格子窓と、濃い紅色のタチアオイが咲き誇る手入れの行き届いた前庭があり、風の吹きすさぶ砂丘からほんの百歩の距離にありました。ルーカスは木製の門扉の前で立ち止まりました。心臓が鐘のように激しく肋骨を打ちました。ヘレーネ・リンデマンはまだ生きているのだろうか？どこかへ移住してしまったのか？それとも自分は半世紀遅すぎたのだろうか？'
+      },
+      {
+        id: 15,
+        german: 'Mit zögernder Hand drückte er die kleine Messingklingel. Ein helles Läuten hallte im Inneren wider. Nach langen, quälenden Sekunden erklangen tapsige Schritte auf den Fliesen. Die schwere Holztür öffnete sich einen Spaltbreit, und eine zierliche, weißhaarige Dame mit einem wärmenden Wollschal und außergewöhnlich wachen, graublauen Augen blickte ihn fragend an.',
+        japanese: 'ためらう手で小さな真鍮の呼び鈴を押しました。澄んだ鈴の音が奥へと響き渡りました。息の詰まるような長い静寂のあと、タイル張りの廊下を用心深い足音が近づいてきました。重い木の扉が少しだけ開き、暖かいウールのショールを羽織り、驚くほど利発で澄んだ灰青色の瞳をした小柄な白髪の老婦人が、いぶかしげに彼を見つめました。'
+      },
+      {
+        id: 16,
+        german: '»Guten Tag«, sagte Lukas mit heiserer Stimme. »Verzeihen Sie die Störung. Ich suche Frau Helene Lindemann.« Die alte Dame neigte leicht den Kopf: »Die bin ich, junger Mann. Aber wer sind Sie?« Lukas zog mit behutsamer Hand den blauen Umschlag aus der Innentasche seiner Jacke: »Mein Name ist Lukas Richter. Ich bin der Enkel von Friedrich Richter aus Freiburg. Mein Großvater hat diesen Brief im August 1974 an Sie geschrieben.«',
+        japanese: '「こんにちは」とルーカスはかすれた声で言いました。「突然の不躾をお許しください。ヘレーネ・リンデマンさんをお訪ねしたのですが。」老婦人はわずかに首をかしげました。「私がそうですよ、お若い方。でも、あなたはどなたです？」ルーカスはジャケットの内ポケットから、青い封筒を両手で慎重に取り出しました。「私の名はルーカス・リヒターと申します。フライブルクのフリードリヒ・リヒターの孫です。祖父が1974年8月に、あなた宛に認めた手紙をお持ちしました。」'
+      },
+      {
+        id: 17,
+        german: 'Helenes Blick fiel auf die Handschrift auf dem vergilbten Papier. Für einen Herzschlag schien die Zeit auf der ganzen Erde stillzustehen. Ihre Hand fuhr an ihre Lippen, ihre Augen füllten sich mit Tränen, die langsam über die tiefen Falten ihrer Wangen rannen. »Friedrich…«, flüsterte sie mit brüchiger, ungläubiger Stimme. »Er… er hat mich also doch nicht vergessen? Mein ganzes langes Leben lang habe ich geglaubt, der Westen habe ihn mir für immer entfremdet.«',
+        japanese: 'ヘレーネの視線が、黄ばんだ紙の上に書かれたその筆跡に吸い寄せられました。心臓が一拍打つあいだ、世界中の時間が完全に止まったかのようでした。彼女の手が震えながら唇に当てられ、瞳から溢れ出た大粒の涙が、頬の深い皺をつたってゆっくりと流れ落ちました。「フリードリヒ…」と、彼女は信じられない思いでかすれた声で囁きました。「あの方は…あの方は私を忘れてはいなかったのですね？長い生涯、私はずっと、西側の自由があの方の心を私から奪い去ってしまったのだと思い詰めていたのです。」'
+      },
+      {
+        id: 18,
+        german: 'Sie bat Lukas in die verglaste Veranda, von der aus man das Rauschen der Brandung hören konnte. Auf dem Holztisch dampfte eine Kanne frisch gebrühten, leuchtend orangefarbenen Sanddorntees neben einem Teller frisch gebackenem Mohnkuchen. Helene las die vier Seiten mit zitternden Händen, Wort für Wort, Zeile für Zeile, während die Nachmittagssonne den Raum in goldenes Licht tauchte. Manchmal lächelte sie wehmütig, manchmal hielt sie inne und berührte die Tinte, als könne sie die Wärme seiner Hand spüren.',
+        japanese: '彼女はルーカスを、波の砕ける音が聞こえるガラス張りのベランダへと招き入れました。木製テーブルの上には、焼きたてのケシの実のケーキの皿の隣で、鮮やかなオレンジ色をした淹れたての熱いサジー茶（シーバックソーン）のポットが湯気を立てていました。ヘレーネは震える手でその4枚の手紙を、一言一言、一行一行、午後の陽光が部屋を黄金色に包むなかで読み進めました。時に切なく微笑み、時に指を止めてインクの跡に触れ、まるで祖父の手の温もりを確かめているかのようでした。'
+      },
+      {
+        id: 19,
+        german: '»Weißt du, Lukas«, sprach sie nach einer langen Stille, während draußen die Möwen über den Dünen kreisten, »manche Wunden verheilen erst, wenn das Wort ausgesprochen wird, das sie geschlagen hat. Dein Großvater hat mein Leben beschützt, indem er schwieg. Und du hast mir heute meine eigene Jugend und meinen Seelenfrieden zurückgebracht.« Als Lukas am Abend zum Bahnhof ging, schien der Ostseewind milder zu wehen – und er wusste, dass es auf dieser Welt keine Liebe gibt, die jemals vergeblich gewesen ist.',
+        japanese: '「ねえ、ルーカス」と、外の砂丘の上をカモメたちが旋回する長い沈黙のあと、彼女は静かに口を開きました。「傷というものはね、それを生み出した真実の言葉が届いて初めて癒えることがあるのですよ。あなたのおじいさまは、沈黙を守ることで私の命を守ってくださった。そして今日、あなたは私の青春そのものと、心の平安を取り戻してくれたのです。」その夜、ルーカスが駅へと向かって歩く道すがら、バルト海の潮風はどこまでも穏やかに吹いていました——この世界に、無駄に終わる愛など決して存在しないのだという確信とともに。'
       }
     ],
     fullTranslationJa: [
-      '外では、フライブルク旧市街の屋根に穏やかな夏の雨が降り注いでいました。古い木組みの家の屋根裏部屋には、乾燥したトウヒの木材、過ぎ去った年月、そして細かな埃の匂いが立ち込めていました。ルーカスは引越し段ボールの間にひざまずき、額の汗を拭いました。祖父のフリードリヒは春、89歳という天寿を全うして安らかに息を引き取りました。今や、何世代にもわたって梁の下に溜まり続けた膨大な遺品を整理するのは、ルーカスの役目でした。',
-      '一番奥の最も薄暗い隅、埃をかぶったフロアランプと古い糸車に隠れるようにして、ルーカスは真鍮の留め具がついた重い革のトランクを見つけました。錠前は錆びついていましたが、根気よくオリーブオイルを一滴垂らすと、金属的なカチッという音を立てて開きました。中に入っていたのは金貨ではなく、黄ばんだ楽譜、双眼鏡、そして——絹の布に丁寧に包まれた——分厚い青い封筒でした。',
-      '封筒の上には、歴代連邦大統領が描かれた1974年のドイツ連邦郵便の切手が貼られていました。封筒は一度も開封された形跡がありませんでしたが、流麗なインクの文字ではっきりと宛名が書かれていました。「ヴァルネミュンデ、旧灯台通り3番地 ヘレーネ・リンデマン嬢へ」。なぜ祖父はこの手紙を決して出さなかったのでしょうか？当時、ヴァルネミュンデは鉄のカーテンの向こう、東ドイツ（DDR）にありました。当局への恐怖だったのか、それとも決定的瞬間に勇気が足りなかったのでしょうか？',
-      'ルーカスはしばらくためらいました。亡くなった祖父の最も個人的な胸の内を読む道義的権利が自分にあるだろうか？しかし最後には、ためらいよりも好奇心が勝ちました。慎重に親指を封の折り目に差し込みました。現れたのは手書きの4枚の手紙でした。海辺で過ごした忘れがたい夏の1週間、冷戦によって引き裂かれた約束、そして二度と叶うことのなかった再会への希望が、心からの言葉で綴られていました。',
-      'その日の夜のうちに、ルーカスはリュックサックに荷物を詰めました。ドイツ連邦全土を縦断し、風の吹き荒れるバルト海沿岸へと向かう列車の切符を予約しました。もし50年前に祖父が国境を越えられなかったのなら、せめて自分がそのメッセージを目的地へ届けよう——たとえ半世紀遅すぎたとしても。',
-      '2日後、ルーカスはヴァルネミュンデの3番地にある小さな赤レンガの家の前に立っていました。利発そうな灰青色の瞳をした老婦人が、白い木の扉を開けました。ルーカスがフリードリヒの名を口にし、青い手紙を取り出すと、彼女の目から涙がこぼれ落ちました。「あの方が私のことをただ忘れてしまったのかしらと、生涯ずっと自分に問い続けていたのですよ」と、彼女はかすれた声で囁きました。',
-      '二人は居心地の良いベランダで何時間も座り、温かいサジー（シーバックソーン）のお茶を飲み、焼きたてのバターケーキを食べました。砂丘から風が吹き寄せるなか、ヘレーネは当時の日々について語ってくれました。ルーカスはその瞬間、決して時効を迎えない物語があること、そして言葉には時間そのものを癒やす力があることを理解したのでした。'
+      'フライブルク旧市街の瓦屋根に夏の雨が降るなか、ルーカスは古い木組みの家の屋根裏で祖父の遺品整理をしていました。',
+      '祖父フリードリヒは春に89歳で他界しました。温厚で優しい人でしたが、東西ドイツ統一前の過去を語ることはありませんでした。',
+      '何時間も古い荷物を整理していたルーカスは、屋根窓の奥に真鍮の金具がついた重厚な古い革のトランクを見つけました。',
+      '錆びついた鍵前をオイルで慎重に開けると、中には古い登山靴やパンフレットとともに、青い絹に包まれた分厚い封筒がありました。',
+      '封筒には1974年の消印と西ドイツ郵便の切手が貼られていましたが、投函されず赤い封蝋は無傷のままでした。',
+      '宛先は「東ドイツ・ヴァルネミュンデ 旧灯台通り3番地 ヘレーネ・リンデマン嬢」。祖父はこの手紙を決して出していませんでした。',
+      'ルーカスはためらいながらもペティナイフで封蝋を開き、細密に書かれた4枚の手紙を読み始めました。',
+      '「愛するヘレーネ」から始まる手紙には、強制送還された悲しみと、鉄のカーテンを越える変わらぬ愛が綴られていました。',
+      '弁護士から「文通を続ければヘレーネが国家反逆罪で投獄される」と警告され、祖父は彼女を守るために沈黙を選んだのでした。',
+      '「もしこの手紙が届くなら、私の愛は最期まで真実だったと知ってほしい」と結ばれた手紙を前に、ルーカスは届ける決意を固めました。',
+      'その夜のうちに荷物を詰め、ルーカスは高速列車ICEに乗って再統一されたドイツ列島を北へと縦断しました。',
+      'ライン川からテューリンゲンを抜け、やがてメクレンブルクの広大な大地と大空が広がりました。',
+      'ロストックでSバーンに乗り換え、バルト海の終着駅ヴァルネミュンデに降り立つと、冷たい潮風が吹き寄せてきました。',
+      '「旧灯台通り3番地」には、赤レンガの美しい平屋が確かに砂丘のそばに佇んでいました。ルーカスは胸を高鳴らせました。',
+      '呼び鈴を鳴らすと、ショールをまとった澄んだ瞳の白髪の老婦人、ヘレーネ・リンデマン本人が扉を開けました。',
+      'ルーカスがフリードリヒの孫だと名乗り、1974年の青い手紙を差し出すと、ヘレーネの瞳から涙が溢れ出しました。',
+      '「あの方は私を忘れてはいなかったのですね…」と、生涯の重荷を下ろしたように彼女は震える声で呟きました。',
+      'ベランダで熱いサジー茶とケーキを囲み、ヘレーネは午後の黄金色の光の中で手紙を一文字ずつ噛み締めるように読みました。',
+      '「おじいさまは沈黙で私を守り、あなたは私の青春を取り戻してくれた」と語る彼女に見送られ、ルーカスは愛の不滅を確信して帰路につきました。'
     ],
     vocabulary: [
-      { german: 'der Nachlass', article: 'der', pos: 'Substantiv', japanese: '遺品、遺産' },
-      { german: 'die Messingbeschläge', article: 'die', pos: 'Substantiv (Plural)', japanese: '真鍮（黄銅）の金具・留め具' },
-      { german: 'der Eiserne Vorhang', article: 'der', pos: 'Substantiv', japanese: '鉄のカーテン（冷戦期の東西分断線）' },
-      { german: 'zögern', pos: 'Verb', japanese: 'ためらう、躊躇する' },
-      { german: 'der Bestimmungsort', article: 'der', pos: 'Substantiv', japanese: '目的地、送り先' },
-      { german: 'verjähren', pos: 'Verb', japanese: '時効になる、風化する' }
+      { german: 'die Hinterlassenschaft', article: 'die', pos: 'Substantiv', japanese: '遺品、遺物、形見' },
+      { german: 'der Grünspan', article: 'der', pos: 'Substantiv', japanese: '緑青（ろくしょう・銅や真鍮のサビ）' },
+      { german: 'der Eiserne Vorhang', article: 'der', pos: 'Substantiv', japanese: '鉄のカーテン（東西冷戦の分断線）' },
+      { german: 'die Kurrentschrift', article: 'die', pos: 'Substantiv', japanese: 'クーレント筆記体（ドイツの伝統的古典筆記体）' },
+      { german: 'das Büttenpapier', article: 'das', pos: 'Substantiv', japanese: '手漉き便箋、高級コットン紙' },
+      { german: 'der Häscher', article: 'der', pos: 'Substantiv', japanese: '追手、官憲' },
+      { german: 'unumstößlich', pos: 'Adjektiv', japanese: '揺るぎない、動かしがたい' },
+      { german: 'der Sanddorntee', article: 'der', pos: 'Substantiv', japanese: 'サジー茶（バルト海名物のビタミン豊富なハーブ果実茶）' },
+      { german: 'wehmütig', pos: 'Adjektiv', japanese: '切ない、物悲しい、懐旧の情に満ちた' },
+      { german: 'der Seelenfrieden', article: 'der', pos: 'Substantiv', japanese: '心の平安、魂の安らぎ' }
     ],
     culturalNote: {
-      title: '東西ドイツ分断と郵便事情',
-      content: '1989年のベルリンの壁崩壊まで、西ドイツと東ドイツ（DDR）の間の手紙や荷物は検閲の対象となり、親族や恋人同士の連絡にも大きな心理的・政治的障壁が存在しました。'
+      title: '東西ドイツ分断の壁とバルト海の保養地ヴァルネミュンデ',
+      content: 'ヴァルネミュンデ（Warnemünde）は、旧東ドイツ（DDR）を代表する美しい砂丘と灯台のある海辺の町です。冷戦時代、西ドイツ市民が東ドイツを訪問する際には厳格な査証（ビザ）と通貨交換が義務付けられ、分断された恋人や家族の多くの絆が引き裂かれました。1989年のベルリンの壁崩壊と1990年のドイツ再統一は、そうした何十万人もの個人の歴史の悲劇に終止符を打ちました。'
     }
   },
   {

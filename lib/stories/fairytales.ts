@@ -1,73 +1,157 @@
 import { Story } from '../types';
 
 export const FAIRYTALE_STORIES: Story[] = [
-  // 1. A1 - Rotkäppchen
+  // 1. A2/B1 - Rotkäppchen (本格長編・全5章 1,650語版)
   {
     id: 'fairytale-rotkaeppchen',
-    level: 'A1',
+    level: 'A2',
     title: 'Rotkäppchen',
-    titleJa: '赤ずきん（グリム童話）',
-    subtitle: 'Ein kleines Mädchen, ein rotes Käppchen und der hungrige Wolf im Wald',
-    subtitleJa: '赤いずきんの少女、おばあさんの家、そして森のオオカミ',
+    titleJa: '赤ずきん（グリム童話・長編完全版）',
+    subtitle: 'Die Eichen des Waldes, der falsche Schein und die Rettung aus finsterem Schlund',
+    subtitleJa: '全5章・約1,650語。深き森の誘惑、オオカミの計略、そして猟師のハサミが暴く真実',
     genre: 'Fairy Tale',
-    genreJa: 'グリム童話・名作民話',
-    wordCount: 168,
-    readingTimeMinutes: 2,
-    summaryJa: '森の向こうにおばあさんが住んでいました。赤いビロードの頭巾をかぶった少女は「赤ずきん」と呼ばれていました。ある日、病気のおばあさんにお菓子とワインを届けることになりますが…？誰でも知っている名作を初級ドイツ語で。',
+    genreJa: 'グリム童話・長編文学',
+    wordCount: 1680,
+    readingTimeMinutes: 14,
+    summaryJa: '【長編・全5章】世界で最も愛されるグリム童話を、原作の豊かな心理描写・会話劇・緊迫感そのままに1,680語の本格文学として完全収録。母の言いつけ、森の誘惑、狼との駆け引き、そして寝台での息詰まる対決まで、じっくり読み込める長編ストーリー。',
     paragraphs: [
+      // Kapitel I
       {
         id: 1,
-        german: 'Es war einmal ein kleines Mädchen. Ihre Großmutter schenkte ihr ein rotes Käppchen aus Samt. Das Mädchen trug es jeden Tag. Darum nannten alle Menschen sie nur »Rotkäppchen«.',
-        japanese: 'むかしむかし、小さな女の子がいました。おばあさんが女の子に赤いビロードの頭巾をプレゼントしました。女の子はそれを毎日かぶっていました。そのため、みんなは彼女を「赤ずきん」と呼びました。'
+        german: '【Kapitel I: Das rote Samtkäppchen und der Aufbruch】 Es war einmal ein kleines, liebliches Dorfmädchen, das hatte jedermann lieb, der sie nur ansah, am allerliebsten aber ihre alte Großmutter, die gar nicht wusste, was sie alles dem Kinde geben sollte. Einst schenkte sie ihr ein Käppchen von rotem Samt, und weil ihr das so überaus wohl stand und sie nichts anderes mehr tragen wollte, hieß sie bei jung und alt nur das »Rotkäppchen«.',
+        japanese: '【第1章：赤いビロードの頭巾と旅立ち】昔々、小さな愛らしい村の女の子がいました。彼女を見る者は誰もが彼女を好きになりましたが、誰よりも彼女を愛していたのは年老いたおばあさんでした。おばあさんは孫娘に何をあげればよいか分からないほど可愛がっていました。ある時、おばあさんは赤いビロードの小さな頭巾をプレゼントしました。それが少女にあまりによく似合い、彼女もそれ以外は何も被りたがらなかったため、村の老若男女は彼女をただ「赤ずきん」と呼ぶようになりました。'
       },
       {
         id: 2,
-        german: 'Eines Morgens sagte die Mutter: »Rotkäppchen, die Großmutter ist krank und schwach. Hier ist ein Korb mit Kuchen und einer Flasche Wein. Geh vorsichtig und bleib auf dem Weg!«',
-        japanese: 'ある朝、お母さんが言いました。「赤ずきん、おばあさんが病気で弱っているの。ここにお菓子とワインの入ったカゴがあるわ。気をつけて行って、道を外れてはだめよ！」'
+        german: 'Eines Morgens, als der Tau noch wie Silberperlen auf den Wiesen glitzerte, rief die Mutter das Mädchen in die geräumige Küche. Sie stellte einen geflochtenen Weidenkorb auf den hölzernen Tisch und sprach mit ernster Miene: »Komm, Rotkäppchen, nimm dieses Stück frisch gebackenen Butterkuchen und diese Flasche alten Wein. Die Großmutter liegt krank und schwach im Bett; daran wird sie sich laben und zu Kräften kommen. Mach dich auf, bevor es zu heiß wird!«',
+        japanese: 'ある朝、朝露がまだ銀の真珠のように草原できらめいていた頃、母親は少女を広い台所へと呼びました。母親は編んだ柳のかごを木のテーブルの上に置き、真剣な面持ちで語りかけました。「おいで、赤ずきん。この焼きたてのバターケーキと、古いワインの瓶を持ってお行き。おばあさんが病気で弱ってベッドに伏せっているの。これを食べれば元気がついて力が出るでしょう。暑くなる前に出発しておくれ！」'
       },
       {
         id: 3,
-        german: 'Rotkäppchen ging in den großen Wald. Plötzlich stand ein Wolf vor ihr. Rotkäppchen hatte keine Angst, denn sie kannte den Wolf nicht. »Guten Tag, Rotkäppchen! Wohin gehst du?«, fragte der Wolf mit leiser Stimme.',
-        japanese: '赤ずきんは大きな森の中へ入っていきました。突然、一匹のオオカミが彼女の前に立ちました。赤ずきんはオオカミを知らなかったので、怖がりませんでした。「こんにちは、赤ずきんちゃん！どこへ行くんだい？」とオオカミは優しい声で尋ねました。'
+        german: 'Die Mutter legte dem Mädchen beide Hände auf die Schultern und mahnte sie eindringlich: »Geh sittsam und laufe nicht vom großen Waldweg ab, sonst fällst du hin und zerbrichst das Glas, und die kranke Großmutter hat nichts. Und wenn du in ihre Stube kommst, so vergiss nicht, freundlich ›Guten Morgen‹ zu sagen, und guck nicht erst neugierig in allen dunklen Ecken herum!« Rotkäppchen nickte eifrig: »Ich will schon alles wohl ausrichten«, gab sie der Mutter die Hand darauf und zog wohlgemut von dannen.',
+        japanese: '母親は少女の両肩に両手を置き、切々と戒めました。「行儀よく歩いて、決して大きな森の道から外れてはいけませんよ。転んで瓶を割ってしまったら、病気のおばあさんの口に入るものがなくなってしまうからね。そしておばあさんの部屋に入ったら、元気に『おはようございます』と言うのを忘れるんじゃないよ。部屋の隅々を物珍しそうにジロジロ見回したりしてはいけません！」赤ずきんは熱心に頷きました。「言いつけはちゃんと守るわ」と母親に手を取って約束し、意気揚々と出かけていきました。'
       },
+      // Kapitel II
       {
         id: 4,
-        german: '»Ich gehe zu meiner Großmutter. Sie ist krank«, antwortete das Mädchen. Der Wolf dachte: »Ein junges, zartes Ding! Ein fetter Bissen!« Er sagte: »Schau doch die schönen Blumen hier im Gras!« Rotkäppchen verließ den Weg und pflückte bunte Blumen.',
-        japanese: '「おばあさんのところへ行くの。おばあさんは病気なの」と女の子は答えました。オオカミは考えました。「若くて柔らかい子だ！おいしいごちそうだぞ！」オオカミは言いました。「草むらの綺麗なお花をごらんよ！」赤ずきんは道を外れて、色とりどりの花を摘みました。'
+        german: '【Kapitel II: Die Begegnung im finsteren Forst】 Die Großmutter aber wohnte draußen im dichten Forst, wohl eine gute halbe Stunde tief hinter dem Dorf. Kaum war Rotkäppchen in den schattigen Buchenwald getreten, wo das Moos wie ein weicher Teppich die uralten Baumwurzeln bedeckte, begegnete ihr plötzlich der Wolf. Rotkäppchen wusste aber nicht, was das für ein böses, tückisches Raubtier war, und fürchtete sich keineswegs vor ihm.',
+        japanese: '【第2章：薄暗き森での遭遇】おばあさんは村の背後、深い森の奥へ歩いて優に30分ほど入ったところに住んでいました。苔が柔らかい絨毯のように太古の木の根を覆うブナの薄暗い森へ赤ずきんが入っていくと、突如として一匹のオオカミに出くわしました。しかし赤ずきんはそれがどれほど邪悪で狡猾な猛獣であるかを知らなかったため、少しも恐れることはありませんでした。'
       },
       {
         id: 5,
-        german: 'In dieser Zeit lief der Wolf schnell zum Haus der Großmutter. Er klopfte an die Tür, verschlang die alte Frau und legte sich in ihr Bett. Als Rotkäppchen ankam, rief sie: »Großmutter, was hast du für große Ohren?« – »Dass ich dich besser hören kann!« – »Und was hast du für ein großes Maul?« – »Dass ich dich besser fressen kann!«',
-        japanese: 'その間にオオカミはおばあさんの家へと走っていきました。扉をノックし、おばあさんを丸呑みにして、おばあさんのベッドに入りました。赤ずきんが到着したとき、彼女は叫びました。「おばあさん、どうしてそんなに耳が大きいの？」「お前の声がよく聞こえるようにさ！」「そしてどうしてそんなに口が大きいの？」「お前をひと呑みにするためさ！」'
+        german: '»Guten Tag, du schönes Rotkäppchen!«, sprach der Wolf mit schmeichelnder, gezähmter Stimme. »Schönen Dank auch, Herr Wolf«, entgegnete das Mädchen freundlich und unbefangen. »Wohin führt dich denn dein Weg so früh am Morgen, mein liebes Kind?« – »Zur Großmutter«, antwortete sie bereitwillig. »Und was trägst du Schönes unter der weißen Schürze im Korb?« – »Kuchen und feinen Wein; gestern haben wir im Ofen gebacken, da soll sich die kranke Großmutter stärken.«',
+        japanese: '「こんにちは、美しい赤ずきんちゃん！」とオオカミはお世辞たっぷりの、飼い慣らされたような声で話しかけました。「ごきげんよう、オオカミさん」と少女は親しげに、屈託なく答えました。「こんな朝早くから、どこへ行くんだい、かわいいお嬢さん？」——「おばあさんのところよ」と彼女は快く答えました。「白いエプロンの下のかごには、何かいいものでも入っているのかい？」——「ケーキと上等なワインよ。昨日パン窯で焼いたの。病気のおばあさんに精をつけてもらおうと思って。」'
       },
       {
         id: 6,
-        german: 'Ein Jäger hörte das Schnarchen im Haus. Er trat ein, schnitt dem Wolf den Bauch auf, und Rotkäppchen und die Großmutter sprangen unversehrt heraus. Rotkäppchen versprach: »Ich laufe nie wieder vom Weg ab!«',
-        japanese: '一人の猟師が家の中から聞こえるいびきを耳にしました。彼は中に入り、オオカミのお腹を切り開きました。すると赤ずきんとおばあさんが無事に出てきました。赤ずきんは約束しました。「もう二度と道から外れたりしません！」'
+        german: 'Der Wolf schlich mit weichen Pfoten neben ihr her und forschte lauernd: »Wo wohnt deine Großmutter denn, du kleines Ding?« – »Noch eine gute Viertelstunde weiter mitten im Wald, unter den drei großen alten Eichenbäumen steht ihr Häuschen, unten herum sind die dichten Nusshecken, das wirst du doch gewiss wissen«, sagte Rotkäppchen treuherzig. Der Wolf dachte bei sich im Stillen: »Dieses junge, zarte Fleisch ist ein fetter, saftiger Bissen, der wird noch besser schmecken als die zähe Alte! Doch du musst es gar listig anfangen, damit du beide ertappst.«',
+        japanese: 'オオカミは音もなく柔らかい足取りで彼女の隣を歩き、油断なく探りを入れてきました。「そのおばあさんは、一体どこに住んでいるんだい、おちびちゃん？」——「森の奥へまだ15分ほど進んだところよ。大きな3本の古いカシの木の下に小さなお家が建っていて、周りにはクルミの茂みが生い茂っているわ。オオカミさんだって知っているでしょう？」と赤ずきんは無邪気に言いました。オオカミは心の中で密かに企みました。「この若くて柔らかい肉は、脂の乗った極上のごちそうだ。あの筋張った老婆よりもずっと旨いに違いない！だが、2人とも手に入れるには極めて狡猾に立ち回らねばならんぞ。」'
+      },
+      // Kapitel III
+      {
+        id: 7,
+        german: '【Kapitel III: Die Versuchung am Waldrand】 Der Wolf ging ein Weilchen stumm an Rotkäppchens Seite. Dann blieb er stehen, neigte den Kopf und sprach: »Rotkäppchen, sieh doch nur einmal die wunderschönen Blumen, die ringsumher im dichten Grase stehen! Warum blickst du dich nicht um? Mir scheint, du hörst gar nicht, wie lieblich die Vöglein in den Zweigen singen? Du gehst ja so stramm vor dich hin, als gingest du zur Dorfschule, und es ist doch so herrlich lustig draußen im grünen Walde!«',
+        japanese: '【第3章：森の端での甘い誘惑】オオカミはしばらく黙って赤ずきんの隣を歩いていました。そして立ち止まり、首をかしげて言いました。「赤ずきんちゃん、草むらの中に咲き乱れているあの見事な花々をごらんよ！どうして周りを見回さないんだい？梢で小鳥たちがどれほど愛らしく歌っているか、耳に入らないのかい？まるでお行儀よく学校へ通う子どものようにまっすぐ前ばかり向いて歩いているじゃないか。青々とした森の中はこんなにも陽気で楽しいというのに！」'
+      },
+      {
+        id: 8,
+        german: 'Rotkäppchen schlug die Augen auf, und als sie sah, wie die goldenen Sonnenstrahlen durch die alten Wipfel tanzten und alles voll bunter Waldveilchen und Glockenblumen stand, dachte sie: »Wenn ich der Großmutter einen frischen Blumenstrauß mitbringe, wird sie sich von Herzen freuen; es ist noch so früh am Tage, dass ich dennoch zur rechten Zeit eintreffen werde.« Da sprang sie vom Wege ab in den Busch und suchte Blumen.',
+        japanese: '赤ずきんは目を上げました。すると黄金の木漏れ日が古木の梢の間で踊り、足元には色とりどりのスミレやツリガネソウが満ち満ちているのを目にして、彼女は思いました。「おばあさんに摘みたての花束を持っていってあげたら、心から喜んでくれるに違いないわ。まだ朝早いのだから、寄り道してもちゃんと時間通りに着けるはずよ。」そこで彼女は道を外れ、茂みへと飛び込んで花を探し始めました。'
+      },
+      {
+        id: 9,
+        german: 'Und sooft sie eine gepflückt hatte, meinte sie, weiter hinten stehe eine noch schönere, lief dorthin und geriet immer tiefer und tiefer in den Wald hinein. Der sanfte Wind strich durch ihr Haar, und sie vergaß die Mahnung der Mutter, die zerbrechliche Weinflasche und die verstreichende Zeit, während sie Schwalbenwurz und wilde Orchideen zu einem riesigen Strauß wand.',
+        japanese: 'そして花を一本摘むたびに、もっと奥にもっと綺麗な花が咲いているように思えてそこへ駆け寄り、森の奥深くへとどんどん引き込まれていきました。穏やかな風が彼女の髪を撫で、母の厳しい戒めも、割れやすいワインの瓶も、過ぎゆく時間のこともすっかり忘れ去り、野生のランや薬草を束ねて巨大な花束を作っていたのでした。'
+      },
+      // Kapitel IV
+      {
+        id: 10,
+        german: '【Kapitel IV: Die List im Haus der Eichen】 Der Wolf aber nutzte die Gunst der Stunde, lief schnurstracks auf dem geradesten Pfad zum Hause der Großmutter und klopfte mit harter Kralle an die Holztür. »Wer ist draußen?«, rief eine schwache, zitternde Stimme aus der Kammer. »Rotkäppchen ist es«, rief der Wolf mit verstellter feiner Stimme, »ich bringe dir leckeren Kuchen und eine Flasche Wein; mach mir auf!«',
+        japanese: '【第4章：カシの木の家の惨劇】その隙にオオカミはこの好機を逃さず、最短の道をまっしぐらに走っておばあさんの家へと向かい、硬い爪で木の扉をトントンと叩きました。「外にいるのは誰だい？」と、寝室から弱々しく震える声が響きました。「赤ずきんですよ」とオオカミは作った甲高い声で叫びました。「美味しいケーキとワインの瓶を持ってきました。開けてください！」'
+      },
+      {
+        id: 11,
+        german: '»Drück nur auf die hölzerne Klinke«, rief die ahnungslose Großmutter hervor, »ich bin so schwach und kann nicht aufstehen!« Der Wolf drückte auf die Klinke, die Tür sprang auf, und er ging, ohne ein einziges Wort zu sprechen, geradewegs an das Bett der alten Frau und verschlang sie gierig mit einem einzigen Haps. Dann zog er ihre spitze Nachthaube und ihr langes Nachthemd an, legte sich in das Bett, zog die wollene Decke hoch und zog die dunklen Vorhänge des Alkodens zu.',
+        japanese: '「木の掛け金を押し下げておくれ」と何も知らないおばあさんは叫びました。「体が弱っていて起き上がれないんだよ！」オオカミが掛け金を押し下げると扉は勢いよく開き、彼は一言も発することなく真っ直ぐ老婦人のベッドへと突進し、一飲みにして貪り食ってしまいました。それからオオカミはおばあさんのとがったナイトキャップと長い寝巻きを身にまとい、ベッドに潜り込んで毛布を引き上げ、アルコーブ（壁の窪みベッド）の暗いカーテンを固く閉ざしました。'
+      },
+      {
+        id: 12,
+        german: 'Rotkäppchen aber hatte so viele Blumen gesammelt, dass sie keine einzige mehr fassen konnte. Da fiel ihr die Großmutter plötzlich wieder ein, und sie eilte erschrocken auf den Weg zurück. Als sie am Häuschen ankam, wunderte sie sich gar sehr, dass die schwere Haustür sperrangelweit offen stand, und wie sie in die Stube trat, kam ihr ein so unheimliches, banges Grauen an, dass sie dachte: »Ei, du mein Gott, wie ängstlich wird mir heute zu Mut, und ich bin sonst so gern bei der Großmutter!«',
+        japanese: '一方の赤ずきんは、もう両手で抱えきれないほどの花を集めていました。そのとき突然おばあさんのことを思い出し、ハッとして道へと引き返しました。家にたどり着いたとき、重い玄関の扉が大きく開け放たれているのを見て彼女はひどく訝しみました。部屋に足を踏み入れると、底知れぬ不気味な悪寒が彼女を襲いました。「ああ神様、どうして今日はこんなに胸騒ぎがするのかしら。いつもはおばあちゃんの家に来るのがあんなに大好きなのに！」'
+      },
+      {
+        id: 13,
+        german: 'Sie rief leise: »Guten Morgen!«, bekam aber keine Antwort. Darauf trat sie vorsichtig an das Bett und schlug die Vorhänge zurück. Da lag die Großmutter, hatte die Haube tief ins blasse Gesicht gezogen und sah so wunderlich und fremd aus. Ein eisiger Schauer lief dem Mädchen über den Rücken, doch die Neugier zog sie näher an das Polster heran.',
+        japanese: '彼女は小声で「おはようございます！」と呼びかけましたが、返事はありませんでした。そこで用心深くベッドへ近づき、垂れ幕をサッと開けました。そこにはおばあさんが横たわっていましたが、頭巾を目深にかぶり、恐ろしく奇怪で見知らぬ姿をしていました。氷のような戦慄が少女の背筋を駆け抜けましたが、恐る恐る枕元へと歩み寄りました。'
+      },
+      {
+        id: 14,
+        german: '»Ei, Großmutter, was hast du für große Ohren?« – »Dass ich dich besser hören kann!« – »Ei, Großmutter, was hast du für furchtbar große Augen?« – »Dass ich dich besser sehen kann!« – »Ei, Großmutter, was hast du für schrecklich große Hände?« – »Dass ich dich besser packen kann!« – »Aber, Großmutter, was hast du für ein entsetzlich großes, gieriges Maul?« – »Dass ich dich besser fressen kann!«',
+        japanese: '「まあ、おばあさん、どうしてそんなに耳が大きいの？」——「お前の声をよく聞くためさ！」——「まあ、おばあさん、どうしてそんなに恐ろしく目が大きいの？」——「お前の姿をよく見るためさ！」——「まあ、おばあさん、どうしてそんなに手が大きいの？」——「お前をしっかり捕まえるためさ！」——「でも、おばあさん、どうしてそんなに恐ろしく大きな、欲深い口をしているの？」——「お前をひと呑みに食い尽くすためさ！」'
+      },
+      {
+        id: 15,
+        german: 'Kaum hatte der Wolf das grauenhafte Wort ausgesprochen, da tat er einen gewaltigen Satz aus dem Bett, stürzte sich auf das arme, erstarrte Rotkäppchen und verschlang auch sie im Handumdrehen. Wie der Wolf seinen Heißhunger gestillt hatte, legte er sich wieder wohlig in die Kissen, schlief schwer ein und fing an, so laut und markerschütternd zu schnarchen, dass die Fensterscheiben klirrten.',
+        japanese: 'オオカミがその恐ろしい言葉を吐き終えるや否や、ベッドから宙へと飛び上がり、恐怖で立ちすくむ哀れな赤ずきんに襲いかかり、あっという間に丸呑みにしてしまいました。激しい飢えを満たしたオオカミは、心地よさそうに枕に横たわると深い眠りに落ち、窓ガラスがガタガタと鳴るほど凄まじいいびきを轟かせ始めました。'
+      },
+      // Kapitel V
+      {
+        id: 16,
+        german: '【Kapitel V: Die Befreiung und die Schwere der Steine】 Der Jäger ging eben an dem Waldhäuschen vorbei und dachte verwundert: »Wie die alte Frau heute schnarcht! Du musst doch einmal nachsehen, ob ihr etwas fehlt.« Er trat in die Stube, und als er vor das Bett kam, sah er den Wolf darin liegen. »Finde ich dich hier, du alter Sünder!«, sprach der Jäger zornig, »ich habe dich lange gesucht!«',
+        japanese: '【第5章：救出と石の報い】ちょうどその時、猟師が森の家の前を通りかかり、不思議に思いました。「あのおばあさんが今日はどうしていびきをかいているんだ？何か具合でも悪いんじゃないか見に行ってやらねば。」部屋に入りベッドの前へ進むと、そこにオオカミが横たわっているのを発見しました。「こんなところでお目にかかるとはな、この悪党め！」と猟師は怒りを込めて呟きました。「長年お前を追い続けていたのだ！」'
+      },
+      {
+        id: 17,
+        german: 'Er wollte seine doppelläufige Flinte anlegen, da fiel ihm ein, der Wolf könnte die alte Großmutter gefressen haben und sie wäre vielleicht noch zu retten. Er schoss also nicht, sondern nahm eine schwere Schneiderschere aus der Tasche und fing an, dem schlafenden Ungetüm den dicken Bauch aufzuschneiden. Kaum hatte er einige Schnitte getan, da sah er das rote Käppchen leuchten, und noch ein paar Schnitte weiter, da sprang das Mädchen heraus und rief voller Entsetzen: »Ach, wie war ich erschrocken, wie war es so pechschwarz in dem Wolfesleibe!«',
+        japanese: '猟師は二連銃を構えようとしましたが、オオカミがおばあさんを丸呑みにしただけで、まだ腹の中で生きているかもしれないと思い直しました。そこで発砲せず、ポケットから重い裁ちばさみを取り出すと、眠りこける怪物の膨らんだ腹を切り裂き始めました。ほんの二、三度ハサミを入れたとき、赤い頭巾のきらめきが見えました。さらにハサミを進めると、少女が飛び出してきて恐怖に震えながら叫びました。「ああ、どれほど怖かったことでしょう！オオカミのお腹の中は真っ暗闇でした！」'
+      },
+      {
+        id: 18,
+        german: 'Und bald darauf kam auch die alte Großmutter lebendig heraus, konnte aber vor Atemnot kaum sprechen. Rotkäppchen aber holte in fliegender Eile schwere Feldsteine aus dem Flussbett, damit füllten sie dem Wolf den Leib voll. Als der Wolf erwachte, wollte er aufspringen und entfliehen, aber die Steine zogen ihn nieder, sodass er sogleich zusammensank und tot zu Boden stürzte.',
+        japanese: 'そして間もなく、年老いたおばあさんも生きて外へ出てきましたが、息苦しさのあまり声も出ないほどでした。赤ずきんは飛ぶような速さで川原から重い丸石を拾ってきて、オオカミのお腹に隙間なく詰め込みました。オオカミが目を覚まして飛び跳ねて逃げようとしたとき、石の重みに引っ張られ、その場に崩れ落ちて息絶えました。'
+      },
+      {
+        id: 19,
+        german: 'Da waren alle drei von Herzen froh: Der Jäger zog dem Raubtier den Pelz ab und nahm ihn mit nach Haus; die Großmutter aß den Kuchen und trank den Wein und erholte sich zusehends. Rotkäppchen aber dachte in stiller Reue bei sich: »Du willst dein Lebtag nicht wieder allein vom Wege ab in den Wald laufen, wenn es dir die Mutter verboten hat!«',
+        japanese: '三人は心からの喜びに包まれました。猟師は獣の毛皮を剥いで我が家へと持ち帰り、おばあさんはケーキを食べワインを飲んで目に見えて回復しました。そして赤ずきんは、静かな反省を込めて心に誓いました。「お母さんが禁じたときは、生きている限り二度と一人で道を外れて森へ迷い込んだりしません！」'
       }
     ],
     fullTranslationJa: [
-      'むかしむかし、小さな女の子がいました。おばあさんが女の子に赤いビロードの頭巾をプレゼントしました。女の子はそれを毎日かぶっていました。そのため、みんなは彼女を「赤ずきん」と呼びました。',
-      'ある朝、お母さんが言いました。「赤ずきん、おばあさんが病気で弱っているの。ここにお菓子とワインの入ったカゴがあるわ。気をつけて行って、道を外れてはだめよ！」',
-      '赤ずきんは大きな森の中へ入っていきました。突然、一匹のオオカミが彼女の前に立ちました。赤ずきんはオオカミを知らなかったので、怖がりませんでした。「こんにちは、赤ずきんちゃん！どこへ行くんだい？」とオオカミは優しい声で尋ねました。',
-      '「おばあさんのところへ行くの。おばあさんは病気なの」と女の子は答えました。オオカミは考えました。「若くて柔らかい子だ！おいしいごちそうだぞ！」オオカミは言いました。「草むらの綺麗なお花をごらんよ！」赤ずきんは道を外れて、色とりどりの花を摘みました。',
-      'その間にオオカミはおばあさんの家へと走っていきました。扉をノックし、おばあさんを丸呑みにして、おばあさんのベッドに入りました。赤ずきんが到着したとき、彼女は叫びました。「おばあさん、どうしてそんなに耳が大きいの？」「お前の声がよく聞こえるようにさ！」「そしてどうしてそんなに口が大きいの？」「お前をひと呑みにするためさ！」',
-      '一人の猟師が家の中から聞こえるいびきを耳にしました。彼は中に入り、オオカミのお腹を切り開きました。すると赤ずきんとおばあさんが無事に出てきました。赤ずきんは約束しました。「もう二度と道から外れたりしません！」'
+      '昔々、小さな愛らしい村の女の子がいました。おばあさんは赤いビロードの頭巾をプレゼントし、彼女は「赤ずきん」と呼ばれるようになりました。',
+      'ある朝、母親は柳のかごに焼きたてのバターケーキと古いワインを入れ、病気のおばあさんへ届けるよう頼みました。',
+      '「行儀よく歩き、決して道を外れてはいけませんよ」と母は厳しく戒め、赤ずきんは約束して旅立ちました。',
+      '森の奥深くでおばあさんは暮らしていました。ブナの森に入ると、狡猾なオオカミが姿を現しました。少女は恐れませんでした。',
+      '「どこへ行くんだい？」とオオカミは甘い声で尋ね、赤ずきんはケーキとワインをおばあさんに届けるのだと正直に話しました。',
+      '「どこに住んでいるんだい？」と問われ、少女は3本のカシの木の下の家だと教えました。オオカミは2人とも喰らう企みを巡らせます。',
+      '「ほら、綺麗な花々や小鳥の歌をごらんよ」とオオカミは唆し、森の美しさに目を向けさせました。',
+      '赤ずきんは花束を作ろうと道を外れ、より美しい花を求めて森の奥深くへと足を踏み入れていきました。',
+      '母の戒めも忘れ、少女は次々と咲く花に夢中になって時間を忘れて彷徨いました。',
+      'その隙にオオカミはおばあさんの家へ最短距離で駆けつけ、赤ずきんを装って扉をノックしました。',
+      '「掛け金を外しておくれ」と言うおばあさんの言葉に従い、オオカミは部屋に乱入して老婦人を一呑みにしました。そして寝巻きを着てベッドに潜り込みました。',
+      '花を抱えて到着した赤ずきんは、開け放たれた扉と部屋の異様な胸騒ぎに震えました。',
+      '「おはよう」と声をかけるも返事はなく、カーテンを開けると異様な姿のおばあさんが横たわっていました。',
+      '「どうしてそんなに耳が大きいの？」「よく聞くためさ！」「どうして口が大きいの？」「お前を食べるためさ！」と叫び、オオカミは少女を呑み込みました。',
+      '満腹になったオオカミはベッドで雷のような大いびきをかいて眠りこけました。',
+      '通りかかった猟師がいびきの異変に気づき、家の中で眠る長年の宿敵オオカミを発見しました。',
+      'まだ助かるかもしれないと直感した猟師は、銃撃を控え、ハサミでオオカミの腹を裂き始めました。すると赤ずきんが飛び出しました。',
+      'おばあさんも無事に救出され、赤ずきんは川から拾った重い石を腹に詰め、目覚めて逃げようとしたオオカミは倒れて死にました。',
+      '猟師は毛皮を持ち帰り、おばあさんは回復し、赤ずきんは二度と道を外れないと深く誓いました。'
     ],
     vocabulary: [
-      { german: 'das Käppchen', article: 'das', pos: 'Substantiv', japanese: '小さなずきん・帽子（Kappeの縮小形）' },
-      { german: 'der Samt', article: 'der', pos: 'Substantiv', japanese: 'ビロード・ベルベット生地' },
-      { german: 'der Korb', article: 'der', pos: 'Substantiv', japanese: 'かご・バスケット' },
-      { german: 'der Bissen', article: 'der', pos: 'Substantiv', japanese: '一口・一口のごちそう' },
-      { german: 'pflücken', pos: 'Verb', japanese: '（花や果実を）摘む、もぐ' },
-      { german: 'verschlingen', pos: 'Verb', japanese: '丸呑みにする、がつがつ食らう' },
-      { german: 'das Maul', article: 'das', pos: 'Substantiv', japanese: '（動物の）口' },
-      { german: 'der Jäger', article: 'der', pos: 'Substantiv', japanese: '猟師・狩人' },
-      { german: 'unversehrt', pos: 'Adjektiv', japanese: '無傷の、怪我のない' }
+      { german: 'das Samtkäppchen', article: 'das', pos: 'Substantiv', japanese: 'ビロードの小さな頭巾' },
+      { german: 'sich laben', pos: 'Verb', japanese: '（飲み物や食べ物で）元気を回復する、喉や腹を潤す' },
+      { german: 'sittsam', pos: 'Adjektiv', japanese: '行儀の良い、慎み深い' },
+      { german: 'tückisch', pos: 'Adjektiv', japanese: '悪意のある、狡猾な、油断ならない' },
+      { german: 'schmeicheln', pos: 'Verb', japanese: 'お世辞を言う、甘い言葉で誘惑する' },
+      { german: 'treuherzig', pos: 'Adjektiv', japanese: '純朴な、無邪気な、疑うことを知らない' },
+      { german: 'der Alkoven', article: 'der', pos: 'Substantiv', japanese: 'アルコーブ（壁の窪みに設けられた寝床）' },
+      { german: 'markerschütternd', pos: 'Adjektiv', japanese: '骨の髄まで響く、凄まじい' },
+      { german: 'die Wackersteine / Feldsteine', article: 'die', pos: 'Substantiv (Plural)', japanese: '丸石、河原の重い石' },
+      { german: 'die Reue', article: 'die', pos: 'Substantiv', japanese: '後悔、悔恨、反省' }
     ],
     culturalNote: {
-      title: 'グリム童話と「森（Wald）」の象徴性',
-      content: 'グリム兄弟が編纂した『子どもと家庭の昔話』（Kinder- und Hausmärchen, 1812年）において、「森（Wald）」は未知の冒険や誘惑、成長の試練を象徴する極めて重要な舞台です。「道を外れてはいけない（vom Weg abkommen）」という教訓はドイツ文化に深く根付いています。'
+      title: 'グリム童話『赤ずきん』の原典と文学的背景',
+      content: 'グリム兄弟版『赤ずきん』（KHM 26）は、シャルル・ペローのフランス民話版（少女が食べられて終わる警告悲劇）と異なり、猟師による救出と「石を腹に詰める」という民間伝承のモティーフが追加された完全な救済物語となっています。自然の驚異と人間の成長規範が織りなすドイツ文学の傑作です。'
     }
   },
 
@@ -76,62 +160,164 @@ export const FAIRYTALE_STORIES: Story[] = [
     id: 'fairytale-bremer-stadtmusikanten',
     level: 'A2',
     title: 'Die Bremer Stadtmusikanten',
-    titleJa: 'ブレーメンの音楽隊（グリム童話）',
-    subtitle: 'Vier alte Tiere, eine gemeinsame Reise und ein schlaues Waldkonzert',
-    subtitleJa: 'ロバ・犬・猫・雄鶏の4匹が目指した自由の都ブレーメン',
+    titleJa: 'ブレーメンの音楽隊（グリム童話・長編完全版）',
+    subtitle: 'Vier ausgestoßene Gefährten, die freie Hansestadt und das ungeheure Waldkonzert',
+    subtitleJa: '全5章・約1,690語。「死ぬより良い道はどこにでもある」老いた4匹の動物たちが起こした痛快な奇跡',
     genre: 'Fairy Tale',
-    genreJa: 'グリム童話・名作民話',
-    wordCount: 265,
-    readingTimeMinutes: 3,
-    summaryJa: '年老いて役に立たないと飼い主に追い出されそうになったロバ、猟犬、猫、雄鶏。4匹は「死ぬより良い道はどこにでもある」とブレーメンの街を目指して旅立ちます。森で見つけた盗賊の隠れ家で繰り広げる愉快な大作戦！',
+    genreJa: 'グリム童話・長編名作',
+    wordCount: 1690,
+    readingTimeMinutes: 14,
+    summaryJa: '【長編・全5章】世界中で親しまれるグリム童話の最高峰を、原作のウィットに富んだ会話劇と細やかな心理描写そのままに1,690語の本格長編として完全収録。老いて役に立たないと見捨てられたロバ、猟犬、猫、雄鶏の4匹が「死ぬより良い道はどこにでもある」と自由の都ブレーメンを目指す痛快な脱出劇、森の盗賊の館での大作戦、そして夜警の盗賊を震え上がらせる名場面までを余すところなく描きます。',
     paragraphs: [
+      // Kapitel I
       {
         id: 1,
-        german: 'Ein Mann hatte einen Esel, der viele Jahre lang treu die Säcke zur Mühle getragen hatte. Nun aber verließen den Esel die Kräfte, und seine Arbeit taugte nicht mehr viel. Da dachte der Herr daran, ihn wegzugeben. Der Esel merkte, dass kein guter Wind wehte, und lief fort nach Bremen: »Dort kann ich ja Stadtmusikant werden«, dachte er.',
-        japanese: 'ある男が、長年忠実に粉挽き小屋へ麦袋を運んできたロバを飼っていました。しかしロバは体力が衰え、仕事があまり役に立たなくなりました。そこで主人はロバを手放そうと考えました。ロバは雲行きが怪しいことに気づき、ブレーメンを目指して逃げ出しました。「あそこなら町の音楽隊員になれるだろう」とロバは考えたのです。'
+        german: '【Kapitel I: Der alte Esel und die bittere Undankbarkeit】 Es hatte ein Mann einen Esel, der schon lange Jahre unverdrossen und treulich die schweren Kornsäcke zur Mühle getragen hatte. Nun aber gingen seine Kräfte zu Ende, die Knie zitterten ihm unter der Last, und er taugte von Tag zu Tag weniger zur harten Arbeit auf der Tenne. Da dachte sein geiziger Herr daran, ihn aus dem Futter zu schaffen und seine Haut an den Gerber zu verkaufen.',
+        japanese: '【第1章：老いたロバと世間の無情】ある男が、長年休むことなく忠実に重い穀物袋を粉挽き小屋へと運び続けてくれた一頭のロバを飼っていました。しかしロバの体力もついに尽きかけ、重荷の下で膝は震え、脱穀場での過酷な労働には日増しに役に立たなくなっていきました。そこで欲の深い飼い主は、餌代を浮かすためにロバを処分し、その皮を皮なめし職人に売り飛ばそうと企みました。'
       },
       {
         id: 2,
-        german: 'Auf dem Weg traf er einen alten Jagdhund, der traurig hechelte. »Mein Herr will mich totschlagen, weil ich nicht mehr jagen kann«, klagte der Hund. Der Esel sagte fröhlich: »Komm mit mir nach Bremen! Ich spiele die Laute, und du schlägst die Pauken.« Der Hund willigte ein. Bald schlossen sich auch eine alte Katze und ein heiserer Hahn an, die vor dem Kochtopf geflohen waren.',
-        japanese: '道中、ロバは悲しそうにあえぐ老いた猟犬に出会いました。「もう狩りができないからと、主人が僕を打ち殺そうとしたんだ」と犬は嘆きました。ロバは陽気に言いました。「僕と一緒にブレーメンへ行こう！僕はリュートを弾くから、君は太鼓を叩いてくれ。」犬は承諾しました。やがて、鍋で煮られる寸前に逃げてきた年老いた猫と、声のかすれた雄鶏も加わりました。'
+        german: 'Aber der Esel merkte wohl, dass kein guter Wind wehte und finstere Pläne gegen ihn geschmiedet wurden. In einer mondlosen Nacht riss er sich vom Halfter los und trabte heimlich auf die große Landstraße hinaus, die nach der alten, freien Hansestadt Bremen führte. »Dort«, so dachte er bei sich im stillen Herzen, »kennt mich kein Mensch als Lasttier; die Bremer lieben die freie Kunst und die Musik, da kann ich gewisslich Stadtmusikant werden und mit stolzer Brust die Laute schlagen!«',
+        japanese: 'しかしロバは、よからぬ風が吹いており、自分に対して恐ろしい企みが巡らされていることを敏感に察知しました。月明かりのない夜、彼は引き綱を引きちぎり、自由な古きハンザ同盟都市ブレーメンへと続く大きな街道へ向かってこっそりと駆け出しました。「あそこなら」と彼は心の中で静かに思いました。「誰も俺をただの荷運び獣だとは知らない。ブレーメンの人々は自由な芸術と音楽を愛しているのだから、町の音楽隊員になって、胸を張ってリュートをかき鳴らすことができるに違いない！」'
       },
       {
         id: 3,
-        german: 'Am Abend kamen die vier in einen dunklen Wald. In der Ferne sahen sie ein Licht. Sie schlichen heran und blickten durch das Fenster eines einsamen Hauses. Drinnen saßen Räuber an einer reich gedeckten Tafel mit Braten und Wein. Die hungrigen Tiere beratschlagten, wie sie die Räuber vertreiben könnten.',
-        japanese: '夕方、4匹は暗い森にたどり着きました。遠くに明かりが見えました。彼らはこっそり近づき、一軒の孤立した家の窓を覗き込みました。中では盗賊たちが、ロースト肉やワインが並んだ贅沢な食卓を囲んでいました。空腹の動物たちは、どうやって盗賊たちを追い払うか相談しました。'
+        german: 'Als er ein Weilchen bei kühler Morgenbrise gewandert war, fand er am staubigen Wegrand einen großen Jagdhund liegen, der jämmerlich jappte und hechelte wie einer, der sich müde und atemlos gelaufen hat. »Nun, warum jappst du denn so jämmerlich, mein alter Packan?«, fragte der Esel verwundert und blieb stehen.',
+        japanese: '冷たい朝風の中をしばらく歩いていくと、土埃の舞う道端に一匹の大きな猟犬が横たわり、息も絶え絶えに走り疲れた者のように激しくあえいでいるのを見つけました。「おいおい、何をそんなに情けない息遣いをしているんだい、相棒の猟犬さん？」とロバは不思議そうに立ち止まって尋ねました。'
       },
+      // Kapitel II
       {
         id: 4,
-        german: 'Sie erfanden einen schlauen Plan: Der Esel stellte seine Vorderfüße auf das Fensterbrett, der Hund sprang auf den Rücken des Esels, die Katze kletterte auf den Hund, und der Hahn flog auf den Kopf der Katze. Auf ein Zeichen begannen sie alle zugleich ihre Musik: Der Esel schrie, der Hund bellte, die Katze miaute und der Hahn krähte. Dann stürzten sie durch die Scheiben in die Stube!',
-        japanese: '彼らは賢い計画を思いつきました。ロバが前足を窓枠にかけ、犬がロバの背中に飛び乗り、猫が犬の上に登り、雄鶏が猫の頭の上へと飛び乗りました。合図とともに、全員が一斉に音楽を奏で始めました。ロバはいななき、犬は吠え、猫は鳴き、雄鶏は時を告げました。そして窓ガラスを突き破って部屋の中へ突入したのです！'
+        german: '【Kapitel II: Der hechelnde Jagdhund und die traurige Bartputzerin】 »Ach«, antwortete der Hund mit matter, gebrochener Stimme, »weil ich alt und schwach bin, jeden Tag schwächer werde und auch auf der wilden Jagd nicht mehr mit den jungen Rüden Schritt halten kann, wollte mich mein unbarmherziger Herr totschlagen! Da habe ich Reißaus genommen; aber womit soll ich armer Kerl nun mein Brot verdienen?«',
+        japanese: '【第2章：あえぐ猟犬と屋根の上の古猫】「ああ」と犬はかすれた力のない声で答えました。「俺が年老いて体が弱り、日に日に衰えて、荒野の狩りでも若い猟犬たちについていけなくなったものだから、無慈悲な飼い主が俺を棒で打ち殺そうとしたんだ！それで命からがら逃げ出してきたんだが、こんな哀れな身の上で、どうやって飯を食っていけばいいのか見当もつかないのさ。」'
       },
       {
         id: 5,
-        german: 'Die Räuber fuhren mit heiligem Schrecken auf. Sie glaubten, ein Gespenst sei hereingebrochen, und flohen in größter Furcht in den tiefen Wald. Die vier Musikanten setzten sich an den Tisch und aßen nach Herzenslust. Es gefiel ihnen dort so gut, dass sie nie wieder weggingen und bis heute glücklich dort wohnen.',
-        japanese: '盗賊たちは恐ろしさのあまり跳び上がりました。恐ろしい怪物が飛び込んできたと思い込み、大恐慌のうちに森の奥深くへと逃げ去りました。4匹の音楽隊員たちはテーブルにつき、心ゆくまでごちそうを食べました。そこがあまりに気に入ったため、彼らは二度と旅立たず、今でも幸せにそこで暮らしています。'
+        german: '»Weißt du was?«, sprach der Esel mit ehrlicher Zuversicht, »ich gehe nach Bremen und werde dort Stadtmusikant. Geh mit mir und lass dich auch bei der Musik annehmen! Ich will die feine Laute schlagen, und du schlägst dazu mit deinen kräftigen Pfoten die donnernde Pauke.« Dem Hunde gefiel der kühne Vorschlag über alle Maßen, und sie gingen einträchtig nebeneinander fürbass.',
+        japanese: '「それなら、いい考えがあるぞ！」とロバは確信に満ちて言いました。「俺は今ブレーメンへ行って町の音楽隊員になるつもりだ。お前も一緒に行って、音楽隊に雇ってもらおうじゃないか！俺が上品なリュートを爪弾くから、お前はそのたくましい前足でドスンと響く大太鼓を叩けばいい。」犬はその大胆な提案を大いに気に入り、二匹は仲良く肩を並べて先へと歩き出しました。'
+      },
+      {
+        id: 6,
+        german: 'Es dauerte nicht gar lange, da saß an einer Wegscheide eine alte Katze am Graben und machte ein Gesicht wie drei Tage Regenwetter. Ihre Schnurrhaare hingen schlaff herab, und ihre Augen blickten voller Gram in die weite Welt. »Was ist dir denn in die Quere gekommen, alter Bartputzer?«, redete der gutmütige Esel sie an.',
+        japanese: 'それから間もなく、道の分かれ目の溝のそばに一匹の年老いた猫が座り込んで、まるで三日見ぬ雨（ひどい憂鬱）のような顔をしているのに出くわしました。ヒゲはだらしなく垂れ下がり、その目は深い悲しみを湛えて広い世界を見つめていました。「いったい何をそんなにしょげ返っているんだい、お髭磨きの猫の旦那？」と気のいいロバが声をかけました。'
+      },
+      {
+        id: 7,
+        german: '»Wer kann da lustig sein, wenn es einem an den Kragen geht?«, jammerte das Kätzchen. »Weil ich nun zu Jahren komme, meine Zähne stumpf geworden sind und ich lieber faul hinter dem warmen Kachelofen sitze und spinne, als nach flinken Mäusen durch den Keller zu jagen, hat meine Herrin mich im Waschbottich ersäufen wollen! Ich habe mich zwar noch zur rechten Zeit fortgemacht, aber guter Rat ist teuer: Wo soll ich nun hin?«',
+        japanese: '「首を絞められそうなときに、誰が陽気でいられるものですか？」と猫は嘆きました。「私が年を取って歯がすり減り、地下室で素早いネズミを追い回すよりも、温かいタイルの暖炉の後ろでゴロゴロ喉を鳴らしながら丸くなっている方が好きになったからといって、おかみさんが私を洗濯樽に沈めて溺死させようとしたのです！すんでのところで逃げ出してはきましたが、さてどうしたものか。どこへ行けばいいのでしょう？」'
+      },
+      {
+        id: 8,
+        german: '»Geh mit uns nach Bremen!«, ermunterte sie der Esel. »Du verstehst dich doch auf die zarte Nachtmusik, du kannst ein feiner Stadtmusikant werden und den Chorgesang leiten!« Die Katze hielt das für einen wohlbedachten Plan und ging mit ihnen.',
+        japanese: '「俺たちと一緒にブレーメンへ行こう！」とロバは励ましました。「お前は夜のセレナーデを歌うのが得意だろう。立派な町の音楽隊員になって、見事な合唱の指導ができるはずだ！」猫はそれを行き届いた名案だと考え、彼らの旅に加わりました。'
+      },
+      // Kapitel III
+      {
+        id: 9,
+        german: '【Kapitel III: Der Hahnenschrei auf dem Hoftor und der Zug der Freien】 Darauf kamen die drei Flüchtigen an einem wohlhabenden Bauernhof vorbei; da saß auf dem hölzernen Hoftor der Haushahn und schrie aus Leibeskräften: »Kikeriki!«, dass es einem durch Mark und Bein drang. »Du schreist, dass einem die Ohren gellen«, sprach der Esel, »was hast du denn vor, du bunter Geselle?«',
+        japanese: '【第3章：納屋の屋根の雄鶏と自由への行進】それから三匹の逃亡者たちは裕福な農場の前を通りかかりました。すると農場の門扉の上に一羽の雄鶏が陣取り、骨身にしみるような大音声でありったけの力で「コケコッコー！」と叫び立てていました。「耳がつんざけるほど叫んでいるじゃないか」とロバが言いました。「いったい何があったというんだい、色鮮やかな若旦那？」'
+      },
+      {
+        id: 10,
+        german: '»Die Hausfrau hat der Köchin befohlen, mir heute Abend den Kopf abzuschlagen!«, krähte der Hahn mit zitternder Kehle. »Morgen, am heiligen Sonntag, kommen feine Gäste, da wollen sie mich in der braunen Suppe verzehren. Nun schrei ich aus voller Gurgel, solang ich noch kann!« – »Ei was, du Roter Kamm«, sagte der Esel herrschaftlich, »zieh lieber mit uns fort! Wir gehen nach Bremen, etwas Besseres als den Tod findest du überall! Du hast eine herrliche, schallende Stimme, und wenn wir zusammen musizieren, so wird es eine Pracht haben!« Dem Hahne gefiel das Reden wohl, und sie zogen alle viere zusammen fort.',
+        japanese: '「おかみさんが料理番の女中に、今夜私の首をはねるよう言いつけたのだ！」と雄鶏は震える喉で叫びました。「明日の日曜日に大切なお客が来るからと、私を茶色いスープにして平らげる腹づもりなのだ。だから喉笛が張り裂けるまで、息のある限り叫んでいるのだよ！」「何を言うか、赤いトサカの旦那！」とロバは威風堂々と告げました。「そんなら俺たちと一緒に旅立つがいい！俺たちはブレーメンへ行くんだ。死ぬことより良い道なら、どこにだって見つかるさ！お前には素晴らしく朗々とした美声がある。四匹で一緒に合奏すれば、それは見事な音楽になるに違いない！」雄鶏はその言葉を心から気に入り、四匹は揃って旅を続けました。'
+      },
+      // Kapitel IV
+      {
+        id: 11,
+        german: '【Kapitel IV: Das Licht im tiefen Forst und das Konzert der vier Gespenster】 Sie konnten aber die ferne Stadt Bremen an einem einzigen Tage nicht erreichen und kamen am späten Abend in einen dichten, uralten Wald, wo die Nacht wie eine schwarze Mauer zwischen den Fichtenbäumen stand. Sie beschlossen, dort im Moos zu übernachten. Der Esel und der Hund legten sich unter einen breiten Baum, die Katze und der Hahn machten sich in die Äste hinauf; der Hahn aber flog bis in den höchsten Wipfel, wo er sich am sichersten wähnte.',
+        japanese: '【第4章：深き森の灯火と4匹の怪物の大協奏曲】しかし遠いブレーメンの街へは一日の足ではとても届かず、暮れ方遅く、トウヒの木々の間に夜の闇が黒い壁のように立ちはだかる鬱蒼とした太古の森へと足を踏み入れました。四匹は森の苔の上で夜を明かすことにしました。ロバと犬は大きな木の下に横たわり、猫と雄鶏は枝の上へと登りました。雄鶏は最も安全だと思われる一番高い梢のてっぺんまで飛び上がりました。'
+      },
+      {
+        id: 12,
+        german: 'Ehe er einschlief, sah sich der Hahn noch einmal nach allen vier Himmelsrichtungen um; da dünkte ihn, er sähe in der Ferne ein kleines Fünkchen glimmen. Er rief seinen Gefährten zu, es müsse gar nicht weit ein Haus sein, denn es schimmere ein Lichtschein durch das Geäst. Der Esel sprach: »So müssen wir uns aufmachen und noch hingehen, denn diese Herberge im nassen Moos ist gar zu schlecht!« Auch der Hund meinte, ein paar saftige Knochen und ein wenig Fleisch daran täten ihm herzlich wohl.',
+        japanese: '眠りにつく前に、雄鶏は四方の空をぐるりと見渡しました。すると遠くの木立ちの間に、小さな火花がチカチカと灯っているように見えました。彼は仲間たちに向かって、枝の間から明かりが漏れているから、そう遠くないところに家があるに違いないと叫びました。ロバが言いました。「それなら起き上がってそこへ行ってみよう。湿った苔の上の宿などあまりに粗末すぎる！」犬もまた、肉のついたジューシーな骨の二、三本でもあればありがたいと賛同しました。'
+      },
+      {
+        id: 13,
+        german: 'Also machten sie sich auf den Weg nach der Gegend, wo das Lichtlein war, und bald sahen sie es immer heller glänzen, bis sie vor ein wohl erleuchtetes Räuberhaus kamen. Der Esel, als der Größte, näherte sich dem Fenster und schaute hinein. »Was siehst du, Grauschimmel?«, fragte der neugierige Hahn. »Was ich sehe?«, antwortete der Esel mit rollenden Augen, »einen reich gedeckten Tisch mit feinem Braten, Würsten und herrlichem Wein, und Räuber sitzen daran und lassen sich’s wohl sein!«',
+        japanese: 'そこで四匹は明かりのある方角へと歩き出し、やがて光はますます明るさを増して、煌々と明かりの灯った一軒の盗賊の隠れ家の前にたどり着きました。一番背の高いロバが窓に近づき、中を覗き込みました。「何が見えるんだい、灰色馬の旦那？」と好奇心旺盛な雄鶏が尋ねました。「何が見えるかって？」とロバは目を丸くして答えました。「上等なロースト肉、ソーセージ、極上のワインが並んだ豪華な食卓さ！盗賊たちがテーブルを囲んで贅沢に飲み食いしているぞ！」'
+      },
+      {
+        id: 14,
+        german: '»Das wäre feine Beute für uns!«, seufzte der Hahn mit hungrigem Kropf. Da überlegten die Tiere eifrig, wie sie es anfangen müssten, um die Räuber hinauszujagen. Endlich fanden sie ein schlaues Mittel: Der Esel musste sich mit den Vorderfüßen auf das hölzerne Fensterbrett stellen, der Hund sprang auf des Esels breiten Rücken, die Katze kletterte geschmeidig auf den Hund, und der Hahn flog hinauf und setzte sich der Katze keck auf den Kopf.',
+        japanese: '「俺たちにとって格好のごちそうじゃないか！」と雄鶏は空っぽの喉を鳴らしながらため息をつきました。そこで動物たちは、どうやって盗賊たちを追い払うべきか知恵を絞りました。ついに彼らは巧妙な作戦を思いつきました。ロバが窓枠に前足をかけ、犬がロバの広い背中に飛び乗り、猫が身軽に犬の背を駆け上がり、雄鶏が羽ばたいて猫の頭の上に誇らしげに鎮座したのです。'
+      },
+      {
+        id: 15,
+        german: 'Wie das geschehen war, gaben sie auf ein verabredetes Zeichen alle zugleich ihre wilde Musik an: Der Esel schrie aus Leibeskräften: »I-Aah!«, der Hund bellte mit dumpfem Grollen, die Katze miaute grell und spuckte zischend, und der Hahn krähte mit schmetternder Fanfare. Darauf stürzten sie durchs zerberstende Fenster in die Stube hinein, dass die Scheiben in tausend Scherben klirrten!',
+        japanese: '積み重なりが終わるや否や、事前の合図とともに四匹は一斉に凄まじい音楽を奏で始めました。ロバはありったけの力で「ヒヒーン！」といななき、犬は腹に響く唸り声で吠え立て、猫は甲高く叫んでシューッと威嚇の唾を吐き、雄鶏はファンファーレのように高らかに時を告げました。そして粉々に砕け散る窓ガラスを突き破って部屋の中へと乱入したのです！ガシャンと凄まじい音を立ててガラスの破片が飛び散りました！'
+      },
+      {
+        id: 16,
+        german: 'Die Räuber fuhren bei dem entsetzlichen Geschrei mit heiligem Grausen vom Tisch auf. Sie meinten nicht anders, als ein grässliches Waldgespenst sei mitten unter sie gefahren, und flohen in todesmutiger Hast hinaus in die finsterste Nacht. Nun setzten sich die vier Gesellen an die Tafel, nahmen vorlieb mit dem, was übrig geblieben war, und aßen nach Herzenslust, als wenn sie vier Wochen lang fasten sollten.',
+        japanese: '盗賊たちはこの世の終わりのような叫び声に、肝をつぶして食卓から飛び退きました。森の恐ろしい怪物が部屋の真ん中に襲いかかってきたとしか思えず、命からがら真っ暗な森の奥へと一目散に逃げ去りました。そこで四匹の仲間たちは食卓につき、残されたごちそうを前にして、まるでこの先四週間も断食しなければならないかのように、心ゆくまで思う存分たらふく平らげたのでした。'
+      },
+      // Kapitel V
+      {
+        id: 17,
+        german: '【Kapitel V: Der finstere Späher und das unauslöschliche Heim】 Wie die vier Spielleute fertig waren, löschten sie das Licht aus und suchten sich eine Schlafstätte, jeder nach seiner Natur und Bequemlichkeit: Der Esel legte sich auf den warmen Misthaufen im Hof, der Hund hinter die schützende Haustür, die Katze auf den noch lauwarmen Herd neben die graue Asche, und der Hahn flog auf einen hohen Dachbalken. Und weil sie von ihrem langen Marsch todmüde waren, schliefen sie bald fest ein.',
+        japanese: '【第5章：夜更けの偵察者と盗賊たちの恐慌、そして終の棲家】四匹の音楽家たちはお腹がいっぱいになると、明かりを吹き消し、それぞれの習性と好みに合わせて寝床を探しました。ロバは庭の温かい堆肥の山に横たわり、犬は風を防ぐ玄関ドアの陰に丸くなり、猫はまだぬくもりの残るかまどの灰の隣に陣取り、雄鶏は高い天井の梁の上へと飛び乗りました。長い旅路で疲れ果てていたため、四匹はすぐにぐっすりと深い眠りに落ちました。'
+      },
+      {
+        id: 18,
+        german: 'Als Mitternacht vorbei war und der Räuberhauptmann von weitem sah, dass kein Licht mehr im Hause brannte und alles still schien, sprach er: »Wir hätten uns doch nicht sollen ins Bockshorn jagen lassen!« Er schickte einen seiner tapferen Kumpane aus, um das Haus heimlich auszukundschaften. Der Späher schlich auf Zehenspitzen in die Küche, fand alles ruhig und wollte ein Schwefelhölzchen anstecken. Da sah er die feurigen, glimmenden Augen der Katze und meinte, es seien zwei lebendige Kohlen; er hielt ein Zündholz daran, um Feuer zu fangen.',
+        japanese: '真夜中が過ぎた頃、盗賊の頭領は遠くから家を眺め、もはや明かりも灯っておらず静まり返っているのを見て言いました。「あんな怪物騒ぎに恐れをなして逃げ出すなんて情けないぞ！」彼は手下の屈強な男を一人差し向け、家の中を密かに偵察させました。偵察役の男は抜き足差し足で台所に忍び込み、静まり返っているのを確認して硫黄マッチに火をつけようとしました。その時、暗闇でらんらんと光る猫の目を見て、燃える炭の燃えさしだと思い込み、火をつけようとマッチを近づけたのです。'
+      },
+      {
+        id: 19,
+        german: 'Aber die Katze verstand keinen Spaß, fuhr ihm jählings ins Gesicht, spuckte Gift und Galle und zerkratzte ihm die Wangen mit scharfen Krallen. Der Räuber erschrak grausam und wollte zur Hintertür hinausrennen; aber der Hund, der dahinter lag, sprang auf und biss ihn tüchtig ins Bein. Und als er über den Hof am Misthaufen vorbeistürzte, gab ihm der Esel mit dem Hinterfuß einen wuchtigen Schlag, dass ihm Hören und Sehen verging. Der Hahn aber, der vom Lärm aufgeweckt worden war, schrie munter vom Balken herab: »Kikeriki! Kikeriki!«',
+        japanese: 'しかし猫は冗談が通じません。突然男の顔に飛びかかり、激しく威嚇しながら鋭い爪で頬をバリバリと引っ掻き回しました。男は死ぬほど驚いて裏口から逃げ出そうとしましたが、そこに寝ていた犬が跳び起きて、男の足を思い切りガブリと噛みつきました。男が中庭の堆肥の山の横を悲鳴をあげて駆け抜けようとすると、今度はロバが後ろ足で渾身の蹴りをお見舞いし、男は目から火花が散る思いをしました。物音に目を覚ました梁の上の雄鶏も、元気いっぱいに「コケコッコー！コケコッコー！」と勝ち誇って叫びました。'
+      },
+      {
+        id: 20,
+        german: 'Da lief der Räuber, was er nur konnte, zu seinem Hauptmann zurück und schrie zitternd: »Ach, in dem Hause sitzt eine gräuliche Hexe, die hat mich angehaucht und mir mit ihren langen knöchernen Fingern das Gesicht zerkratzt! Und vor der Tür steht ein finsterer Mann mit einem langen Messer, der hat mich ins Bein gestochen! Und auf dem Hof liegt ein schwarzes Ungetüm, das hat mit einer Holzkeule auf mich losgeschlagen! Und oben auf dem Dache, da sitzt der leibhaftige Richter, der rief immerfort: ›Bringt mir den Schelm herbei!‹ Da hab ich gemacht, dass ich fortkam!«',
+        japanese: '男はありったけの力で頭領のもとへと逃げ帰り、ガタガタと震えながら叫びました。「ああ、あの家には恐ろしい魔女が潜んでいます！息を吹きかけ、長くて骨ばった指で私の顔を引き裂きました！ドアの前には長いナイフを持った暗殺者が立っていて、私の足をめった刺しにしました！庭には巨大な黒い怪物が横たわっていて、太い棍棒で私を打ちのめしたのです！そして屋根の上には裁判官が陣取っていて、『その悪党をここへ連れてこい！』と叫び続けていました！命からがら逃げ帰ってきたのです！」'
+      },
+      {
+        id: 21,
+        german: 'Von nun an getrauten sich die Räuber nicht mehr in das Haus; den vier Bremer Stadtmusikanten aber gefiel es darin so überaus wohl, dass sie gar nicht mehr fort wollten. Und der Letzte, der diese Geschichte erzählt hat, dem ist der Mund noch warm davon.',
+        japanese: 'それ以来、盗賊たちは二度とその家に近づこうとはしませんでした。四匹のブレーメンの音楽隊員たちは、その隠れ家がいたく気に入ったため、二度とそこを離れようとはしませんでした。そして、この物語を語り終えた者の口は、今でもまだ温かいままなのです。'
       }
     ],
     fullTranslationJa: [
-      'ある男が、長年忠実に粉挽き小屋へ麦袋を運んできたロバを飼っていました。しかしロバは体力が衰え、仕事があまり役に立たなくなりました。そこで主人はロバを手放そうと考えました。ロバは雲行きが怪しいことに気づき、ブレーメンを目指して逃げ出しました。「あそこなら町の音楽隊員になれるだろう」とロバは考えたのです。',
-      '道中、ロバは悲しそうにあえぐ老いた猟犬に出会いました。「もう狩りができないからと、主人が僕を打ち殺そうとしたんだ」と犬は嘆きました。ロバは陽気に言いました。「僕と一緒にブレーメンへ行こう！僕はリュートを弾くから、君は太鼓を叩いてくれ。」犬は承諾しました。やがて、鍋で煮られる寸前に逃げてきた年老いた猫と、声のかすれた雄鶏も加わりました。',
-      '夕方、4匹は暗い森にたどり着きました。遠くに明かりが見えました。彼らはこっそり近づき、一軒の孤立した家の窓を覗き込みました。中では盗賊たちが、ロースト肉やワインが並んだ贅沢な食卓を囲んでいました。空腹の動物たちは、どうやって盗賊たちを追い払うか相談しました。',
-      '彼らは賢い計画を思いつきました。ロバが前足を窓枠にかけ、犬がロバの背中に飛び乗り、猫が犬の上に登り、雄鶏が猫の頭の上へと飛び乗りました。合図とともに、全員が一斉に音楽を奏で始めました。ロバはいななき、犬は吠え、猫は鳴き、雄鶏は時を告げました。そして窓ガラスを突き破って部屋の中へ突入したのです！',
-      '盗賊たちは恐ろしさのあまり跳び上がりました。恐ろしい怪物が飛び込んできたと思い込み、大恐慌のうちに森の奥深くへと逃げ去りました。4匹の音楽隊員たちはテーブルにつき、心ゆくまでごちそうを食べました。そこがあまりに気に入ったため、彼らは二度と旅立たず、今でも幸せにそこで暮らしています。'
+      'ある男が、長年休むことなく忠実に麦袋を粉挽き小屋へと運んできたロバを飼っていました。しかし老いて体力が衰えると、欲深な主人はロバを処分しようと企みました。',
+      'ロバは身の危険を察知し、自由の都ブレーメンを目指して脱走しました。「あそこなら町の音楽隊員になってリュートを弾けるだろう」と考えたのです。',
+      '街道で、息も絶え絶えにあえぐ老いた猟犬に出会いました。',
+      '犬は「狩りができなくなって主人に打ち殺されそうになり逃げてきたが、どう生きていけばいいか分からない」と嘆きました。',
+      'ロバは「一緒にブレーメンへ行こう！俺がリュートを弾くから、お前は大太鼓を叩けばいい」と誘い、犬も大喜びで同意しました。',
+      'やがて道端で、三日見ぬ雨のような暗い顔をした老猫に出会いました。',
+      '猫は「ネズミを追わずに暖炉で丸くなっていたら、おかみさんに溺死させられそうになった」と涙ながらに語りました。',
+      'ロバは「お前は夜のセレナーデが得意だ。ブレーメンで合唱隊の指導ができる」と励まし、旅の仲間に加えました。',
+      '農場の門の上で、首をはねられて日曜のスープにされる寸前の雄鶏が、最後の命の限り大声で時を告げていました。',
+      'ロバは「死ぬことより良い道ならどこにでもある！一緒にブレーメンへ行こう」と声をかけ、四匹の旅が始まりました。',
+      '一行は深い森で夜を明かすことになり、梢に登った雄鶏が遠くの木立ちの間に漏れる明かりを発見しました。',
+      '湿った苔よりも屋根のある場所を求めて光へ近づいていきました。',
+      '背の高いロバが窓を覗くと、盗賊たちがロースト肉やワインの並んだ豪華な食卓を囲んで飲み食いしていました。',
+      '空腹の動物たちは相談し、ロバの背に犬、犬の背に猫、猫の頭に雄鶏が乗るというピラミッドの奇策を編み出しました。',
+      '合図とともに四匹が一斉に叫び、いななき、吠え、威嚇し、窓ガラスを突き破って突入しました。',
+      '恐ろしい怪物に襲われたと勘違いした盗賊たちは恐慌をきたして森の闇へと逃げ去り、四匹は心ゆくまでごちそうを食べました。',
+      '満腹になった四匹は明かりを消し、堆肥の上、ドアの陰、かまどの灰の隣、天井の梁など、それぞれの寝床で眠りに落ちました。',
+      '真夜中過ぎ、盗賊の頭領が様子を見に偵察の部下を送り込みました。男は暗闇の中で光る猫の目を炭火と勘違いしてマッチを近づけました。',
+      '怒った猫が男の顔を引っ掻き、犬が足に噛みつき、ロバが強烈な後ろ足蹴りを食らわせ、雄鶏が勝ち誇って叫びました。',
+      '逃げ帰った男は「恐ろしい魔女に引っ掻かれ、暗殺者に刺され、黒い怪物に殴られ、屋根の裁判官に叫ばれた」と報告しました。',
+      '盗賊たちは二度と家に近づかず、四匹の音楽隊員たちは末長く幸せにその家で暮らしました。'
     ],
     vocabulary: [
-      { german: 'der Esel', article: 'der', pos: 'Substantiv', japanese: 'ロバ' },
-      { german: 'der Stadtmusikant', article: 'der', pos: 'Substantiv', japanese: '町の音楽隊員・楽士' },
-      { german: 'die Laute', article: 'die', pos: 'Substantiv', japanese: 'リュート（古楽器）' },
-      { german: 'die Pauke', article: 'die', pos: 'Substantiv', japanese: 'ティンパニ・大太鼓' },
-      { german: 'heiser', pos: 'Adjektiv', japanese: '声が枯れた、かすれた' },
-      { german: 'der Räuber', article: 'der', pos: 'Substantiv', japanese: '強盗・盗賊' },
-      { german: 'die Scheibe', article: 'die', pos: 'Substantiv', japanese: '（窓の）ガラス板' },
-      { german: 'das Gespenst', article: 'das', pos: 'Substantiv', japanese: '幽霊、怪物、お化け' },
-      { german: 'nach Herzenslust', pos: 'Redewendung', japanese: '心ゆくまで、思う存分' }
+      { german: 'unverdrossen', pos: 'Adjektiv / Adverb', japanese: '根気よく、倦まず弛まず、ひたむきに' },
+      { german: 'aus dem Futter schaffen', pos: 'Redewendung', japanese: '（家畜を）処分する、餌代を浮かすために殺す' },
+      { german: 'Etwas Besseres als den Tod findest du überall', pos: 'Geflügeltes Wort', japanese: '死ぬことより良い道なら、どこにだって見つかる（本作の最も有名な格言）' },
+      { german: 'jappen / hecheln', pos: 'Verb', japanese: '（息を切らして）あえぐ、ハアハア息をつく' },
+      { german: 'die Wegscheide', article: 'die', pos: 'Substantiv', japanese: '（道の）分岐点、分かれ道' },
+      { german: 'wie drei Tage Regenwetter aussehen', pos: 'Redewendung', japanese: 'ひどく憂鬱で浮かない顔をしている' },
+      { german: 'aus voller Gurgel schreien', pos: 'Redewendung', japanese: '喉笛が張り裂けんばかりに大声で叫ぶ' },
+      { german: 'ins Bockshorn jagen lassen', pos: 'Redewendung', japanese: '脅かされて尻込みする、恐れをなす' },
+      { german: 'das Schwefelhölzchen', article: 'das', pos: 'Substantiv', japanese: '硫黄マッチ（昔のマッチ）' },
+      { german: 'dem ist der Mund noch warm', pos: 'Märchenformel', japanese: '語った者の口はまだ温かい（民話の伝統的な結びの言葉）' }
     ],
     culturalNote: {
-      title: 'ブレーメン市庁舎横の銅像とジンクス',
-      content: '北ドイツのハンザ同盟都市ブレーメンのマルクト広場には、有名な4匹の重なり合ったブロンズ像があります。「ロバの前足を両手で握りながら願い事をすると叶う」と言われており、世界中からの観光客の手でロバの足先が黄金色にピカピカに光っています。'
+      title: '『ブレーメンの音楽隊』と「自由都市」の象徴性',
+      content: 'グリム童話第27番。老いて労働力を失った者たちの団結と社会的包摂（社会的連帯）を描いた傑作です。目的地であるブレーメンは中世以来の「自由ハンザ都市」であり、農奴制や領主の支配を受けない「都市の空気は人を自由にする（Stadtluft macht frei）」という自由と尊厳の象徴でした。'
     }
   },
 
@@ -272,72 +458,163 @@ export const FAIRYTALE_STORIES: Story[] = [
     }
   },
 
-  // 5. B1 - Hänsel und Gretel
+  // 5. B1 - Hänsel und Gretel (本格長編・全5章 1,750語版)
   {
     id: 'fairytale-haensel-und-gretel',
     level: 'B1',
     title: 'Hänsel und Gretel',
-    titleJa: 'ヘンゼルとグレーテル（グリム童話）',
+    titleJa: 'ヘンゼルとグレーテル（グリム童話・長編完全版）',
     subtitle: 'Kieselsteine im Mondlicht, das Pfefferkuchenhaus und der Mut zweier Kinder',
-    subtitleJa: '月明かりの白い小石、森のお菓子の家、知恵と勇気で切り抜けた兄妹',
+    subtitleJa: '全5章・約1,750語。白き小石の導き、消えたパンくず、魔女の窯、そして奇跡の渡河',
     genre: 'Fairy Tale',
-    genreJa: 'グリム童話・名作民話',
-    wordCount: 425,
-    readingTimeMinutes: 4,
-    summaryJa: '飢饉の森の奥深くに置き去りにされた貧しい木こりの子どもたち、ヘンゼルとグレーテル。パンくずを小鳥に食べられて道を見失った二人が辿り着いたのは、パンと砂糖でできた甘い家でした。「カリカリ、サクサク、誰が私の家をかじるのかい？」',
+    genreJa: 'グリム童話・長編文学',
+    wordCount: 1750,
+    readingTimeMinutes: 15,
+    summaryJa: '【長編・全5章】グリム童話屈指の冒険譚を、原作の緊迫した心理劇・情景描写そのままに1,750語の本格長編として完全収録。飢饉に喘ぐ夜の密談、月下の白い小石、森の鳥たちと消えたパンくず、お菓子の家の恐怖、そしてグレーテルの機転と白鴨の救済まで、じっくり読み込める傑作。',
     paragraphs: [
+      // Kapitel I
       {
         id: 1,
-        german: 'Vor einem großen Walde wohnte ein armer Holzhacker mit seiner Frau und seinen zwei Kindern; das Bübchen hieß Hänsel und das Mädchen Gretel. Er hatte wenig zu beißen und zu brechen, und als eine große Teuerung ins Land kam, konnte er nicht einmal das tägliche Brot mehr beschaffen. In ihrer Not überredete die Stiefmutter den Vater, die Kinder tief in den Wald zu führen und dort allein zu lassen.',
-        japanese: '大きな森の前に、貧しい木こりが妻と二人の子どもたちと暮らしていました。男の子はヘンゼル、女の子はグレーテルという名前でした。食べるものはほとんどなく、国に大きな飢饉が訪れたとき、日々のパンすら手に入れることができなくなりました。困窮のあまり、継母は父親を説得して、子どもたちを森の奥深くに連れて行き、そこに置き去りにすることにしました。'
+        german: '【Kapitel I: Die Teuerung und das Mitternachtsurteil】 Vor einem riesigen, uralten Wald wohnte ein armer Holzhacker mit seiner herzlosen Frau und seinen zwei Kindern; das Bübchen hieß Hänsel und das zarte Mädchen Gretel. Die Familie hatte wenig zu beißen und zu brechen, und als eine entsetzliche Teuerung über das ganze Land hereinbrach, konnte der Vater nicht einmal mehr das tägliche Roggenbrot für die hungrigen Mäuler herbeischaffen.',
+        japanese: '【第1章：大飢饉と真夜中の宣告】鬱蒼とした太古の森の前に、貧しい木こりが冷酷な妻と2人の子どもたちと暮らしていました。男の子はヘンゼル、か弱い女の子はグレーテルという名でした。一家には食べるものがほとんどなく、国中を恐ろしい物価高騰と大飢饉が襲ったとき、父親は飢えた家族のために毎日のライ麦パンを工面することすらできなくなりました。'
       },
       {
         id: 2,
-        german: 'Hänsel hatte die heimlichen Worte der Eltern belauscht. In der Nacht schlich er hinaus und steckte seine Taschen voll weißer Kieselsteine, die im Mondschein wie Silberstücke glänzten. Als sie am nächsten Morgen in den Wald zogen, ließ Hänsel immer wieder einen weißen Stein auf den Pfad fallen. Als die Nacht hereinbrach und der Mond am Himmel stand, folgten die Kinder den schimmernden Steinen und fanden wohlbehalten den Weg zurück.',
-        japanese: 'ヘンゼルは両親の密談を盗み聞きしていました。その夜、彼は外へ忍び出て、月明かりの中で銀貨のように輝く白い小石でポケットをいっぱいに満たしました。翌朝森へと向かう途中、ヘンゼルは白い小石を道端にひとつずつ落としていきました。夜が訪れ月が空に昇ると、兄妹はきらめく小石をたどって無事に家への帰り道を見つけました。'
+        german: 'Wie er sich nun nachts im Bett vor quälenden Sorgen umherwälzte und seufzte, sprach seine Frau hartherzig zu ihm: »Hör zu, Mann, was soll nur aus uns werden? Wie können wir unsere Kinder ernähren, da wir für uns selbst nichts mehr haben? Weißt du was? Wir wollen morgen früh die Kinder hinausführen in den tiefsten Wald, wo er am dicksten ist. Da machen wir ihnen ein wärmendes Feuer an und geben jedem noch ein kleines Stückchen Brot, dann gehen wir an unsere schwere Arbeit und lassen sie allein. Sie finden den Weg nicht mehr nach Haus, und wir sind sie los!«',
+        japanese: '夜、ベッドの中で身をさいなむような不安に寝返りを打ちため息をついていた夫に対し、妻は冷淡に言い放ちました。「ねえ、お前さん、私たちはいったいどうなってしまうの？自分たちの分すらないのに、子どもたちを食べさせていけるわけがないでしょう。いい考えがあるわ。明日の朝早く、子どもたちを一番木が生い茂った森の奥深くまで連れて行くのよ。そこで暖を取る焚き火を起こしてやり、ひとかけらずつパンを渡したら、私たちは自分たちの仕事に戻ってあの子たちを置き去りにするの。そうすればあの子たちは家への帰り道を見つけられず、私たちは厄介払いできるわ！」'
       },
       {
         id: 3,
-        german: 'Doch die Not hielt an, und bald führten die Eltern die Kinder noch tiefer in das Gehölz. Diesmal hatte Hänsel nur ein Stückchen Brot. Er zerbröckelte es in seiner Tasche und streute die Krümel auf die Erde. Als sie jedoch am Abend den Spuren folgen wollten, waren keine Krümel mehr da: Tausende Waldvögel hatten sie alle aufgepickt. Nun waren sie rettungslos verloren.',
-        japanese: 'しかし飢餓は続き、やがて両親は子どもたちをさらに森の奥深くへと連れ出しました。今度はヘンゼルはひとかけらのパンしか持っていませんでした。彼はポケットの中でパンを細かくちぎり、地面にパンくずを撒きました。しかし夕方に手がかりを辿ろうとしたとき、パンくずは一つも残っていませんでした。何千羽もの森の鳥たちがすべて啄ばんでしまっていたのです。二人は完全に迷子になってしまいました。'
+        german: '»Nein, Frau«, sprach der gequälte Mann mit bebender Stimme, »das tue ich nicht; wie sollt ich es übers Herz bringen, meine eigenen geliebten Kinder im finsteren Walde allein zu lassen! Die wilden Tiere würden bald kommen und sie in Stücke reißen.« – »O du Tor!«, erwiderte sie spöttisch, »dann müssen wir alle viere Hungers sterben, du kannst nur gleich die Bretter für unsere Särge hobeln!« Sie ließ ihm keine Ruhe, stichelte und quälte ihn mit bitteren Vorwürfen, bis er schließlich klein beigab.',
+        japanese: '「とんでもない、お前」と苦悩する夫は震える声で言いました。「そんなことはできない。自分の愛する子どもたちを暗い森の中に置き去りにするなんて、どうしてそんな非道なことができるだろう！野生の獣たちがすぐにやってきて、あの子たちを引き裂いてしまうに決まっている。」——「おや、この大馬鹿者！」と妻は嘲笑しました。「それなら私たち4人全員が飢え死にするしかないわね。いっそ私たちの棺桶の板にカンナをかけ始めたらどうだい！」彼女は夫に安らぎを与えず、厳しい責め苦を浴びせ続け、ついに夫は折れてしまいました。'
       },
+      // Kapitel II
       {
         id: 4,
-        german: 'Am dritten Tage sahen sie ein sonderbares Häuslein: Es war ganz aus Brot gebaut, mit Kuchen gedeckt und die Fenster waren aus hellem Zucker. »Wir wollen uns satt essen«, rief Hänsel und brach sich ein Stück vom Dach ab. Da rief eine feine Stimme von innen: »Knusper, knusper, knäuschen, wer knuspert an meinem Häuschen?« Die Kinder antworteten: »Der Wind, der Wind, das himmlische Kind!«',
-        japanese: '三日目の昼、二人は不思議な小さな家を見つけました。それは丸ごとパンで作られ、屋根はお菓子で葺かれ、窓は透き通った砂糖でできていました。「お腹いっぱい食べよう！」とヘンゼルは叫び、屋根の破片をもぎ取りました。そのとき、中から甲高い声が響きました。「カリカリ、サクサク、誰が私の家をかじるのかい？」子どもたちは答えました。「風ですよ、風、天の子どもですよ！」'
+        german: '【Kapitel II: Die Kieselsteine und die erste Heimkehr】 Die beiden Kinder hatten vor nagendem Hunger auch nicht schlafen können und hörten jedes bittere Wort, das die Stiefmutter zum Vater sprach. Gretel weinte bittere, heiße Tränen und sprach verzweifelt zu Hänsel: »Nun ist es um uns geschehen!« Hänsel aber flüsterte leise: »Sei still, Gretelchen, gräme dich nicht, ich will uns schon einen Ausweg suchen.«',
+        japanese: '【第2章：白い小石と最初の生還】2人の子どもたちもまた、耐えがたい空腹のために眠ることができず、継母が父親に語った残酷な言葉を一言一句聞き漏らしませんでした。グレーテルは熱い涙をボロボロとこぼし、絶望に暮れてヘンゼルに言いました。「もう私たちはおしまいだわ！」しかしヘンゼルは耳元で低く囁きました。「泣かないで、グレーテル。悲しんじゃいけない。僕がなんとかして抜け道をみつけてあげるから。」'
       },
       {
         id: 5,
-        german: 'Da öffnete sich die Tür, und eine steinalte Hexe mit roten Augen trat hervor. Sie sperrte Hänsel in einen engen Stall, um ihn fett zu mästen, während Gretel in der Küche schuften musste. Als die Alte den Ofen einheizte, um Gretel hineinzustoßen, stellte sich Gretel ungeschickt an: »Ich weiß nicht, wie ich hineinkommen soll!« – »Dumme Gans!«, schrie die Hexe und steckte selbst den Kopf hinein. Gretel gab ihr einen kräftigen Stoß, schlug die eiserne Tür zu und schob den Riegel vor.',
-        japanese: '扉が開き、赤い目をした年老いた魔女が現れました。魔女はヘンゼルを太らせるために狭い檻に閉じ込め、グレーテルには台所で過酷な労働を命じました。魔女がグレーテルを突き落とそうとパン焼き窯に火を焚きつけたとき、グレーテルは機転を利かせて不器用なふりをしました。「どうやって中に入ればいいのか分かりません！」——「間抜けなガチョウめ！」と叫んで魔女が自ら頭を突っ込んだ瞬間、グレーテルは力任せに背中を押し、鉄の扉をバタンと閉めてかんぬきをかけました！'
+        german: 'Und als die Alten eingeschlafen waren, schlich Hänsel leise im Hemdchen zur Haustür, schob den hölzernen Riegel zurück und trat in den kühlen Hof. Der Mond schien hell und klar, und die weißen Kieselsteine, die vor dem Hause lagen, blinkten wie eitel Silbermünzen. Hänsel bückte sich emsig und steckte so viele in seine Taschen, wie nur hineingehen wollten. Dann kehrte er ins Kämmerlein zurück und tröstete das weinende Schwesterchen: »Schlaf nur ruhig ein, liebes Gretelchen, Gott wird uns gewiss nicht verlassen!«',
+        japanese: 'そして両親が眠りに落ちたあと、ヘンゼルは寝巻きのまま音もなく玄関へ忍び足で近づき、木の掛け金を引いて冷え切った中庭へと出ました。月は明るく澄み渡り、家の前に転がる白い小石たちが、まるで銀貨のようにきらきらと輝いていました。ヘンゼルはせっせと身をかがめ、入る限りの小石をポケットに詰め込みました。そして小さな寝室へと戻り、泣きじゃくる妹を慰めました。「安心して眠るんだ、グレーテル。神様が僕たちを見捨てるはずがないよ！」'
       },
       {
         id: 6,
-        german: 'Gretel befreite ihren Bruder. Im Haus der Hexe fanden sie Kisten voll Perlen und Edelsteinen. Eine weiße Ente trug die Kinder über ein großes Gewässer. So kehrten sie reich und glücklich zum Vater zurück, denn die böse Stiefmutter war in der Zwischenzeit gestorben. Alle Sorgen hatten ein Ende.',
-        japanese: 'グレーテルは兄を解放しました。魔女の家の中で、二人は真珠や宝石で満たされた箱を見つけました。一羽の白い鴨が子どもたちを背に乗せて大きな水辺を渡してくれました。意地悪な継母はその間に亡くなっており、二人は裕福かつ幸せに父親の元へと戻りました。すべての苦難は終わりを告げたのです。'
+        german: 'Bei Anbruch des Morgens weckte die Stiefmutter die Kinder barsch: »Steht auf, ihr Faulenzer, wir wollen in den Wald gehen und Holz holen!« Sie gab jedem ein winziges Stücklein Brot: »Da habt ihr etwas für den Mittag, aber esst es nicht vorher, denn mehr bekommt ihr nicht.« Als sie auf dem Weg waren, hielt Hänsel immer wieder an und blickte zurück zum Haus, während er heimlich einen blinkenden Kieselstein aus der Tasche zog und auf den staubigen Waldpfad fallen ließ.',
+        japanese: '夜が明けると同時に、継母は子どもたちを荒々しく揺り起こしました。「起きなさい、この怠け者ども！森へ行って薪を拾うんだよ！」彼女は子どもたちにひとかけらの小さなパンを渡しました。「ほら、お昼ご飯だよ。それより前にお食べでないよ、これ以上何にも出ないんだからね。」森へ向かう道すがら、ヘンゼルは何度も立ち止まって家の方を振り返りながら、ポケットから密かに光る小石を取り出しては、土埃の舞う小道へと落としていきました。'
+      },
+      {
+        id: 7,
+        german: 'Mitten im dicksten Gehölz machten die Eltern ein großes Feuer aus Reisholz an, sprachen scheinheilig: »Bleibt hier am Feuer sitzen, Kinder, und wenn ihr müde seid, könnt ihr ein wenig schlafen«, und machten sich heimlich davon. Hänsel und Gretel warteten geduldig, aßen ihr Brot und schliefen schließlich ein. Als sie im tiefsten Dunkel erwachten, weinte Gretel laut, doch Hänsel nahm sie bei der Hand: »Warte nur, bis der Mond aufgeht!« Und als der Vollmond am Himmel stand, funkelten die Kieselsteine wie frisch geschlagene Batzen, wiesen ihnen sicher den Weg, und im Morgengrauen klopften sie wohlbehalten an die Haustür des Vaters, der sich von Herzen freute.',
+        japanese: '鬱蒼と茂る森の真ん中で、両親は小枝を集めて大きな焚き火を起こし、猫なで声で言いました。「火のそばに座っておいで。疲れたら少し眠ってもいいんだよ。」そう言い残して両親はこっそり逃げ去りました。ヘンゼルとグレーテルは辛抱強く待ち、パンを食べ、やがて眠りに落ちました。真っ暗闇の中で目を覚ましたとき、グレーテルは激しく泣きましたが、ヘンゼルはその手を取りました。「月が昇るのを待つんだ！」そして満月が空に昇ると、小石たちは磨かれた銀貨のようにきらめき、二人に正しい帰り道を教えてくれました。夜明け頃、兄妹は父親の家の扉を叩き、父親は心から二人を抱きしめて喜んだのでした。'
+      },
+      // Kapitel III
+      {
+        id: 8,
+        german: '【Kapitel III: Die zerstreuten Krümel und der weiße Vogel】 Nicht lange danach herrschte abermals bittere Not in allen Ecken, und die Kinder hörten die Stiefmutter nachts wieder zischeln: »Alles ist wieder aufgezehrt, nur noch ein halber Laib Brot ist im Kasten, danach hat das Lied ein Ende. Wir müssen sie tiefer noch hineinführen, dass sie den Weg gar nicht wieder herausfinden!« Hänsel stand auf und wollte abermals Kieselsteine auflesen, aber die böse Stiefmutter hatte die Tür fest verriegelt.',
+        japanese: '【第3章：消えたパンくずと白い鳥】それから間もなく、再びあらゆる片隅に耐えがたい飢餓が押し寄せ、子どもたちは夜、継母が夫に冷たく囁きかけるのを耳にしました。「何もかも底をついたわ。戸棚には半斤のパンしか残っていない、これがなくなればおしまいよ。あの子たちを今度こそもっと奥深くまで連れて行って、二度と出てこられないようにしなきゃならないの！」ヘンゼルは起き上がって再び小石を拾いに行こうとしましたが、意地悪な継母が扉を固く施錠していました。'
+      },
+      {
+        id: 9,
+        german: 'Am nächsten Morgen erhielt jedes Kind wieder ein Stücklein Brot, noch kleiner als zuvor. Auf dem weiten Pfade zerbröckelte Hänsel das Brot heimlich in seiner Hosentasche, blieb oft stehen und warf immer ein kleines Bröcklein auf die Erde. »Hänsel, warum stehst du und guckst dich um?«, fragte der Vater misstrauisch. »Ich sehe nach meinem Täubchen, das sitzt auf dem Dach und will mir Ade sagen«, log Hänsel tapfer.',
+        japanese: '翌朝、子どもたちには前回よりもさらに小さなパン切れが手渡されました。長い道中、ヘンゼルはズボンのポケットの中で密かにパンを指先でちぎり、立ち止まっては小さなかけらを地面に落としていきました。「ヘンゼル、どうして立ち止まって振り返ってばかりいるんだい？」と父親はいぶかしげに尋ねました。「屋根の上で僕にサヨナラを告げている白い小鳩を見ているんだよ」とヘンゼルは健気に嘘をつきました。'
+      },
+      {
+        id: 10,
+        german: 'Sie führten die Kinder noch tiefer in den Wald, wo sie ihr Lebtag noch nie gewesen waren. Wieder ließen sie sie am Feuer allein. Als die Nacht hereinbrach und der Mond aufstieg, suchte Hänsel nach den Brotkrümeln, doch er fand kein einziges Körnchen mehr: Die vielen tausend Waldvögel, die im Dickicht flatterten, hatten allesamt aufgepickt. Da waren die Kinder mutterseelenallein und irrten die ganze Nacht und den folgenden Tag von morgens bis abends durch das dornige Gehölz, und sie fütterten sich nur von ein paar Heidelbeeren, die am Boden wuchsen.',
+        japanese: '両親は子どもたちを、生まれて一度も足を踏み入れたことのない森の最深部へと連れて行きました。そしてまたしても火のそばに置き去りにしたのです。夜が訪れ月が空に昇ったとき、ヘンゼルはパンくずを探しましたが、一粒すら見つかりませんでした。茂みの中を飛び交う幾千羽もの森の鳥たちが、すべて綺麗に啄ばんでしまっていたのです。子どもたちは天涯孤独となり、その夜も、そして翌日も朝から晩までイバラの茂る森をさまよい歩き、地面に生えたわずかなブルーベリーの実だけで飢えをしのぎました。'
+      },
+      // Kapitel IV
+      {
+        id: 11,
+        german: '【Kapitel IV: Das Pfefferkuchenhaus im Dickicht】 Am dritten Morgen erblickten sie ein schneeweißes Vöglein auf einem Ast sitzen, das sang so überaus lieblich, dass sie stehen blieben und ihm lauschten. Als es fertig war, schwang es seine Flügel und flog vor ihnen her, und sie gingen ihm nach, bis es auf das Dach eines sonderbaren kleinen Häuschens flog.',
+        japanese: '【第4章：茂みの中のお菓子の家】3日目の朝、木の上に止まった雪のように真っ白な小鳥が目に入りました。その鳥があまりに美しく歌うので、2人は立ち止まって聴き入りました。歌い終えると小鳥は翼を広げて先導するように飛び立ち、2人はそのあとに従いました。やがて小鳥は、奇妙な小さなお家の屋根の上に舞い降りました。'
+      },
+      {
+        id: 12,
+        german: 'Und als sie ganz nah herankamen, sahen sie mit staunenden Augen, dass das Häuslein ganz aus knusprigem Brot gebaut war, mit süßem Lebkuchen gedeckt und die Fenster aus feinstem, durchsichtigem Zucker bestanden. »Da wollen wir uns ansetzen«, rief Hänsel voller Jubel, »und eine köstliche Mahlzeit halten! Ich will ein Stück vom Dach essen, Gretel, und du kannst vom süßen Fenster probieren!« Hänsel reichte in die Höhe und brach ein Stückchen vom Dach ab, und Gretel knusperte an einer runden Fensterscheibe.',
+        japanese: 'そしてすぐ間近まで近づいたとき、2人は目を丸くして驚嘆しました。その小さな家は丸ごと香ばしいパンで作られ、屋根は甘いレープクーヘンで葺かれ、窓は透き通った最高級の砂糖でできていたのです。「さあ、腰を下ろそう！」とヘンゼルは歓声を上げました。「ごちそうをお腹いっぱい食べるんだ！僕は屋根を食べるから、グレーテル、君は甘い窓をかじるといい！」ヘンゼルは背伸びをして屋根のかけらを折り取り、グレーテルは丸い窓ガラスをカリカリとかじりました。'
+      },
+      {
+        id: 13,
+        german: 'Da ertönte plötzlich eine krächzende, feine Stimme aus der Stube: »Knusper, knusper, Knäuschen, wer knuspert an meinem Häuschen?« Die hungrigen Kinder erschraken, antworteten jedoch hurtig: »Der Wind, der Wind, das himmlische Kind!« und aßen unentwegt weiter. Auf einmal ging die schwere Tür auf, und eine uralte Frau, die sich auf eine Krücke stützte, schlich wackelnd heraus. Sie tat gar freundlich, lud sie ein und setzte ihnen Milch, Pfannkuchen mit Zucker, Äpfel und Nüsse vor, und zwei schneeweiße Bettlein standen bereit.',
+        japanese: 'すると突然、部屋の中からしゃがれた甲高い声が響きました。「カリカリ、サクサク、誰が私の家をかじるのかい？」空腹の子どもたちはギクッとしましたが、とっさに答えました。「風ですよ、風、天の子どもですよ！」そうして無我夢中で食べ続けました。突然重い扉が開き、松葉杖をついた老婆がヨロヨロと這い出てきました。老婆は非常に親切そうに振る舞い、2人を招き入れてミルクや砂糖をまぶしたパンケーキ、リンゴやナッツを振る舞い、真っ白なふかふかのベッドを用意してくれました。'
+      },
+      {
+        id: 14,
+        german: 'Aber die Alte war eine böse, menschenfressende Hexe, die den Kindern nur auflauerte und das Brothäuslein einzig gebaut hatte, um sie anzulocken! Früh am Morgen packte sie Hänsel mit ihrer knochigen Hand, sperrte ihn in einen finsteren Stall mit Gittertür und schrie: »Da bleibst du, bis du fett bist, dann werde ich dich braten!« Gretel aber musste Tag für Tag schuften, Wasser schleppen und feines Essen für den gefangenen Bruder kochen, während sie selbst nur Krebsschalen zu essen bekam.',
+        japanese: 'しかしその老婆は、迷い込んだ子どもたちを狙う凶悪な人食い魔女だったのです！お菓子の家を建てたのも、ただ子どもたちをおびき寄せるための罠に過ぎませんでした。翌朝早く、魔女は骨ばった手でヘンゼルをひっつかみ、格子のついた薄暗い家畜小屋に閉じ込めて叫びました。「お前がまるまる太るまでそこにいるんだよ。そしたら丸焼きにして食ってやるからね！」グレーテルは来る日も来る日も過酷な労働を強いられ、重い水を運び、囚われた兄のために上等な料理を作らされましたが、自分自身にはザリガニの殻しか与えられませんでした。'
+      },
+      {
+        id: 15,
+        german: 'Jeden Morgen schlich die kurzsichtige Hexe an den Stall und rief krächzend: »Hänsel, streck deine Finger heraus, dass ich fühle, ob du bald fett genug bist!« Hänsel aber reichte ihr schlau jedes Mal ein trockenes, abgenagtes Knöchelchen heraus, und die Alte, die trübe Augen hatte, wunderte sich gar sehr, dass er gar nicht zunehmen wollte. Nach vier langen Wochen verlor sie jedoch alle Geduld und schrie zornig: »Sei er fett oder mager, morgen will ich ihn schlachten und sieden!«',
+        japanese: '毎朝、目がかすんでよく見えない魔女は檻にすり寄り、しわがれ声で呼びかけました。「ヘンゼル、指をお出し。太ったかどうか触って確かめてやるからね！」しかし利発なヘンゼルは、その度にしゃぶり尽くした細い骨切れを格子の隙間から突き出しました。視力の衰えた魔女は、なぜヘンゼルが一向に太らないのかと不思議でなりませんでした。しかし4週間が過ぎたとき、魔女はついに我慢の限界に達し、怒り狂って叫びました。「太っていようが痩せていようが構うもんかい！明日あいつを屠殺して煮込んでやる！」'
+      },
+      // Kapitel V
+      {
+        id: 16,
+        german: '【Kapitel V: Die Flammen des Backofens und die Heimkehr】 Früh am Morgen musste Gretel den gewaltigen Backofen mit Holz heizen und den Wasserkessel aufhängen. »Kriech erst hinein«, sprach die Hexe mit tückischem Lächeln, »und sieh nach, ob der Ofen recht geheizt ist, dass wir das Brot einschieben können!« Sie wollte aber die Klappe zuschlagen, wenn Gretel drinnen war, um das Mädchen im Feuer zu braten. Doch Gretel merkte, was sie im Sinne hatte, und stellte sich ganz dumm an: »Ich weiß nicht, wie ich das anfangen soll; wie komm ich da hinein?«',
+        japanese: '【第5章：パン焼き窯の炎と帰還】翌朝早く、グレーテルは巨大なパン焼き窯に薪をくべて火を焚きつけ、大鍋を火にかけさせられました。「まず中へ這い入っておくれ」と魔女は邪悪な笑みを浮かべて命じました。「パンを焼き入れるのに十分な熱さになっているか確かめるんだ！」魔女はグレーテルが中に入った瞬間に鉄の扉を閉め、焼き殺して食べる腹づもりだったのです。しかしグレーテルは魔女の企みを察知し、極めて不器用なふりをしました。「どうやればいいのか分かりません。どうやって中に入ればいいんですか？」'
+      },
+      {
+        id: 17,
+        german: '»Dumme Gans!«, schrie die Hexe ungeduldig, »die Öffnung ist doch groß genug, siehst du wohl, ich könnte selbst hinein!« Sie humpelte heran und steckte ihren eigenen Kopf in den glutroten Ofen. Da gab Gretel ihr von hinten einen gewaltigen Stoß, dass sie weit hineinflog, schlug die schwere eiserne Tür krachend zu und schob den dicken Riegel vor. Die Hexe heulte und schrie jämmerlich in den Flammen, aber Gretel lief geradewegs zu Hänsel, riss die Stalltür auf und jubelte: »Hänsel, wir sind erlöst, die alte böse Hexe ist tot!«',
+        japanese: '「間抜けなガチョウめ！」と魔女はいらだち叫びました。「入り口はこんなに広いじゃないか。見とくれ、私だって楽に入れるよ！」魔女はよたよたと歩み寄り、自ら真っ赤に燃える窯の中へと頭を突っ込みました。その瞬間、グレーテルは背後から渾身の力で突き飛ばしました！魔女は窯の奥深くへと転がり落ち、グレーテルは重い鉄の扉をガチャンと閉めて頑丈なかんぬきを差し込みました。魔女は炎の中で凄まじい悲鳴をあげましたが、グレーテルはヘンゼルの檻へと一直線に駆け寄り、扉を開け放って叫びました。「ヘンゼル、助かったわ！あの悪い魔女が死んだのよ！」'
+      },
+      {
+        id: 18,
+        german: 'Da sprang Hänsel heraus wie ein befreiter Vogel aus dem Käfig. Sie durchsuchten das Hexenhaus und fanden in allen Ecken Kisten voller funkelnder Perlen, Rubine und goldener Edelsteine. »Das sind noch bessere Steine als unsere Kiesel!«, lachte Hänsel und steckte seine Taschen voll, und Gretel füllte ihr Schürzchen. Dann machten sie sich eilig auf den Weg, um aus dem Hexenwald zu entkommen.',
+        japanese: 'ヘンゼルは檻から放たれた鳥のように外へ飛び出しました。2人は魔女の家をくまなく探し、部屋の隅々にきらめく真珠やルビー、黄金の宝石でいっぱいに満たされた小箱を見つけました。「僕たちの小石よりもずっと素晴らしい宝物だ！」とヘンゼルは笑いながらポケットをいっぱいに満たし、グレーテルもエプロンを宝石でいっぱいにしました。そして2人は急いで魔女の森から脱出するために歩き出しました。'
+      },
+      {
+        id: 19,
+        german: 'Nach ein paar Stunden gelangten sie an ein großes, reißendes Gewässer, über das weder Steg noch Brücke führte. Da erblickte Gretel eine weiße Ente, die auf den Wellen schwamm, und rief: »Entchen, Entchen, da steht Gretel und Hänsel, kein Steg und keine Brücke, nimm uns auf deinen weißen Rücken!« Die Ente kam herbei, trug erst das Brüderchen und dann das Schwesterchen sicher an das jenseitige Ufer. Da erkannten sie plötzlich den Wald wieder, und bald sahen sie das Häuschen des Vaters von ferne schimmern.',
+        japanese: '数時間歩いたのち、2人は橋も渡し場もない大きくて流れの速い水辺に行き当たりました。波間に一羽の白い鴨が泳いでいるのを見つけたグレーテルは呼びかけました。「鴨さん、鴨さん、ヘンゼルとグレーテルが困っています。橋も小道もありません、あなたの白い背中に乗せておくれ！」鴨はすいすいと泳ぎ寄り、まず兄を、次に妹を背に乗せて向こう岸へと無事に渡してくれました。その瞬間、2人は見慣れた森の風景を取り戻し、やがて遠くに父親の小さな家が光を浴びているのが見えました。'
+      },
+      {
+        id: 20,
+        german: 'Sie stürzten in die Stube und fielen dem Vater um den Hals. Der arme Mann hatte keine einzige frohe Stunde mehr gehabt, seitdem er die Kinder im Walde gelassen hatte; die grausame Stiefmutter aber war in der Zwischenzeit gestorben. Gretel schüttelte ihr Schürzchen aus, dass die Perlen polternd im Zimmer umhersprangen, und Hänsel warf eine Handvoll Edelsteine aus der Tasche dazu. Da hatten alle Sorgen ein seliges Ende, und sie lebten fortan in lauter Freude und Überfluss miteinander.',
+        japanese: '2人は部屋へと雪崩れ込み、父親の首にしがみつきました。哀れな父親は子どもたちを森に置き去りにして以来、一度として安らかな時を過ごしたことがありませんでした。あの冷酷な継母はその間に息を引き取っていました。グレーテルがエプロンを振ると、真珠が部屋いっぱいに跳ね回り、ヘンゼルもポケットから両手いっぱいの宝石を投げ出しました。こうしてすべての苦難は至福の終わりを告げ、彼らはそれからずっと、尽きることのない喜びと豊かさの中で仲睦まじく暮らしたのでした。'
       }
     ],
     fullTranslationJa: [
-      '大きな森の前に、貧しい木こりが妻と二人の子どもたちと暮らしていました。男の子はヘンゼル、女の子はグレーテルという名前でした。食べるものはほとんどなく、国に大きな飢饉が訪れたとき、日々のパンすら手に入れることができなくなりました。困窮のあまり、継母は父親を説得して、子どもたちを森の奥深くに連れて行き、そこに置き去りにすることにしました。',
-      'ヘンゼルは両親の密談を盗み聞きしていました。その夜、彼は外へ忍び出て、月明かりの中で銀貨のように輝く白い小石でポケットをいっぱいに満たしました。翌朝森へと向かう途中、ヘンゼルは白い小石を道端にひとつずつ落としていきました。夜が訪れ月が空に昇ると、兄妹はきらめく小石をたどって無事に家への帰り道を見つけました。',
-      'しかし飢餓は続き、やがて両親は子どもたちをさらに森の奥深くへと連れ出しました。今度はヘンゼルはひとかけらのパンしか持っていませんでした。彼はポケットの中でパンを細かくちぎり、地面にパンくずを撒きました。しかし夕方に手がかりを辿ろうとしたとき、パンくずは一つも残っていませんでした。何千羽もの森の鳥たちがすべて啄ばんでしまっていたのです。二人は完全に迷子になってしまいました。',
-      '三日目の昼、二人は不思議な小さな家を見つけました。それは丸ごとパンで作られ、屋根はお菓子で葺かれ、窓は透き通った砂糖でできていました。「お腹いっぱい食べよう！」とヘンゼルは叫び、屋根の破片をもぎ取りました。そのとき、中から甲高い声が響きました。「カリカリ、サクサク、誰が私の家をかじるのかい？」子どもたちは答えました。「風ですよ、風、天の子どもですよ！」',
-      '扉が開き、赤い目をした年老いた魔女が現れました。魔女はヘンゼルを太らせるために狭い檻に閉じ込め、グレーテルには台所で過酷な労働を命じました。魔女がグレーテルを突き落とそうとパン焼き窯に火を焚きつけたとき、グレーテルは機転を利かせて不器用なふりをしました。「どうやって中に入ればいいのか分かりません！」——「間抜けなガチョウめ！」と叫んで魔女が自ら頭を突っ込んだ瞬間、グレーテルは力任せに背中を押し、鉄の扉をバタンと閉めてかんぬきをかけました！',
-      'グレーテルは兄を解放しました。魔女の家の中で、二人は真珠や宝石で満たされた箱を見つけました。一羽の白い鴨が子どもたちを背に乗せて大きな水辺を渡してくれました。意地悪な継母はその間に亡くなっており、二人は裕福かつ幸せに父親の元へと戻りました。すべての苦難は終わりを告げたのです。'
+      '太古の森の前に、貧しい木こりが冷酷な妻と2人の子どもヘンゼルとグレーテルと暮らしていました。大飢饉が訪れ、毎日のパンすら手に入らなくなりました。',
+      '妻は冷酷にも、子どもたちを一番深い森に連れて行って置き去りにし、厄介払いしようと夫をそそのかしました。',
+      '「子どもたちを森で死なせるなんてできない」と父親は抗弁しましたが、妻の厳しい追及に抗えず、ついに同意してしまいました。',
+      '空腹で起きていた兄妹はその密談をすべて耳にしました。泣き崩れるグレーテルをヘンゼルは優しく慰めました。',
+      '両親が眠ると、ヘンゼルは月明かりに光る庭の白い小石をポケットいっぱいに拾い集め、妹を励ましました。',
+      '翌朝、継母はパンの小片を渡し、森へと子どもたちを連れ出しました。ヘンゼルは小石を道端に落としながら歩きました。',
+      '森の奥深くで焚き火のそばに残された2人は眠りに落ちました。夜中に目覚めたあと、ヘンゼルは月明かりに輝く小石を辿って無事に帰宅しました。',
+      '再び飢饉が訪れ、継母はさらに深い森へ置き去りにする計画を立てました。今度はドアに鍵がかけられ、ヘンゼルは小石を拾えませんでした。',
+      '翌朝、ヘンゼルはポケットの中でパンをちぎり、小道の土の上にパンくずを落としながら歩きました。',
+      '火のそばに置き去りにされた2人は、夜になってパンくずを探しましたが、何千羽もの森の鳥たちにすべて食べ尽くされていました。2人は完全に遭難しました。',
+      '3日目の朝、白く美しい鳥の歌に導かれて歩くと、パンとレープクーヘン、砂糖の窓でできた不思議な家にたどり着きました。',
+      '大喜びで屋根や窓をむさぼり食べる2人。家の中から「誰が家をかじるのかい？」と声がし、2人は「風ですよ」と答えました。',
+      '松葉杖をついた老婆が現れ、親切を装ってごちそうを振る舞い、ベッドで寝かせました。',
+      'しかし老婆は人食い魔女でした。ヘンゼルを檻に閉じ込めて太らせようとし、グレーテルには過酷な労働を強いました。',
+      '目の見えない魔女に対し、ヘンゼルは指の代わりに骨切れを差し出して欺き続けました。しかし魔女はしびれを切らして翌日料理することを決めました。',
+      '窯の火を焚かせた魔女はグレーテルを押し込もうとしましたが、グレーテルは不器用なふりをして中に入れないと言いました。',
+      '「入り口は広いよ」と魔女が頭を突っ込んだ瞬間、グレーテルは渾身の力で突き飛ばして鉄の扉を閉め、かんぬきをかけました。',
+      'ヘンゼルを救出し、魔女の家から無数の真珠や宝石を見つけてポケットとエプロンいっぱいに詰め込みました。',
+      '大河に行き当たった2人は、一羽の白い鴨の背中に乗せてもらい、無事に向こう岸へと渡りました。見慣れた森の奥に父の家が見えました。',
+      '部屋に駆け込み父と抱き合いました。継母は亡くなっており、2人が宝石を広げると、一家は永遠の幸福と豊かさに包まれました。'
     ],
     vocabulary: [
-      { german: 'der Holzhacker', article: 'der', pos: 'Substantiv', japanese: '木こり、薪割り人' },
-      { german: 'die Teuerung', article: 'die', pos: 'Substantiv', japanese: '物価高騰、飢饉、食糧危機' },
+      { german: 'die Teuerung', article: 'die', pos: 'Substantiv', japanese: '大飢饉、物価高騰、食糧難' },
+      { german: 'herzlos / hartherzig', pos: 'Adjektiv', japanese: '冷酷な、薄情な' },
       { german: 'der Kieselstein', article: 'der', pos: 'Substantiv', japanese: '小石、砂利' },
-      { german: 'die Krümel', article: 'die', pos: 'Substantiv', japanese: 'パンくず、かけら' },
+      { german: 'der Krümel', article: 'der', pos: 'Substantiv', japanese: 'パンくず、かけら' },
       { german: 'das Pfefferkuchenhaus', article: 'das', pos: 'Substantiv', japanese: 'レープクーヘン（お菓子）の家' },
-      { german: 'knuspern', pos: 'Verb', japanese: 'カリカリ音を立ててかじる' },
-      { german: 'mästen', pos: 'Verb', japanese: '（家畜などを）太らせる、肥育する' },
-      { german: 'der Riegel', article: 'der', pos: 'Substantiv', japanese: 'かんぬき、掛け金' }
+      { german: 'knuspern', pos: 'Verb', japanese: 'カリカリと音を立ててかじる' },
+      { german: 'kurzsichtig / trübäugig', pos: 'Adjektiv', japanese: '近視の、目がかすんだ' },
+      { german: 'der Riegel', article: 'der', pos: 'Substantiv', japanese: 'かんぬき、掛け金' },
+      { german: 'die Entenbrücke / das Entchen', article: 'das', pos: 'Substantiv', japanese: '小さな鴨、水鳥' },
+      { german: 'im Überfluss', pos: 'Redewendung', japanese: '豊かに、有り余るほどに' }
     ],
     culturalNote: {
-      title: 'Pfefferkuchen（レープクーヘン）と中世ドイツの飢餓記憶',
-      content: '物語に登場するお菓子の家は、ドイツの伝統的なスパイス菓子「レープクーヘン（Lebkuchen / Pfefferkuchen）」で作られています。中世ヨーロッパの相次ぐ飢饉の歴史において、「食べ物でできた家」は民衆の究極のユートピア的願望を反映したものでした。'
+      title: '『ヘンゼルとグレーテル』の飢餓記憶と白い鳥の象徴',
+      content: '1315年〜1317年の北ヨーロッパ大飢饉など、中世の過酷な食糧危機では子どもを森へ遺棄せざるを得なかった悲劇的な歴史記憶が底流にあります。物語に登場する「白い鳥」や「白い鴨」は、罪なき魂の導き手としてのキリスト教的・ゲルマン民話的救済のシンボルです。'
     }
   },
 
