@@ -1,111 +1,193 @@
 'use client';
 
 import React, { useState } from 'react';
-import { ChevronDown, ChevronUp, Sparkles, ShieldCheck } from 'lucide-react';
-import { UserProgress } from '@/lib/types';
+import {
+  ChevronDown,
+  ChevronUp,
+  ShieldCheck,
+  BookOpen,
+  Laugh,
+  Layers,
+  ArrowRight,
+  Sparkles,
+} from 'lucide-react';
+import { UserProgress, Story } from '@/lib/types';
 import { STORIES } from '@/lib/stories';
 
 interface HeroSectionProps {
   progress: UserProgress;
   onSelectLevel: (level: string) => void;
   activeLevel: string;
+  onSelectStory?: (story: Story) => void;
 }
 
-export function HeroSection({ progress, onSelectLevel, activeLevel }: HeroSectionProps) {
+export function HeroSection({
+  progress,
+  onSelectLevel,
+  activeLevel,
+  onSelectStory,
+}: HeroSectionProps) {
   const [showRules, setShowRules] = useState(false);
   const totalStories = STORIES.length;
   const completedStoriesCount = progress.readStoryIds.length;
   const progressPercent = Math.round((completedStoriesCount / totalStories) * 100);
 
+  // First recommended beginner story
+  const firstStory = STORIES.find((s) => s.level === 'A1') || STORIES[0];
+
+  const handleStartReading = () => {
+    if (onSelectStory && firstStory) {
+      onSelectStory(firstStory);
+    } else {
+      onSelectLevel('A1');
+      document.getElementById('stories-catalog')?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToCatalog = () => {
+    document.getElementById('stories-catalog')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <section className="relative border-b border-slate-200 bg-slate-50/70 py-10 dark:border-slate-800 dark:bg-slate-900/40">
+    <section className="relative border-b border-slate-200 bg-slate-50/70 py-10 sm:py-12 dark:border-slate-800 dark:bg-slate-900/40">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
-          {/* Left Column: Headlines & Pitch */}
+        <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
+          {/* Left Column: Clear Value Proposition */}
           <div className="lg:col-span-7">
-            <div className="flex items-center gap-2 text-xs font-medium text-slate-500 dark:text-slate-400">
-              <span className="inline-flex items-center gap-1 text-slate-900 dark:text-slate-100 font-semibold">
-                🇩🇪 Tadoku Deutsch
-              </span>
-              <span aria-hidden="true">·</span>
-              <span>プライバシー第一</span>
+            {/* Top Category Badge */}
+            <div className="flex items-center gap-2 text-xs font-semibold text-slate-500 dark:text-slate-400">
+              <span className="flex h-2 w-2 rounded-full bg-emerald-500" />
+              <span>🇩🇪 ドイツ語多読プラットフォーム</span>
               <span aria-hidden="true">·</span>
               <span>CEFR A1〜C1</span>
+              <span aria-hidden="true">·</span>
+              <span>登録不要</span>
             </div>
 
-            <h1 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-50 [text-wrap:balance]">
-              教科書を捨てて、<br className="hidden sm:inline" />ドイツ語の物語の世界へ。
+            {/* Main Headline */}
+            <h1 className="mt-3.5 text-3xl sm:text-4xl lg:text-4.5xl font-extrabold tracking-tight text-slate-900 dark:text-slate-50 [text-wrap:balance] leading-[1.2]">
+              辞書を引かずに、<br className="hidden sm:inline" />
+              ドイツ語の物語を浴びるように読む。
             </h1>
 
-            <p className="mt-3 max-w-2xl text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300">
-              官僚主義に物申す自販機、時空を超えるUバーン、哲学する芝刈り機——。
-              文法ドリルではなく、好奇心でグイグイ読み進めるドイツ語多読（Tadoku）プラットフォーム。
-              登録不要・トラッキングゼロ、進捗データはすべてお手元のブラウザに安全に保存されます。
+            {/* Subheading: Concrete & Concise */}
+            <p className="mt-3.5 max-w-2xl text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300">
+              文法ドリルで挫折した学習者のための「多読（Tadoku）」リーダー。
+              入門（A1）から上級（C1）まで、クスッと笑える日常譚やSF短編を通じて、
+              ドイツ語をドイツ語のまま理解する直感を養います。
             </p>
 
-            {/* Quick 3 Tadoku Principles Toggle */}
-            <div className="mt-5">
+            {/* 3 Core Value Props - Google Style Micro-Cards */}
+            <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div className="rounded-xl border border-slate-200/80 bg-white p-3.5 shadow-xs dark:border-slate-800 dark:bg-slate-900">
+                <div className="flex items-center gap-2 text-slate-900 dark:text-slate-100 font-bold text-xs">
+                  <Layers className="h-4 w-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                  <span>A1〜C1 段階別</span>
+                </div>
+                <p className="mt-1 text-[11px] leading-snug text-slate-500 dark:text-slate-400">
+                  1話150語〜。自分のレベルに合った長さと難易度で始められます。
+                </p>
+              </div>
+
+              <div className="rounded-xl border border-slate-200/80 bg-white p-3.5 shadow-xs dark:border-slate-800 dark:bg-slate-900">
+                <div className="flex items-center gap-2 text-slate-900 dark:text-slate-100 font-bold text-xs">
+                  <Laugh className="h-4 w-4 text-amber-500 shrink-0" />
+                  <span>飽きないエンタメ</span>
+                </div>
+                <p className="mt-1 text-[11px] leading-snug text-slate-500 dark:text-slate-400">
+                  役所の頑固な自販機やUバーンの怪異など、ユーモア溢れる短編揃い。
+                </p>
+              </div>
+
+              <div className="rounded-xl border border-slate-200/80 bg-white p-3.5 shadow-xs dark:border-slate-800 dark:bg-slate-900">
+                <div className="flex items-center gap-2 text-slate-900 dark:text-slate-100 font-bold text-xs">
+                  <BookOpen className="h-4 w-4 text-blue-500 shrink-0" />
+                  <span>全訳・音声完備</span>
+                </div>
+                <p className="mt-1 text-[11px] leading-snug text-slate-500 dark:text-slate-400">
+                  下部全訳アコーディオン・音声朗読（TTS）・ワンタップ単語帳付き。
+                </p>
+              </div>
+            </div>
+
+            {/* Primary Action Buttons */}
+            <div className="mt-6 flex flex-wrap items-center gap-3">
               <button
-                onClick={() => setShowRules(!showRules)}
-                className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white transition-colors"
+                onClick={handleStartReading}
+                className="group inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-2.5 text-xs sm:text-sm font-semibold text-white shadow-sm hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-white transition-all"
               >
-                <Sparkles className="h-3.5 w-3.5 text-amber-500" />
-                <span>多読を10倍楽しむ「3つのルール」</span>
-                {showRules ? (
-                  <ChevronUp className="h-3.5 w-3.5 text-slate-400" />
-                ) : (
-                  <ChevronDown className="h-3.5 w-3.5 text-slate-400" />
-                )}
+                <span>まずはA1（入門・2分）を読む</span>
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </button>
 
-              {showRules && (
-                <div className="mt-3 rounded-xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900 text-xs text-slate-600 dark:text-slate-300 space-y-2 animate-in fade-in duration-200">
-                  <div className="flex items-start gap-2.5">
-                    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-slate-900 text-[11px] font-bold text-white dark:bg-slate-100 dark:text-slate-900">
-                      1
+              <button
+                onClick={scrollToCatalog}
+                className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-xs sm:text-sm font-semibold text-slate-700 shadow-xs hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800 transition-colors"
+              >
+                <span>ストーリー一覧を見る</span>
+              </button>
+
+              <button
+                onClick={() => setShowRules(!showRules)}
+                className="inline-flex items-center gap-1 text-xs font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200 px-2 py-2 transition-colors ml-auto sm:ml-0"
+              >
+                <Sparkles className="h-3.5 w-3.5 text-amber-500" />
+                <span>多読の3原則</span>
+                {showRules ? <ChevronUp className="h-3.5 w-3.5" /> : <ChevronDown className="h-3.5 w-3.5" />}
+              </button>
+            </div>
+
+            {/* Collapsible Tadoku 3 Principles Drawer */}
+            {showRules && (
+              <div className="mt-4 rounded-xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900 text-xs text-slate-600 dark:text-slate-300 space-y-2.5 animate-in fade-in duration-200">
+                <div className="font-bold text-slate-900 dark:text-slate-100 text-xs flex items-center gap-1.5">
+                  <Sparkles className="h-3.5 w-3.5 text-amber-500" />
+                  <span>多読を10倍楽しむ「3つの鉄則」</span>
+                </div>
+                <div className="grid gap-2 sm:grid-cols-3 pt-1">
+                  <div className="rounded-lg bg-slate-50 p-2.5 dark:bg-slate-800/60">
+                    <span className="font-bold text-slate-900 dark:text-slate-100 block">
+                      1. 辞書は引かない
                     </span>
-                    <div>
-                      <strong className="text-slate-900 dark:text-slate-100">辞書は引かない：</strong>
-                      1語1語調べるのをやめ、文脈や挿絵から全体の流れを推測して読み進めます。
-                    </div>
+                    <span className="text-[11px] text-slate-500 dark:text-slate-400">
+                      1語ずつ調べず、文脈や雰囲気から全体の流れを推測します。
+                    </span>
                   </div>
-                  <div className="flex items-start gap-2.5">
-                    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-slate-900 text-[11px] font-bold text-white dark:bg-slate-100 dark:text-slate-900">
-                      2
+                  <div className="rounded-lg bg-slate-50 p-2.5 dark:bg-slate-800/60">
+                    <span className="font-bold text-slate-900 dark:text-slate-100 block">
+                      2. 分からない所は飛ばす
                     </span>
-                    <div>
-                      <strong className="text-slate-900 dark:text-slate-100">分からない所は飛ばす：</strong>
-                      引っかかっても立ち止まらずに飛ばしてOK。大意が掴めれば十分です。
-                    </div>
+                    <span className="text-[11px] text-slate-500 dark:text-slate-400">
+                      引っかかっても立ち止まらずスキップ。大意が掴めれば十分です。
+                    </span>
                   </div>
-                  <div className="flex items-start gap-2.5">
-                    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-slate-900 text-[11px] font-bold text-white dark:bg-slate-100 dark:text-slate-900">
-                      3
+                  <div className="rounded-lg bg-slate-50 p-2.5 dark:bg-slate-800/60">
+                    <span className="font-bold text-slate-900 dark:text-slate-100 block">
+                      3. 合わなければ別の話へ
                     </span>
-                    <div>
-                      <strong className="text-slate-900 dark:text-slate-100">進まなくなったら別の話へ：</strong>
-                      難しすぎたり退屈に感じたら迷わず別のレベル・ストーリーへ切り替えます。
-                    </div>
+                    <span className="text-[11px] text-slate-500 dark:text-slate-400">
+                      難しすぎたり退屈なら、迷わず別レベルや別ジャンルへ切り替えます。
+                    </span>
                   </div>
                 </div>
-              )}
-            </div>
+              </div>
+            )}
           </div>
 
           {/* Right Column: Google Engineer Style Metrics Card */}
           <div className="lg:col-span-5">
-            <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+            <div className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900">
               <div className="flex items-center justify-between border-b border-slate-100 pb-3 dark:border-slate-800/80">
-                <span className="text-xs font-semibold tracking-wider text-slate-500 uppercase">
-                  Your Local Reading Stats
+                <span className="text-xs font-bold tracking-wider text-slate-500 uppercase">
+                  学習ステータス（ローカル保存）
                 </span>
                 <span className="inline-flex items-center gap-1 text-[11px] text-emerald-600 dark:text-emerald-400 font-medium">
                   <ShieldCheck className="h-3.5 w-3.5" />
-                  完全ローカル
+                  端末内のみ
                 </span>
               </div>
 
-              <div className="mt-4 grid grid-cols-2 gap-4">
+              <div className="mt-4 grid grid-cols-2 gap-3 sm:gap-4">
                 <div className="rounded-xl bg-slate-50 p-3.5 dark:bg-slate-800/50">
                   <span className="text-xs text-slate-500 dark:text-slate-400">累計読了語数</span>
                   <div className="mt-1 flex items-baseline gap-1">
@@ -145,17 +227,20 @@ export function HeroSection({ progress, onSelectLevel, activeLevel }: HeroSectio
 
               {/* Level Quick Nav */}
               <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs">
-                <span className="text-slate-500 dark:text-slate-400">レベル別ジャンプ:</span>
+                <span className="text-slate-500 dark:text-slate-400">レベル選択:</span>
                 <div className="flex items-center gap-1">
                   {['A1', 'A2', 'B1', 'B2', 'C1'].map((lvl) => {
                     const isSelected = activeLevel === lvl;
                     return (
                       <button
                         key={lvl}
-                        onClick={() => onSelectLevel(lvl)}
-                        className={`px-2 py-1 rounded text-xs font-semibold transition-colors ${
+                        onClick={() => {
+                          onSelectLevel(lvl);
+                          scrollToCatalog();
+                        }}
+                        className={`px-2.5 py-1 rounded text-xs font-semibold transition-colors ${
                           isSelected
-                            ? 'bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900'
+                            ? 'bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900 shadow-xs'
                             : 'text-slate-600 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800'
                         }`}
                       >

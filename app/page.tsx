@@ -197,10 +197,14 @@ export default function Home() {
             progress={progress}
             onSelectLevel={(lvl) => setSelectedLevel(lvl)}
             activeLevel={selectedLevel}
+            onSelectStory={(s) => {
+              setActiveStory(s);
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
           />
 
           {/* Stories Catalog Section */}
-          <section className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
+          <section id="stories-catalog" className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
             {/* Filter Bar */}
             <LevelFilterBar
               selectedLevel={selectedLevel}
