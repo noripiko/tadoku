@@ -4,8 +4,9 @@ import { A2_STORIES } from './stories/a2';
 import { B1_STORIES } from './stories/b1';
 import { B2_STORIES } from './stories/b2';
 import { FAIRYTALE_STORIES } from './stories/fairytales';
+import { POE_STORIES } from './stories/poe';
 
-export { B2_STORIES, FAIRYTALE_STORIES };
+export { B2_STORIES, FAIRYTALE_STORIES, POE_STORIES };
 
 export const C1_STORIES: Story[] = [
   {
@@ -121,6 +122,8 @@ const a1Fairytales = FAIRYTALE_STORIES.filter((s) => s.level === 'A1');
 const a2Fairytales = FAIRYTALE_STORIES.filter((s) => s.level === 'A2');
 const b1Fairytales = FAIRYTALE_STORIES.filter((s) => s.level === 'B1');
 const b2Fairytales = FAIRYTALE_STORIES.filter((s) => s.level === 'B2');
+const poeB2 = POE_STORIES.filter((s) => s.level === 'B2');
+const poeC1 = POE_STORIES.filter((s) => s.level === 'C1');
 
 export const STORIES: Story[] = [
   ...A1_STORIES,
@@ -131,7 +134,9 @@ export const STORIES: Story[] = [
   ...b1Fairytales,
   ...B2_STORIES,
   ...b2Fairytales,
+  ...poeB2,
   ...C1_STORIES,
+  ...poeC1,
 ];
 
 export const CEFR_DESCRIPTIONS: Record<string, { label: string; descJa: string; wordRange: string }> = {
