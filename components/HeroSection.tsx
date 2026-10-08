@@ -29,8 +29,13 @@ export function HeroSection({
   const completedStoriesCount = progress.readStoryIds.length;
   const progressPercent = Math.round((completedStoriesCount / totalStories) * 100);
 
-  // First recommended beginner story
-  const firstStory = STORIES.find((s) => s.level === 'A1') || STORIES[0];
+  // Recommended story: prioritize unread beginner story in A1, or next unread across all, or first story
+  const readSet = new Set(progress.readStoryIds);
+  const recommendedStory =
+    STORIES.find((s) => s.level === 'A1' && !readSet.has(s.id)) ||
+    STORIES.find((s) => !readSet.has(s.id)) ||
+    STORIES[0];
+  const hasStartedReading = progress.readStoryIds.length > 0;
 
   const scrollToCatalog = () => {
     document.getElementById('stories-catalog')?.scrollIntoView({ behavior: 'smooth' });
@@ -101,15 +106,19 @@ export function HeroSection({
             {/* Primary Action Buttons */}
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <Link
-                href={`/stories/${firstStory.id}`}
+                href={`/stories/${recommendedStory.id}`}
                 onClick={() => {
                   if (onSelectStory) {
-                    onSelectStory(firstStory);
+                    onSelectStory(recommendedStory);
                   }
                 }}
                 className="group inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-2.5 text-xs sm:text-sm font-semibold text-white shadow-sm hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-white transition-all"
               >
-                <span>まずはA1（入門・2分）を読む</span>
+                <span>
+                  {hasStartedReading
+                    ? `続きの未読ストーリー（${recommendedStory.level}）を読む`
+                    : 'まずはA1（入門・2分）を読む'}
+                </span>
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </Link>
 

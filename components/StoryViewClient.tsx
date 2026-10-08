@@ -176,6 +176,7 @@ export function StoryViewClient({ story }: StoryViewClientProps) {
           story={story}
           isRead={progress.readStoryIds.includes(story.id)}
           isBookmarked={progress.bookmarkedStoryIds.includes(story.id)}
+          readStoryIds={progress.readStoryIds}
           onToggleRead={handleToggleRead}
           onToggleBookmark={handleToggleBookmark}
           onSaveWord={handleSaveWord}

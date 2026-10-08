@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import {
   ArrowLeft,
   CheckCircle2,
@@ -8,6 +8,8 @@ import {
   Languages,
   ChevronDown,
   ChevronUp,
+  ChevronLeft,
+  ChevronRight,
   Bookmark,
   Plus,
   BookOpen,
@@ -23,6 +25,7 @@ interface StoryReaderProps {
   story: Story;
   isRead: boolean;
   isBookmarked: boolean;
+  readStoryIds?: string[];
   onToggleRead: (storyId: string) => void;
   onToggleBookmark: (storyId: string) => void;
   onSaveWord: (wordData: Omit<SavedWord, 'id' | 'savedAt'>) => void;
@@ -34,6 +37,7 @@ interface StoryReaderProps {
 export function StoryReader({
   story,
   isRead,
+  readStoryIds = [],
   onToggleRead,
   onSaveWord,
   onBack,
@@ -164,9 +168,88 @@ export function StoryReader({
     }
   };
 
-  // Next story recommendation
-  const nextStory = allStories.find((s) => s.id !== story.id && s.level === story.level) ||
-    allStories.find((s) => s.id !== story.id);
+  // Determine next and previous story recommendations (prioritizing unread, preventing 2-story ping-pong loops)
+  const { nextStory, prevStory, isNextUnread, isNextDifferentLevel } = useMemo(() => {
+    const currentIndex = allStories.findIndex((s) => s.id === story.id);
+    const readSet = new Set(readStoryIds || []);
+    if (isRead) {
+      readSet.add(story.id);
+    }
+
+    // Stories in current CEFR level
+    const sameLevelStories = allStories.filter((s) => s.level === story.level);
+    const currentLevelIndex = sameLevelStories.findIndex((s) => s.id === story.id);
+
+    let nextCandidate: Story | null = null;
+
+    // 1. Next UNREAD story in the same level (searching forward after current story)
+    if (currentLevelIndex !== -1) {
+      for (let i = currentLevelIndex + 1; i < sameLevelStories.length; i++) {
+        if (!readSet.has(sameLevelStories[i].id)) {
+          nextCandidate = sameLevelStories[i];
+          break;
+        }
+      }
+
+      // 2. Wrap around within the same level for any unread story before current story
+      if (!nextCandidate) {
+        for (let i = 0; i < currentLevelIndex; i++) {
+          if (!readSet.has(sameLevelStories[i].id)) {
+            nextCandidate = sameLevelStories[i];
+            break;
+          }
+        }
+      }
+    }
+
+    // 3. If all stories in the current level are read, search forward in subsequent levels for an unread story
+    if (!nextCandidate && currentIndex !== -1) {
+      for (let i = currentIndex + 1; i < allStories.length; i++) {
+        if (!readSet.has(allStories[i].id)) {
+          nextCandidate = allStories[i];
+          break;
+        }
+      }
+
+      // 4. Wrap around all unread stories in the entire library
+      if (!nextCandidate) {
+        for (let i = 0; i < currentIndex; i++) {
+          if (!readSet.has(allStories[i].id)) {
+            nextCandidate = allStories[i];
+            break;
+          }
+        }
+      }
+    }
+
+    const isNextUnread = nextCandidate ? !readSet.has(nextCandidate.id) : false;
+    const isNextDifferentLevel = nextCandidate ? nextCandidate.level !== story.level : false;
+
+    // 5. Fallback when all stories are read (or reviewing): strictly advance to the next story sequentially
+    // (Never ping-pong between 2 stories!)
+    if (!nextCandidate) {
+      if (sameLevelStories.length > 1 && currentLevelIndex !== -1) {
+        nextCandidate = sameLevelStories[(currentLevelIndex + 1) % sameLevelStories.length];
+      } else if (allStories.length > 1 && currentIndex !== -1) {
+        nextCandidate = allStories[(currentIndex + 1) % allStories.length];
+      }
+    }
+
+    // Calculate previous story (strictly sequential going backwards)
+    let previousCandidate: Story | null = null;
+    if (sameLevelStories.length > 1 && currentLevelIndex !== -1) {
+      previousCandidate = sameLevelStories[(currentLevelIndex - 1 + sameLevelStories.length) % sameLevelStories.length];
+    } else if (allStories.length > 1 && currentIndex !== -1) {
+      previousCandidate = allStories[(currentIndex - 1 + allStories.length) % allStories.length];
+    }
+
+    return {
+      nextStory: nextCandidate,
+      prevStory: previousCandidate,
+      isNextUnread,
+      isNextDifferentLevel,
+    };
+  }, [allStories, story.id, story.level, readStoryIds, isRead]);
 
   // Font size classes
   const fontSizes = {
@@ -606,10 +689,21 @@ export function StoryReader({
             </p>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center justify-end gap-3 w-full sm:w-auto">
+            {prevStory && (
+              <button
+                onClick={() => onSelectStory(prevStory)}
+                className="flex items-center gap-1 rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-750 transition-colors"
+                title={`前の話: ${prevStory.titleJa}`}
+              >
+                <ChevronLeft className="h-3.5 w-3.5" />
+                <span>前の話</span>
+              </button>
+            )}
+
             <button
               onClick={handleToggleReadWithEffect}
-              className={`flex items-center gap-1.5 rounded-lg px-4 py-2 text-xs font-semibold transition-all ${
+              className={`flex items-center gap-1.5 rounded-lg px-4 py-2 text-xs font-semibold transition-all shadow-xs ${
                 isRead
                   ? 'bg-emerald-600 text-white'
                   : 'bg-slate-900 text-white hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900'
@@ -620,13 +714,32 @@ export function StoryReader({
             </button>
 
             {nextStory && (
-              <button
-                onClick={() => onSelectStory(nextStory)}
-                className="flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-4 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-750 transition-colors"
-              >
-                <span>次の話を読む</span>
-                <span className="text-[10px] text-slate-400">({nextStory.level})</span>
-              </button>
+              <div className="flex flex-col items-end">
+                <button
+                  onClick={() => onSelectStory(nextStory)}
+                  className="flex items-center gap-1.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 text-xs font-semibold shadow-xs transition-colors dark:bg-blue-600 dark:hover:bg-blue-500"
+                  title={`次の話: ${nextStory.titleJa}`}
+                >
+                  <span>
+                    {isNextDifferentLevel
+                      ? `次レベルへ（${nextStory.level}）`
+                      : '次の話を読む'}
+                  </span>
+                  {isNextUnread ? (
+                    <span className="rounded bg-blue-500 px-1.5 py-0.5 text-[10px] font-bold text-white leading-none">
+                      未読
+                    </span>
+                  ) : (
+                    <span className="text-[10px] text-blue-200">
+                      ({nextStory.level})
+                    </span>
+                  )}
+                  <ChevronRight className="h-3.5 w-3.5" />
+                </button>
+                <span className="mt-1 max-w-[180px] sm:max-w-[220px] truncate text-[11px] text-slate-500 dark:text-slate-400">
+                  次: {nextStory.titleJa}
+                </span>
+              </div>
             )}
           </div>
         </div>
