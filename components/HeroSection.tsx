@@ -52,7 +52,7 @@ export function HeroSection({
               <span className="flex h-2 w-2 rounded-full bg-emerald-500" />
               <span>🇩🇪 ドイツ語多読プラットフォーム</span>
               <span aria-hidden="true">·</span>
-              <span>CEFR A1〜C1（全{totalStories}編・グリム童話収録）</span>
+              <span>CEFR A1〜C1（全{totalStories}編・グリム童話＆古典収録）</span>
               <span aria-hidden="true">·</span>
               <span>完全無料・登録不要</span>
             </div>
@@ -66,7 +66,7 @@ export function HeroSection({
             {/* Subheading: Concrete & Concise */}
             <p className="mt-3.5 max-w-2xl text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300">
               文法ドリルで挫折した学習者のための「ドイツ語多読（Tadoku）」リーダー。
-              グリム童話（赤ずきん・ブレーメン等）やクスッと笑える日常譚で、辞書を引かずにドイツ語脳を育成。
+              グリム童話やほら吹き男爵・オイレンシュピーゲル、クスッと笑える日常譚で、辞書を引かずにドイツ語脳を育成。
               一行対訳・ネイティブ音声・クリック単語帳で、つまずかずに自然と読み進められます。
             </p>
 

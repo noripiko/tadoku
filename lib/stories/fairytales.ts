@@ -821,19 +821,19 @@ export const FAIRYTALE_STORIES: Story[] = [
     }
   },
 
-  // 9. B2 - Der Rattenfänger von Hameln
+  // 9. B2 - Der Rattenfänger von Hameln (Historische Sage)
   {
     id: 'fairytale-rattenfaenger-von-hameln',
     level: 'B2',
     title: 'Der Rattenfänger von Hameln',
-    titleJa: 'ハーメルンの笛吹き男（ドイツ伝説）',
+    titleJa: 'ハーメルンの笛吹き男（歴史伝承・原典版）',
     subtitle: 'Die historische Sage vom bunt gekleideten Spielmann und dem schicksalhaften Juni 1284',
     subtitleJa: '街を救った魔笛の調べ、破られた契約、そして消えた130人の子どもたち',
     genre: 'Fairy Tale',
-    genreJa: 'グリム童話・名作民話',
+    genreJa: 'ドイツ伝説・名作古典',
     wordCount: 525,
     readingTimeMinutes: 5,
-    summaryJa: '西暦1284年、ニーダーザクセン州の古都ハーメルンを襲った破滅的なネズミの害。色鮮やかな服をまとった流浪の笛吹き男が現れ、報酬と引き換えに街を救いますが、強欲な市議会は約束の支払いを反故にします。聖ヨハネ・パウロの祝日に起きた恐るべき報復の真実とは。',
+    summaryJa: '西暦1284年、ニーダーザクセン州の古都ハーメルンを襲った破滅的なネズミの害。色鮮やかな服をまとった流浪の笛吹き男が現れ、報酬と引き換えに街を救いますが、強欲な市議会は約束の支払いを反故にします。聖ヨハネ・パウロの祝日に起きた恐るべき報復の真実とは。格調高い語彙で味わうB2歴史伝説。',
     paragraphs: [
       {
         id: 1,
@@ -885,8 +885,8 @@ export const FAIRYTALE_STORIES: Story[] = [
       { german: 'die Hybris', article: 'die', pos: 'Substantiv', japanese: '傲慢、不遜' }
     ],
     culturalNote: {
-      title: '歴史的事実と東方植民（Ostsiedlung）説',
-      content: 'ハーメルンの記録文書には実際に「1284年6月26日に130人の子どもたちが失踪した」という旨の記述が残されています。歴史学者の間では、笛吹き男は東方植民運動（Ostsiedlung）の募集人（Locator）であり、新天地（現ポーランドやトランシルヴァニア地方）へと多くの若者たちを引率していった史実が伝説化したという説が有力です。'
+      title: 'グリム兄弟『ドイツ伝説集』第245話とB1多読のメリット',
+      content: '本作は童話（Kinder- und Hausmärchen）ではなく、グリム兄弟が歴史伝承を編纂した『ドイツ伝説集（Deutsche Sagen, 1816）』第245話「ハーメルンの子どもたち（Die Kinder zu Hameln）」に記録された本格的な伝説です。ハーメルンの古文書にも「1284年6月26日に130人の子どもが失踪した」という史実記録が残されており、東方植民（Ostsiedlung）運動の引率者説などが有名です。緊迫したサスペンスと劇的な因果応報のストーリー展開は、B1レベルの重要文法（関係代名詞・過去形・副文・受動態）をスラスラ読み解く多読の推進力として抜群です。'
     }
   },
 
@@ -956,6 +956,213 @@ export const FAIRYTALE_STORIES: Story[] = [
     culturalNote: {
       title: 'グリム原典とペロー版（ディズニー版）の大きな違い',
       content: '世界的に有名なガラスの靴（pantoufle de verre）やカボチャの馬車、魔法使いの妖精はシャルル・ペローのフランス版の創作です。グリム兄弟の『Aschenputtel』は母の墓のハシバミの木や自然信仰、黄金の靴、そして鳩による正義の執行など、古代ゲルマンの土着的なリアリズムが色濃く残っています。'
+    }
+  },
+
+  // 11. A2 - Die Abenteuer des Barons von Münchhausen
+  {
+    id: 'fairytale-muenchhausen',
+    level: 'A2',
+    title: 'Die Abenteuer des Barons von Münchhausen',
+    titleJa: 'ほら吹き男爵の冒険（Münchhausen）',
+    subtitle: 'Der kühne Ritt auf der Kanonenkugel und die unglaublichen Geschichten des Lügenbarons',
+    subtitleJa: '大砲の玉に乗って敵陣偵察、沼からの自力脱出、頭に桜が咲いた鹿！世界一愛される大ホラ吹き男爵',
+    genre: 'Fairy Tale',
+    genreJa: 'ドイツ古典・ほら話コメディ',
+    wordCount: 385,
+    readingTimeMinutes: 4,
+    summaryJa: '大砲の玉に飛び乗って敵陣を空から偵察、底なしの沼に落ちれば自分の弁髪を掴んで馬ごと引き上げ、鹿の額にサクランボの種を撃てば立派な桜の木が生える——！実在のドイツ貴族ヒエロニュムス・フォン・ミュンヒハウゼンをモデルに描かれた、世界文学史上最も愛される大嘘つき男爵の痛快冒険譚。1話完結のコミカルな展開と軽快なオチで、A2〜B1レベルの多読に最適！',
+    paragraphs: [
+      {
+        id: 1,
+        german: 'In seinem behaglichen Gutshaus in Bodenwerder an der Weser saß Baron Hieronymus von Münchhausen am knisternden Kaminfeuer. Mit einer meerschaumenen Pfeife im Mund und einem feinen Glas Wein in der Hand versammelte er seine Freunde um sich. Alle spitzten die Ohren, denn der Baron war bekannt für seine haarsträubenden Geschichten: »Meine werten Herren«, sprach er mit ernster Miene, »ich will Ihnen berichten, was mir wahrhaftig widerfahren ist!«',
+        japanese: 'ヴェーザー河畔のボーデンヴェルダーにある居心地の良い邸宅で、ヒエロニュムス・フォン・ミュンヒハウゼン男爵はパチパチと燃える暖炉の火のそばに座っていました。海泡石のパイプをくわえ、上等なワインのグラスを手にして、彼は友人たちを周りに集めました。誰もが耳を澄ましました。なぜなら男爵は、信じがたい奇想天外な冒険談で有名だったからです。「親愛なる諸君」と彼は大真面目な顔で語り始めました。「私に現実に起こった真実の出来事をお話しいたしましょう！」'
+      },
+      {
+        id: 2,
+        german: '»Einst belagerten wir eine feindliche Festung. Unser General wollte dringend erfahren, wie viele Geschütze die Feinde hinter ihren dicken Mauern verbargen. Da hatte ich einen genialen Gedanken: Als eine gewaltige eiserne Kanonenkugel aus unserem Geschütz abgefeuert wurde, sprang ich ohne Zögern mitten auf die fliegende Kugel und ritt auf ihr durch die Lüfte! Der Wind pfiff um meine Ohren, und von hoch oben konnte ich bequem jedes feindliche Zelt zählen.«',
+        japanese: '「かつて私たちは敵の要塞を包囲しておりました。我が軍の将軍は、敵が厚い城壁の背後にどれほどの大砲を隠しているのか、喉から手が出るほど知りたがっていました。そこで私は天才的な閃きを得たのです。味方の大砲から巨大な鉄の大砲の玉が発射された瞬間、私は躊躇うことなく飛んでいる砲弾の上にひらりと飛び乗り、大空を疾走したのです！風が耳元でビュービューと鳴り、私は上空から敵の天幕を悠々と一つ残らず数え上げました。」'
+      },
+      {
+        id: 3,
+        german: '»Doch mitten im schönsten Fluge überkam mich ein banger Zweifel: Wie sollte ich lebendig wieder zurückkehren? In diesem glücklichen Moment flog eine feindliche Kugel in die entgegengesetzte Richtung dicht an mir vorbei. Geistesgegenwärtig sprang ich von meiner Kugel herab auf die feindliche Kugel hinüber! So sauste ich im eleganten Bogen sicher in unser eigenes Feldlager zurück und erstattete dem staunenden General sogleich präzisen Bericht.«',
+        japanese: '「しかし快適な飛行の真っ最中、ふと不安な疑問が頭をよぎりました。どうやって生きて味方の陣地へ戻ればよいのだろうか？まさにその幸運な瞬間、反対方向へと飛んできた敵の砲弾が私のすぐ脇をかすめました。私はとっさの機転で、乗っていた玉から敵の玉へと飛び移ったのです！こうして私は優美な弧を描いて味方の野営地へと無事に戻り、驚愕する将軍に直ちに正確な偵察報告を差し上げたのでございます。」'
+      },
+      {
+        id: 4,
+        german: '»Ein andermal ritt ich zur Jagd und geriet mit meinem treuen Gaul in einen tiefen, tückischen Sumpf. Wir versanken immer schneller im zähen Schlamm, bis der Morast mir schon bis an die Nasenspitze reichte. Keine Weide und kein Seil war zu greifen! Was tat ich also? Ich packte meinen eigenen gepuderten Haarzopf mit beiden Fäusten, riss kräftig nach oben – und zog mich mitsamt dem Pferd am eigenen Schopf wohlbehalten aus dem bodenlosen Moor heraus!«',
+        japanese: '「またある時には、狩りに出かけた折、愛馬とともに底なしの危険な沼地へと足を踏み入れてしまいました。私たちは粘りつく泥の中へとぐんぐん沈み込み、ついに泥水が私の鼻の頭にまで達しました。掴まる柳の枝もロープもありません！そこで私はどうしたと思いますか？私は両手で自分の粉を振った弁髪をガシッと掴み、渾身の力で上へと引き上げました——するとどうでしょう、自分自身はおろか、愛馬までも自分の髪の毛を引っ張って底なしの泥沼から無事に引き抜いたのです！」'
+      },
+      {
+        id: 5,
+        german: '»Auch jener Hirsch wird mir unvergesslich bleiben: Als mir im tiefen Wald die Bleikugeln ausgingen, lud ich mein Jagdgewehr kurzerhand mit frischen Kirschkernen. Ich zielte und traf einen stattlichen Hirsch mitten auf die Stirn. Das stolze Tier entkam unverletzt. Doch drei Jahre später erblickte ich denselben Hirsch auf einer Waldlichtung wieder: Mitten zwischen seinem prächtigen Geweih wuchs ein zehn Fuß hoher Kirschbaum, der über und über voll köstlicher, süßer Kirschen hing!«',
+        japanese: '「あの鹿のことも忘れられません。深い森の中で鉛の銃弾を切らしてしまった私は、手近にあった新鮮なサクランボの種を猟銃に詰め込みました。私は狙いを定め、立派な雄鹿の額の真ん中を撃ち抜きました。誇り高き獣は怪我もなく逃げ去りました。しかし3年後、森の広場で私は同じ雄鹿と再会したのです。なんと、その見事な枝角の真ん中から、高さ10フィートの立派な桜の木が生え、甘く瑞々しいサクランボの実がたわわに実っていたのです！」'
+      },
+      {
+        id: 6,
+        german: 'Die Gäste lachten schallend und stießen mit ihren Gläsern an: »Bravo, Herr Baron! Ein solcher Schalk und Meistererzähler ist selten auf Erden!« Münchhausen verneigte sich schmunzelnd: Mit Phantasie, unerschütterlichem Mut und einem Lächeln auf den Lippen lässt sich nämlich jedes noch so unlösbare Hindernis im Handumdrehen überwinden.',
+        japanese: '客たちは大声で大笑いし、グラスを打ち鳴らして乾杯しました。「ブラボー、男爵！これほどの痛快なトリックスターにして名語り手は、世の中に滅多におりません！」ミュンヒハウゼン男爵はにやりと笑って会釈しました。豊かな想像力と揺るぎない勇気、そして唇に微笑みを浮かべていれば、どんな絶望的な困難だってあっという間に乗り越えられるものなのです。'
+      }
+    ],
+    fullTranslationJa: [
+      'ヴェーザー河畔のボーデンヴェルダーにある居心地の良い邸宅で、ヒエロニュムス・フォン・ミュンヒハウゼン男爵はパチパチと燃える暖炉の火のそばに座っていました。海泡石のパイプをくわえ、上等なワインのグラスを手にして、彼は友人たちを周りに集めました。誰もが耳を澄ましました。なぜなら男爵は、信じがたい奇想天外な冒険談で有名だったからです。「親愛なる諸君」と彼は大真面目な顔で語り始めました。「私に現実に起こった真実の出来事をお話しいたしましょう！」',
+      '「かつて私たちは敵の要塞を包囲しておりました。我が軍の将軍は、敵が厚い城壁の背後にどれほどの大砲を隠しているのか、喉から手が出るほど知りたがっていました。そこで私は天才的な閃きを得たのです。味方の大砲から巨大な鉄の大砲の玉が発射された瞬間、私は躊躇うことなく飛んでいる砲弾の上にひらりと飛び乗り、大空を疾走したのです！風が耳元でビュービューと鳴り、私は上空から敵の天幕を悠々と一つ残らず数え上げました。」',
+      '「しかし快適な飛行の真っ最中、ふと不安な疑問が頭をよぎりました。どうやって生きて味方の陣地へ戻ればよいのだろうか？まさにその幸運な瞬間、反対方向へと飛んできた敵の砲弾が私のすぐ脇をかすめました。私はとっさの機転で、乗っていた玉から敵の玉へと飛び移ったのです！こうして私は優美な弧を描いて味方の野営地へと無事に戻り、驚愕する将軍に直ちに正確な偵察報告を差し上げたのでございます。」',
+      '「またある時には、狩りに出かけた折、愛馬とともに底なしの危険な沼地へと足を踏み入れてしまいました。私たちは粘りつく泥の中へとぐんぐん沈み込み、ついに泥水が私の鼻の頭にまで達しました。掴まる柳の枝もロープもありません！そこで私はどうしたと思いますか？私は両手で自分の粉を振った弁髪をガシッと掴み、渾身の力で上へと引き上げました——するとどうでしょう、自分自身はおろか、愛馬までも自分の髪の毛を引っ張って底なしの泥沼から無事に引き抜いたのです！」',
+      '「あの鹿のことも忘れられません。深い森の中で鉛の銃弾を切らしてしまった私は、手近にあった新鮮なサクランボの種を猟銃に詰め込みました。私は狙いを定め、立派な雄鹿の額の真ん中を撃ち抜きました。誇り高き獣は怪我もなく逃げ去りました。しかし3年後、森の広場で私は同じ雄鹿と再会したのです。なんと、その見事な枝角の真ん中から、高さ10フィートの立派な桜の木が生え、甘く瑞々しいサクランボの実がたわわに実っていたのです！」',
+      '客たちは大声で大笑いし、グラスを打ち鳴らして乾杯しました。「ブラボー、男爵！これほどの痛快なトリックスターにして名語り手は、世の中に滅多におりません！」ミュンヒハウゼン男爵はにやりと笑って会釈しました。豊かな想像力と揺るぎない勇気、そして唇に微笑みを浮かべていれば、どんな絶望的な困難だってあっという間に乗り越えられるものなのです。'
+    ],
+    vocabulary: [
+      { german: 'die Kanonenkugel', article: 'die', pos: 'Substantiv', japanese: '大砲の玉、砲弾' },
+      { german: 'der Haarzopf', article: 'der', pos: 'Substantiv', japanese: '弁髪、おさげ髪（18世紀貴族の結った髪）' },
+      { german: 'am eigenen Schopf herausziehen', pos: 'Redewendung', japanese: '自力で困難を脱出する（ミュンヒハウゼンの故事から生まれた成句）' },
+      { german: 'der Morast / Sumpf', article: 'der', pos: 'Substantiv', japanese: '泥沼、湿地帯' },
+      { german: 'der Kirschkern', article: 'der', pos: 'Substantiv', japanese: 'サクランボの種' },
+      { german: 'das Geweih', article: 'das', pos: 'Substantiv', japanese: '（鹿の）枝角' },
+      { german: 'geistesgegenwärtig', pos: 'Adjektiv', japanese: 'とっさの機転が利く、機敏な' },
+      { german: 'das Jägerlatein', article: 'das', pos: 'Substantiv', japanese: '狩人のほら話、釣り人の大げさな自慢話' }
+    ],
+    culturalNote: {
+      title: 'ミュンヒハウゼン男爵の実在と文学的誕生',
+      content: '主人公のモデルとなったヒエロニュムス・フォン・ミュンヒハウゼン男爵（Hieronymus von Münchhausen, 1720〜1797）は実在のドイツ貴族で、ニーダーザクセン州のボーデンヴェルダーで暮らしていました。露土戦争に従軍後、自邸で客人に語り聞かせた奇想天外な大ぼら話が評判を呼び、詩人ゴットフリート・アウグスト・ビュルガー（G. A. Bürger）が1786年にドイツ語版小説として刊行、世界的大ベストセラーとなりました。「自分の髪の毛（Schopf）を掴んで沼から脱出する」というエピソードは、物理学・認知科学の用語「ブートストラップ（Bootstrap）」の語源にもなっています。1話完結のコミカルなオチは多読（Tadoku）の楽しさを体感するのに最も適した名作です。'
+    }
+  },
+
+  // 12. A2 - Till Eulenspiegels lustige Streiche
+  {
+    id: 'fairytale-till-eulenspiegel',
+    level: 'A2',
+    title: 'Till Eulenspiegels lustige Streiche',
+    titleJa: 'ティル・オイレンシュピーゲルの愉快ないたずら（Till Eulenspiegel）',
+    subtitle: 'Wie der schelmische Narr die Geizigen narrte und Worte wörtlich nahm',
+    subtitleJa: 'フクロウとサルのパン、綱渡りの靴騒動！権力者や意地悪な大人を頓智で化かすドイツの一休さん',
+    genre: 'Fairy Tale',
+    genreJa: '中世民話・風刺トリックスター',
+    wordCount: 420,
+    readingTimeMinutes: 4,
+    summaryJa: '中世ドイツの町々（ブラウンシュヴァイク、マクデブルクなど）を放浪した伝説のトリックスター、ティル・オイレンシュピーゲル。威張り散らす貴族や欲深いパン屋の親方の言葉を「文字通り（wörtlich）」に実行してやり込める痛快な民話！ドイツ人にとっての「一休さん」とも言える人気者の機智とユーモアを、有名な2大エピソード（綱渡りの靴騒動、フクロウとサルのパン）で楽しむA2多読の決定版。',
+    paragraphs: [
+      {
+        id: 1,
+        german: 'Im vierzehnten Jahrhundert zog ein fröhlicher, scharfzüngiger Geselle durch die deutschen Städte: Till Eulenspiegel. Auf seiner Kappe trug er bunte Schellen, und sein Wappen zeigte eine Eule und einen Spiegel. Die Eule galt als Symbol der Klugheit, der Spiegel als Sinnbild der Selbsterkenntnis. Till liebte es, eitlen Fürsten, habgierigen Meistern und selbstgerechten Bürgern den Spiegel vorzuhalten, damit sie ihre eigene Torheit erblickten.',
+        japanese: '14世紀、陽気で舌鋒鋭い一人の若者がドイツの町々を旅して回っていました。ティル・オイレンシュピーゲルです。彼の帽子には色鮮やかな鈴が揺れ、その紋章にはフクロウと手鏡が描かれていました。フクロウは知恵の象徴、鏡は自己認識のシンボルでした。ティルは、威張った領主や欲深い親方、独善的な大人たちに「鏡を突きつけて」、彼ら自身の愚かさを自覚させることが大好きでした。'
+      },
+      {
+        id: 2,
+        german: 'In Magdeburg spannte Till einst ein langes Seil hoch über den belebten Marktplatz. Das ganze Volk strömte zusammen, um das Spektakel zu sehen. Vor seinem waghalsigen Tanz rief Till den Zuschauern zu: »Gebt mir alle eure linken Schuhe herauf, von jung und alt! Ich werde euch damit ein unerhörtes Kunststück zeigen!« Begierig zogen die Bürger ihre Schuhe aus und warfen sie hinauf. Till knüpfte alle Schuhe an einer langen Schnur fest zusammen.',
+        japanese: 'マクデブルクの街で、ある日ティルは賑わう市場の広場のはるか頭上に長い綱を張りました。その見世物を見ようと、町中の人々が群がってきました。危険な綱渡りを始める前に、ティルは群衆に向かって叫びました。「老いも若きも、お前たちの左足の靴を全部ここへ差し出すがいい！前代未聞の奇術をお見せしよう！」町の人々は好奇心から先を争って靴を脱ぎ、上へと投げ上げました。ティルはすべての靴を長い紐に固く結びつけました。'
+      },
+      {
+        id: 3,
+        german: 'Plötzlich zog Till ein scharfes Taschenmesser hervor, zerschnitt die Schnur und warf den ganzen Schuhhaufen mitten in die staunende Menge: »Nun suche sich jeder seinen eigenen Schuh!« Da brach ein ungeheures Durcheinander los! Die vornehmen Ratsherren, stolzen Bäcker und Geizhälse balgten sich im Dreck, schlugen aufeinander ein und zerrten an den Schuhen. Till stand oben auf dem Dach, lachte aus vollem Halse und rief: »Seht nur, wie friedlich die gelehrte Bürgerschaft miteinander umgeht!«',
+        japanese: '突然、ティルは鋭いナイフを取り出すと紐を断ち切り、靴の山をごっそり見物人の真ん中へと投げ下ろしました。「さあ、誰もが自分の靴を探すがよい！」その瞬間、凄まじい大混乱が巻き起こりました！高貴な参事会員も、威張ったパン屋もケチな商人も泥まみれになって取っ組み合い、互いに殴り合いながら靴を奪い合いました。ティルは屋根の上に立ち、腹の底から大笑いしながら叫びました。「ご覧あれ、教養ある市民たちが何と平和に仲良く暮らしていることか！」'
+      },
+      {
+        id: 4,
+        german: 'Bald darauf kam Till in die alte Welfenstadt Braunschweig und trat bei einem griesgrämigen Bäckermeister als Gehilfe ein. Der Meister war geizig und behandelte seine Lehrbuben schlecht. Als der Bäcker am späten Abend zu Bett gehen wollte, fragte Till scheinheilig: »Herr Meister, was für feines Gebäck soll ich heute Nacht in den Ofen schieben?« Der Meister schnauzte verdrossen: »Was ein Bäcker eben backt! Backe meinetwegen Eulen und Meerkatzen!«',
+        japanese: 'それから間もなく、ティルは古きヴェルフェン都市ブラウンシュヴァイクにやって来て、気難しいパン屋の親方のもとで助手として働き始めました。親方はひどいケチで、徒弟たちをこき使っていました。夜遅く親方が寝室へ行こうとしたとき、ティルは従順を装って尋ねました。「親方、今夜はどんなパンを窯に入れたらよろしいでしょうか？」親方はうんざりして怒鳴りつけました。「パン屋が焼くものに決まっとるだろうが！勝手にフクロウでも長尾ザルでも焼いておけ！」'
+      },
+      {
+        id: 5,
+        german: 'Till nahm die Worte seines Meisters wortwörtlich. In fleißiger Nachtarbeit formte er aus dem besten Teig hunderte niedliche Eulen mit Federaugen und possierliche Äffchen mit geschwungenen Schwänzen und schob sie in die Glut. Am Morgen schrie der Meister entsetzt: »Du Narr! Niemand kauft Eulen anstelle von Brot! Bezahle mir mein Mehl!« Till zahlte den Mehlpreis und trug all das Gebäck in großen Körben vor die Stadtkirche. Es war St. Martinstag: Die Kinder und Eltern waren entzückt von den drolligen Teigfiguren und kauften alles zum doppelten Preis leer! Till steckte das Geld ein und zog lachend von dannen.',
+        japanese: 'ティルは親方の言葉を一言一句、文字通り（wörtlich）に受け止めました。夜通し懸命に働いて、上等の生地から羽模様のついた数百匹の可愛いフクロウと、尾を丸めた愛らしい小猿の形を作り上げ、炭火の窯で焼き上げたのです。朝になり、親方は悲鳴を上げました。「この大馬鹿者め！パンの代わりにフクロウなんて誰が買うか！小麦粉の代金を弁償しろ！」ティルは小麦粉代をあっさり支払い、巨大なカゴに焼き菓子を詰め込んで教会前へと運びました。ちょうど聖マルティンの祝日でした。子どもたちも親たちも珍しい動物パンに夢中になり、通常の倍の値段で飛ぶように完売しました！ティルは懐を金貨で満たし、笑いながら旅立っていきました。'
+      },
+      {
+        id: 6,
+        german: 'Till Eulenspiegel verbeugte sich vor keinem König. Er lehrte die Welt mit Witz und Schalkheit, dass man die Sprache mit Bedacht wählen soll und dass freies Denken jede Fessel sprengt. Wie das japanische Vorbild »Ikkyu-san« ist er bis heute der unsterbliche Liebling aller Schalkfreunde in Deutschland.',
+        japanese: 'ティル・オイレンシュピーゲルはいかなる王の前にもひざまずきませんでした。機智と頓智によって、言葉遣いには慎重であるべきこと、そして自由な精神はあらゆる束縛を打ち破ることを世の中に教えたのです。日本の「一休さん」のように、彼は今日に至るまでドイツ中の人々に愛される不滅の民衆の英雄なのです。'
+      }
+    ],
+    fullTranslationJa: [
+      '14世紀、陽気で舌鋒鋭い一人の若者がドイツの町々を旅して回っていました。ティル・オイレンシュピーゲルです。彼の帽子には色鮮やかな鈴が揺れ、その紋章にはフクロウと手鏡が描かれていました。フクロウは知恵の象徴、鏡は自己認識のシンボルでした。ティルは、威張った領主や欲深い親方、独善的な大人たちに「鏡を突きつけて」、彼ら自身の愚かさを自覚させることが大好きでした。',
+      'マクデブルクの街で、ある日ティルは賑わう市場の広場のはるか頭上に長い綱を張りました。その見世物を見ようと、町中の人々が群がってきました。危険な綱渡りを始める前に、ティルは群衆に向かって叫びました。「老いも若きも、お前たちの左足の靴を全部ここへ差し出すがいい！前代未聞の奇術をお見せしよう！」町の人々は好奇心から先を争って靴を脱ぎ、上へと投げ上げました。ティルはすべての靴を長い紐に固く結びつけました。',
+      '突然、ティルは鋭いナイフを取り出すと紐を断ち切り、靴の山をごっそり見物人の真ん中へと投げ下ろしました。「さあ、誰もが自分の靴を探すがよい！」その瞬間、凄まじい大混乱が巻き起こりました！高貴な参事会員も、威張ったパン屋もケチな商人も泥まみれになって取っ組み合い、互いに殴り合いながら靴を奪い合いました。ティルは屋根の上に立ち、腹の底から大笑いしながら叫びました。「ご覧あれ、教養ある市民たちが何と平和に仲良く暮らしていることか！」',
+      'それから間もなく、ティルは古きヴェルフェン都市ブラウンシュヴァイクにやって来て、気難しいパン屋の親方のもとで助手として働き始めました。親方はひどいケチで、徒弟たちをこき使っていました。夜遅く親方が寝室へ行こうとしたとき、ティルは従順を装って尋ねました。「親方、今夜はどんなパンを窯に入れたらよろしいでしょうか？」親方はうんざりして怒鳴りつけました。「パン屋が焼くものに決まっとるだろうが！勝手にフクロウでも長尾ザルでも焼いておけ！」',
+      'ティルは親方の言葉を一言一句、文字通り（wörtlich）に受け止めました。夜通し懸命に働いて、上等の生地から羽模様のついた数百匹の可愛いフクロウと、尾を丸めた愛らしい小猿の形を作り上げ、炭火の窯で焼き上げたのです。朝になり、親方は悲鳴を上げました。「この大馬鹿者め！パンの代わりにフクロウなんて誰が買うか！小麦粉の代金を弁償しろ！」ティルは小麦粉代をあっさり支払い、巨大なカゴに焼き菓子を詰め込んで教会前へと運びました。ちょうど聖マルティンの祝日でした。子どもたちも親たちも珍しい動物パンに夢中になり、通常の倍の値段で飛ぶように完売しました！ティルは懐を金貨で満たし、笑いながら旅立っていきました。',
+      'ティル・オイレンシュピーゲルはいかなる王の前にもひざまずきませんでした。機智と頓智によって、言葉遣いには慎重であるべきこと、そして自由な精神はあらゆる束縛を打ち破ることを世の中に教えたのです。日本の「一休さん」のように、彼は今日に至るまでドイツ中の人々に愛される不滅の民衆の英雄なのです。'
+    ],
+    vocabulary: [
+      { german: 'der Schelm / der Schalk', article: 'der', pos: 'Substantiv', japanese: 'いたずら者、トリックスター、おどけ者' },
+      { german: 'den Spiegel vorhalten', pos: 'Redewendung', japanese: '鏡を突きつける（自らの愚行を自覚させる）' },
+      { german: 'einen Streich spielen', pos: 'Redewendung', japanese: 'いたずらを仕掛ける、一杯食わせる' },
+      { german: 'wortwörtlich nehmen', pos: 'Redewendung', japanese: '言葉通り・文字通りに受け取る' },
+      { german: 'die Eule', article: 'die', pos: 'Substantiv', japanese: 'フクロウ' },
+      { german: 'die Meerkatze', article: 'die', pos: 'Substantiv', japanese: '長尾ザル、オナガザル' },
+      { german: 'griesgrämig', pos: 'Adjektiv', japanese: '不機嫌な、気難しい、つむじ曲がりの' },
+      { german: 'die Torheit', article: 'die', pos: 'Substantiv', japanese: '愚行、愚かさ' }
+    ],
+    culturalNote: {
+      title: 'ティル・オイレンシュピーゲルとブラウンシュヴァイク文化',
+      content: 'ティル・オイレンシュピーゲル（Till Eulenspiegel）は、1510年頃にヘルマン・ボーテ（Hermann Bote）によって出版された中世ドイツの民話集の主人公です。ニーダーザクセン州ブラウンシュヴァイク近郊のクナイトリンゲン生まれとされ、北ドイツのメルン（Mölln）には彼の記念碑や博物館があります。日本の「一休さん」のように、親方や高官の言葉をあえて「文字通り（wortwörtlich）」に実行することで権威の欺瞞を暴くトリックスターです。現在でもブラウンシュヴァイクの伝統的なパン屋では、ティルのいたずらにちなんだフクロウ型のパン「Eulen und Meerkatzen」が名物として焼かれています。会話のリズムが良く、単語の多義性を学ぶ多読に最適の教材です。'
+    }
+  },
+
+  // 13. B1 - Der Rattenfänger von Hameln (B1-Suspense-Fassung)
+  {
+    id: 'fairytale-rattenfaenger-b1',
+    level: 'B1',
+    title: 'Der Rattenfänger von Hameln',
+    titleJa: 'ハーメルンの笛吹き男（グリム伝説集・B1サスペンス編）',
+    subtitle: 'Die geheimnisvolle Flöte, der gebrochene Eid und die verschwundenen Kinder',
+    subtitleJa: '不気味な魔笛のメロディ、強欲な参事会の裏切り、そして霧の中に消えた130人の子どもたち',
+    genre: 'Fairy Tale',
+    genreJa: 'ドイツ伝説・サスペンス',
+    wordCount: 440,
+    readingTimeMinutes: 4,
+    summaryJa: '【グリム伝説集収録・B1サスペンス名作】西暦1284年、ニーダーザクセン州の古都ハーメルン。町中に溢れかえる凶暴なネズミの大群を、不思議な銀の笛で退治した色鮮やかな旅人。しかし町長たちは約束の金貨を拒み、男を嘲笑して街から追い出す。そして迎えた聖ヨハネ・パウロの祝日、大人たちが教会に集まる中、静まり返った通りに鳴り響いたのは、甘く不気味な魔笛の旋律だった…。ストーリー性が極めて高く、息詰まる展開でB1多読に最適な伝説傑作。',
+    paragraphs: [
+      {
+        id: 1,
+        german: 'Im Jahre 1284 herrschte in der Stadt Hameln an der Weser bitteres Entsetzen. Eine unheimliche Rattenplage überrollte die Straßen: Tausende graue Nager wimmelten in den Kornspeichern, drangen in die Küchen ein und bissen sogar Hunde und schlafende Säuglinge. Weder giftige Kräuter noch hungrige Katzen vermochten die Bestien aufzuhalten. Die Bürger verzagten, denn die Vorräte schwanden und die Seuchengefahr stieg von Tag zu Tag.',
+        japanese: '1284年、ヴェーザー河畔の町ハーメルンは底知れぬ恐怖に包まれていました。不気味なネズミの災厄が通りを埋め尽くしたのです。無数の灰色のネズミが穀物倉庫に群がり、台所に押し入り、犬や眠る赤ん坊にまで噛みつきました。毒入りの薬草も飢えた猫たちも、狂暴な獣たちを食い止めることはできませんでした。食糧は底をつき、疫病の危険が日増しに高まる中、市民たちは絶望に打ちひしがれていました。'
+      },
+      {
+        id: 2,
+        german: 'Da erschien an den Stadttoren ein sonderbarer Wandersmann. Sein Mantel bestand aus lauter bunten, grellen Tuchflicken, und an seinem Gürtel baumelte eine kunstvolle silberne Pfeife. Er trat vor den Rat der Stadt und versprach mit ruhiger Stimme: »Für hundert Gulden will ich Hameln bis zum Sonnenuntergang von jeder einzelnen Ratte befreien.« Die verzweifelten Ratsherren willigten jubelnd ein und schworen bei Gott, den Lohn auf der Stelle auszuzahlen.',
+        japanese: 'そこへ町の城門に、一人の奇妙な旅人が現れました。彼の外套は派手な色とりどりの布の端切れで縫い合わされ、腰帯には精巧な銀の笛がぶら下がっていました。彼は市参事会の前に進み出ると、静かな声で約束しました。「金貨百グルデンをいただけるなら、日没までにハーメルンから一匹残らずネズミを駆除してみせましょう。」絶望していた参事会員たちは大喜びで同意し、その場ですぐに報酬を支払うと神に誓いました。'
+      },
+      {
+        id: 3,
+        german: 'Der Fremde zog das Pfeifchen an die Lippen und schritt durch die Gassen. Er blies eine Melodie von fremdartigem, betörendem Zauber. Kaum erklangen die Töne, da regte sich alles: Aus Kellern, Rinnsteinen und Dachbalken stürzten die Ratten wie im Rausch hervor. Wie verhext folgten Myriaden von Tieren dem Spielmann bis an die reißende Weser. Der Pfeifer watete ins Wasser, und das ganze Heer stürzte blindlings hinein und ertrank in den Strudeln. Hameln war gerettet!',
+        japanese: '見知らぬ男は銀の笛を唇に当て、路地を歩き始めました。彼は異様で人を惑わすような魔性の調べを奏でました。その音が鳴り響くや否や、あらゆるものが蠢き出しました。地下室から、溝から、屋根裏から、ネズミたちが幻惑されたように次々と飛び出してきたのです。何万匹もの群れが魔法にかけられたように笛吹き男の後を追って激流のヴェーザー川へと向かいました。笛吹きが川へ足を踏み入れると、ネズミの大群は盲目的に飛び込み、渦潮の中で溺れ死にました。ハーメルンは救われたのです！'
+      },
+      {
+        id: 4,
+        german: 'Am nächsten Morgen forderte der Spielmann seinen gerechten Lohn. Doch die Ratsherren, die nun keine Gefahr mehr sahen, wurden schäbig und hochmütig: »Einhundert Goldmünzen für ein billiges Flötenspiel? Schämt euch, Vagabund!« Sie verhöhnten den Retter und jagten ihn mit Drohungen aus der Stadt. Der Buntgekleidete schwieg beharrlich, aber sein Blick brannte vor stummer Rache.',
+        japanese: '翌朝、笛吹き男は正当な報酬を求めました。しかし危機が去ったと知った参事会員たちは、卑劣にも傲慢な態度に出ました。「安っぽい笛を一曲吹いただけで金貨百枚だと？恥を知れ、この浮浪者め！」彼らは町の救世主を嘲笑し、脅迫して城門の外へと追い払いました。色鮮やかな衣の男は沈黙を貫きましたが、その瞳には無言の復讐の炎が燃え盛っていました。'
+      },
+      {
+        id: 5,
+        german: 'Am 26. Juni, dem Fest Johannis und Pauli, kehrte er im Morgengrauen zurück – nun gehüllt in das düstere Gewand eines Jägers. Während die Bürgerschaft in der Kirche zur Messe versammelt war, ertönte erneut seine Pfeife. Diesmal klang sie süß, traurig und unwiderstehlich. Augenblicklich liefen hundertdreißig Knaben und Mädchen im Alter über vier Jahren lachend und tanzend aus den Häusern. Wie hypnotisiert folgten sie dem Spielmann durch das Osttor hinaus zum Koppenberg.',
+        japanese: '6月26日、聖ヨハネと聖パウロの祝日の夜明け、男は戻ってきました——今度は陰鬱な狩人の衣を身にまとっていました。市民たちがミサのため教会に集まっていた間、再び彼の笛が鳴り響きました。今度は甘く、悲哀に満ち、抗いがたい調べでした。たちまち百三十人の4歳以上の少年少女たちが、笑い踊りながら家々から駆け出してきました。催眠にかかったかのように、子どもたちは笛吹き男の後に続いて東門を抜け、コッペンベルク（山）へと進んでいきました。'
+      },
+      {
+        id: 6,
+        german: 'Am Berg tat sich plötzlich ein finsterer Felsspalt auf; der Pfeifer ging hinein, und die gesamte Kinderschar folgte ihm ins Innere des Berges. Dann schloss sich die Wand krachend für immer. Nur zwei Kinder blieben zurück: Ein blindes, das den Ort nicht zeigen konnte, und ein stummes, das nichts erzählen konnte. Bis zum heutigen Tage herrscht in der Bungelosenstraße zu Hameln strenges Musikverbot. Ein schauriges Denkmal für den Verrat an einem heiligen Versprechen.',
+        japanese: '山の麓で突如として暗い岩の裂け目が口を開きました。笛吹き男が中へと足を踏み入れ、すべての子どもたちの群れが彼に従って山の胎内へと消えていきました。そして轟音とともに岩壁は永遠に閉ざされたのです。残されたのはわずか二人——場所を示すことのできない盲目の子と、何も話すことのできない口のきけない子だけでした。今日に至るまで、ハーメルンの「ブンゲローゼン通り」では一切の音楽が厳格に禁止されています。神聖な約束の裏切りに対する、身の毛のよだつ歴史の記念碑なのです。'
+      }
+    ],
+    fullTranslationJa: [
+      '1284年、ヴェーザー河畔の町ハーメルンは底知れぬ恐怖に包まれていました。不気味なネズミの災厄が通りを埋め尽くしたのです。無数の灰色のネズミが穀物倉庫に群がり、台所に押し入り、犬や眠る赤ん坊にまで噛みつきました。毒入りの薬草も飢えた猫たちも、狂暴な獣たちを食い止めることはできませんでした。食糧は底をつき、疫病の危険が日増しに高まる中、市民たちは絶望に打ちひしがれていました。',
+      'そこへ町の城門に、一人の奇妙な旅人が現れました。彼の外套は派手な色とりどりの布の端切れで縫い合わされ、腰帯には精巧な銀の笛がぶら下がっていました。彼は市参事会の前に進み出ると、静かな声で約束しました。「金貨百グルデンをいただけるなら、日没までにハーメルンから一匹残らずネズミを駆除してみせましょう。」絶望していた参事会員たちは大喜びで同意し、その場ですぐに報酬を支払うと神に誓いました。',
+      '見知らぬ男は銀の笛を唇に当て、路地を歩き始めました。彼は異様で人を惑わすような魔性の調べを奏でました。その音が鳴り響くや否や、あらゆるものが蠢き出しました。地下室から、溝から、屋根裏から、ネズミたちが幻惑されたように次々と飛び出してきたのです。何万匹もの群れが魔法にかけられたように笛吹き男の後を追って激流のヴェーザー川へと向かいました。笛吹きが川へ足を踏み入れると、ネズミの大群は盲目的に飛び込み、渦潮の中で溺れ死にました。ハーメルンは救われたのです！',
+      '翌朝、笛吹き男は正当な報酬を求めました。しかし危機が去ったと知った参事会員たちは、卑劣にも傲慢な態度に出ました。「安っぽい笛を一曲吹いただけで金貨百枚だと？恥を知れ、この浮浪者め！」彼らは町の救世主を嘲笑し、脅迫して城門の外へと追い払いました。色鮮やかな衣の男は沈黙を貫きましたが、その瞳には無言の復讐の炎が燃え盛っていました。',
+      '6月26日、聖ヨハネと聖パウロの祝日の夜明け、男は戻ってきました——今度は陰鬱な狩人の衣を身にまとっていました。市民たちがミサのため教会に集まっていた間、再び彼の笛が鳴り響きました。今度は甘く、悲哀に満ち、抗いがたい調べでした。たちまち百三十人の4歳以上の少年少女たちが、笑い踊りながら家々から駆け出してきました。催眠にかかったかのように、子どもたちは笛吹き男の後に続いて東門を抜け、コッペンベルクへと進んでいきました。',
+      '山の麓で突如として暗い岩の裂け目が口を開きました。笛吹き男が中へと足を踏み入れ、すべての子どもたちの群れが彼に従って山の胎内へと消えていきました。そして轟音とともに岩壁は永遠に閉ざされたのです。残されたのはわずか二人——場所を示すことのできない盲目の子と、何も話すことのできない口のきけない子だけでした。今日に至るまで、ハーメルンの「ブンゲローゼン通り」では一切の音楽が厳格に禁止されています。神聖な約束の裏切りに対する、身の毛のよだつ歴史の記念碑なのです。'
+    ],
+    vocabulary: [
+      { german: 'die Rattenplage', article: 'die', pos: 'Substantiv', japanese: 'ネズミの害、ネズミの大量発生' },
+      { german: 'der Wandersmann', article: 'der', pos: 'Substantiv', japanese: '旅人、放浪者' },
+      { german: 'der Eid / das Gelübde', article: 'der', pos: 'Substantiv', japanese: '誓い、宣誓' },
+      { german: 'betörend', pos: 'Adjektiv', japanese: '幻惑的な、魅惑的な、心を奪う' },
+      { german: 'der Rinnstein', article: 'der', pos: 'Substantiv', japanese: '溝、側溝、下水溝' },
+      { german: 'der Scharlatan / Betrüger', article: 'der', pos: 'Substantiv', japanese: '詐欺師、いかさま師' },
+      { german: 'der Felsspalt', article: 'der', pos: 'Substantiv', japanese: '岩の裂け目、割れ目' },
+      { german: 'das Musikverbot', article: 'das', pos: 'Substantiv', japanese: '音楽禁止令' }
+    ],
+    culturalNote: {
+      title: 'グリム兄弟『ドイツ伝説集』第245話とB1多読のメリット',
+      content: '本作は童話（Märchen）ではなく、グリム兄弟が歴史的伝承を編纂した『ドイツ伝説集（Deutsche Sagen, 1816）』第245話「ハーメルンの子どもたち（Die Kinder zu Hameln）」に基づく本格的なドイツ伝説です。ハーメルンの古記録にも1284年6月26日に130人の子どもが失踪した旨が明記されており、東方植民（Ostsiedlung）の募集人説や舞踏病説など多くの歴史的議論を呼んでいます。高いストーリー性と背筋の凍るサスペンスは、B1レベルの重要文法（関係代名詞・過去形・副文）を文脈から推測しながら読み解く多読の推進力として最適です。'
     }
   }
 ];

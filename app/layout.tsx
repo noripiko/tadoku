@@ -16,13 +16,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tadoku-deutsch.vercel.app"),
-  title: "Tadoku Deutsch | ドイツ語多読プラットフォーム (A1〜C1対応・全59作品・無料)",
+  title: "Tadoku Deutsch | ドイツ語多読プラットフォーム (A1〜C1対応・全66作品・無料)",
   description:
-    "ドイツ語多読（Tadoku）を無料＆登録不要で体験。グリム童話名作コレクション（赤ずきん・ブレーメン等）やオリジナル短編などCEFRレベル別全59選。一行対訳・ネイティブ音声朗読・クリック単語帳で、辞書を引かずに楽しく読解力が伸びる！",
+    "ドイツ語多読（Tadoku）を無料＆登録不要で体験。グリム童話・ドイツ伝説・ほら吹き男爵・オイレンシュピーゲル等の名作古典やオリジナル短編などCEFRレベル別全66選。一行対訳・ネイティブ音声朗読・クリック単語帳で、辞書を引かずに楽しく読解力が伸びる！",
   keywords: [
     "ドイツ語 多読",
     "ドイツ語 リーディング",
     "グリム童話 ドイツ語",
+    "ほら吹き男爵 ドイツ語",
+    "ティル・オイレンシュピーゲル ドイツ語",
+    "ハーメルンの笛吹き男 ドイツ語",
     "ドイツ語 童話",
     "ドイツ語 赤ずきん",
     "ドイツ語 ブレーメンの音楽隊",
@@ -42,9 +45,9 @@ export const metadata: Metadata = {
     canonical: "https://tadoku-deutsch.vercel.app",
   },
   openGraph: {
-    title: "Tadoku Deutsch | ドイツ語多読プラットフォーム (A1〜C1・全59作品)",
+    title: "Tadoku Deutsch | ドイツ語多読プラットフォーム (A1〜C1・全66作品)",
     description:
-      "辞書を引かずにドイツ語がスラスラ読める。グリム童話名作10編含む全59作品・一行対訳・音声朗読付きの無料・完全ローカル多読リーダー。",
+      "辞書を引かずにドイツ語がスラスラ読める。グリム童話・名作古典13編含む全66作品・一行対訳・音声朗読付きの無料・完全ローカル多読リーダー。",
     url: "https://tadoku-deutsch.vercel.app",
     siteName: "Tadoku Deutsch",
     locale: "ja_JP",
@@ -52,9 +55,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tadoku Deutsch | ドイツ語多読プラットフォーム (A1〜C1・全59作品)",
+    title: "Tadoku Deutsch | ドイツ語多読プラットフォーム (A1〜C1・全66作品)",
     description:
-      "辞書を引かずにドイツ語がスラスラ読める。グリム童話名作10編含む全59作品・一行対訳・音声朗読付きの無料・完全ローカル多読リーダー。",
+      "辞書を引かずにドイツ語がスラスラ読める。グリム童話・名作古典13編含む全66作品・一行対訳・音声朗読付きの無料・完全ローカル多読リーダー。",
   },
   robots: {
     index: true,
@@ -86,7 +89,7 @@ export default function RootLayout({
     applicationCategory: "EducationalApplication",
     operatingSystem: "All",
     description:
-      "ドイツ語多読（Tadoku）プラットフォーム。CEFRレベル別（A1〜C1）ストーリー全59選（グリム童話名作10編含む）、一行対訳・音声朗読・クリック単語帳、登録不要・完全ローカル完結。",
+      "ドイツ語多読（Tadoku）プラットフォーム。CEFRレベル別（A1〜C1）ストーリー全66選（グリム童話・ドイツ伝説・名作古典13編含む）、一行対訳・音声朗読・クリック単語帳、登録不要・完全ローカル完結。",
     url: "https://tadoku-deutsch.vercel.app",
     offers: {
       "@type": "Offer",
