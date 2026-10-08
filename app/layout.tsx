@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -14,8 +14,20 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#0f172a",
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://tadoku-deutsch.vercel.app"),
+  manifest: "/manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Tadoku",
+  },
   title: "Tadoku Deutsch | ドイツ語多読プラットフォーム (A1〜C1対応・全66作品・無料)",
   description:
     "ドイツ語多読（Tadoku）を無料＆登録不要で体験。グリム童話・ドイツ伝説・ほら吹き男爵・オイレンシュピーゲル等の名作古典やオリジナル短編などCEFRレベル別全66選。一行対訳・ネイティブ音声朗読・クリック単語帳で、辞書を引かずに楽しく読解力が伸びる！",
@@ -69,10 +81,14 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      {
-        url: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f172a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z'/%3E%3Cpath d='M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z'/%3E%3C/svg%3E",
-        type: "image/svg+xml",
-      },
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/pwa-512x512.png", sizes: "512x512", type: "image/png" },
+      { url: "/pwa-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
     ],
   },
 };

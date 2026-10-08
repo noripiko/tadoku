@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient (Full Bleed for Android Adaptive Icon) -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080e1a" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+
+    <!-- Deep Ambient Glow behind Book -->
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.38" />
+      <stop offset="55%" stop-color="#2563eb" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Book Cover 3D Depth (Vibrant German Navy & Electric Cyan) -->
+    <linearGradient id="coverDepth" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#0369a1" />
+      <stop offset="100%" stop-color="#075985" />
+    </linearGradient>
+
+    <!-- Left Page Highlight Gradient -->
+    <linearGradient id="pageLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e2e8f0" />
+      <stop offset="70%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+
+    <!-- Right Page Highlight Gradient -->
+    <linearGradient id="pageRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="30%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+
+    <!-- Gold Accent Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="40%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <!-- High tactile drop shadow -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.75" />
+    </filter>
+
+    <filter id="badgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <!-- 1. Full-bleed background: 100% covers Android circular adaptive mask -->
+  <rect width="512" height="512" fill="url(#bg)" />
+
+  <!-- 2. Ambient light glow centered on the book -->
+  <circle cx="256" cy="256" r="230" fill="url(#glow)" />
+
+  <!-- 3. DE German Flag Badge at Top (Safe zone: centered at (256, 96), r=160px from center) -->
+  <g transform="translate(256, 96)" filter="url(#badgeShadow)">
+    <!-- Pill container -->
+    <rect x="-44" y="-13" width="88" height="26" rx="13" fill="#0f172a" stroke="#38bdf8" stroke-width="1.8" />
+    
+    <!-- German Flag Mini Banner -->
+    <g transform="translate(-29, -7.5)">
+      <rect x="0" y="0" width="20" height="5" rx="1" fill="#18181b" />
+      <rect x="0" y="5" width="20" height="5" fill="#dc2626" />
+      <rect x="0" y="10" width="20" height="5" rx="1" fill="#fbbf24" />
+      <rect x="0" y="0" width="20" height="15" rx="1.5" fill="none" stroke="#475569" stroke-width="0.7" />
+    </g>
+
+    <!-- "DE" typography -->
+    <text x="6" y="5" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="12" fill="#38bdf8" letter-spacing="1">DE</text>
+  </g>
+
+  <!-- 4. Dominant Book Emblem Group (Optimized to fill Android circular frame) -->
+  <g filter="url(#shadow)">
+    <!-- Cover Base (Blue edge thickness) -->
+    <!-- Left Cover -->
+    <path d="M 90 338 C 156 324, 218 350, 256 372 L 256 166 C 218 144, 156 118, 90 132 Z" fill="url(#coverDepth)" />
+    <!-- Right Cover -->
+    <path d="M 422 338 C 356 324, 294 350, 256 372 L 256 166 C 294 144, 356 118, 422 132 Z" fill="url(#coverDepth)" />
+
+    <!-- Page Stack 3D Depth Layer -->
+    <path d="M 94 332 C 158 318, 220 344, 256 366 C 220 336, 158 308, 94 322 Z" fill="#64748b" opacity="0.85" />
+    <path d="M 418 332 C 354 318, 292 344, 256 366 C 292 336, 354 308, 418 322 Z" fill="#64748b" opacity="0.85" />
+
+    <!-- Main Open Left Page -->
+    <path d="M 98 324 C 160 310, 222 336, 256 358 L 256 156 C 222 134, 160 108, 98 122 Z" fill="url(#pageLeft)" />
+
+    <!-- Main Open Right Page -->
+    <path d="M 414 324 C 352 310, 290 336, 256 358 L 256 156 C 290 134, 352 108, 414 122 Z" fill="url(#pageRight)" />
+
+    <!-- Center Spine Fold Shadow -->
+    <path d="M 252 156 Q 256 160 260 156 L 260 358 Q 256 362 252 358 Z" fill="#64748b" opacity="0.65" />
+
+    <!-- German Text Lines on Left Page -->
+    <g stroke="#334155" stroke-width="5" stroke-linecap="round" opacity="0.42">
+      <line x1="130" y1="168" x2="228" y2="184" />
+      <line x1="130" y1="200" x2="228" y2="216" />
+      <line x1="130" y1="232" x2="228" y2="248" />
+      <line x1="130" y1="264" x2="228" y2="280" />
+      <line x1="130" y1="294" x2="198" y2="304" />
+    </g>
+
+    <!-- German Text Lines on Right Page -->
+    <g stroke="#334155" stroke-width="5" stroke-linecap="round" opacity="0.42">
+      <line x1="284" y1="184" x2="382" y2="168" />
+      <line x1="284" y1="216" x2="382" y2="200" />
+      <line x1="284" y1="248" x2="382" y2="232" />
+      <line x1="284" y1="280" x2="382" y2="264" />
+      <line x1="284" y1="304" x2="352" y2="294" />
+    </g>
+
+    <!-- German Tricolor Bookmark Ribbon hanging straight down -->
+    <!-- Drop Shadow behind Ribbon -->
+    <path d="M 244 150 L 268 150 L 268 416 L 256 402 L 244 416 Z" fill="#000000" opacity="0.45" />
+
+    <!-- Black stripe -->
+    <path d="M 244 150 L 252 150 L 252 407 L 244 416 Z" fill="#18181b" />
+    <!-- Red stripe -->
+    <path d="M 252 150 L 260 150 L 260 407 L 256 402 L 252 407 Z" fill="#ef4444" />
+    <!-- Gold stripe -->
+    <path d="M 260 150 L 268 150 L 268 416 L 260 407 Z" fill="#fbbf24" />
+
+    <!-- Top Ribbon Arch over spine -->
+    <path d="M 244 150 Q 256 142 268 150 Q 256 156 244 150 Z" fill="#fbbf24" />
+  </g>
+
+  <!-- Golden Tadoku Sparkle Star (Top Right) -->
+  <g transform="translate(378, 108)" opacity="0.9">
+    <path d="M 0 -11 Q 0 0 11 0 Q 0 0 0 11 Q 0 0 -11 0 Q 0 0 0 -11 Z" fill="url(#goldGrad)" />
+  </g>
+</svg>

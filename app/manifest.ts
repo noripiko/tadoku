@@ -1,0 +1,41 @@
+import type { MetadataRoute } from 'next';
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    id: '/',
+    name: 'Tadoku Deutsch',
+    short_name: 'Tadoku',
+    description: 'ドイツ語多読（Tadoku）プラットフォーム。CEFRレベル別全66編。辞書を引かずにスラスラ読める無料多読リーダー。',
+    start_url: '/',
+    scope: '/',
+    display: 'standalone',
+    orientation: 'portrait-primary',
+    background_color: '#0f172a',
+    theme_color: '#0f172a',
+    icons: [
+      {
+        src: '/pwa-512x512.png',
+        sizes: '512x512',
+        type: 'image/png',
+        purpose: 'any',
+      },
+      {
+        src: '/pwa-maskable-512x512.png',
+        sizes: '512x512',
+        type: 'image/png',
+        purpose: 'maskable',
+      },
+      {
+        src: '/pwa-192x192.png',
+        sizes: '192x192',
+        type: 'image/png',
+        purpose: 'any',
+      },
+      {
+        src: '/apple-touch-icon.png',
+        sizes: '180x180',
+        type: 'image/png',
+      },
+    ],
+  };
+}

@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { BookOpen, Award, Bookmark, HelpCircle, Moon, Sun, ShieldCheck } from 'lucide-react';
 import { UserProgress } from '@/lib/types';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface HeaderProps {
   progress: UserProgress;
@@ -119,6 +120,9 @@ export function Header({
             <ShieldCheck className="h-3.5 w-3.5 text-emerald-500" />
             <span>Local only</span>
           </div>
+
+          {/* PWA Install Button */}
+          <PWAInstallButton />
 
           {/* Dark Mode Toggle */}
           <button
